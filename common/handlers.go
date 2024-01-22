@@ -156,7 +156,7 @@ func RegisterPost(w http.ResponseWriter, r *http.Request) {
 		_pwd = !helpers.IsEmpty(rpcreds.Password)
 		_email = !helpers.IsEmpty(rpcreds.Email)
 		if _uName && _pwd && _email {
-			isCreate := data.UserCreate(rpcreds)
+			rpcreds, isCreate := data.UserCreate(rpcreds)
 			if isCreate {
 				var rpcredsR assets.CredentialsR
 				rpcredsR.Pseudo = rpcreds.Pseudo
