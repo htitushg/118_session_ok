@@ -6,7 +6,7 @@
     <link rel="icon" href="/static/css/faviconhb.png" type="image/x-icon">
 </head>
 <header>
-    <h1 class="entete" >Gestion des utilisateurs</h1>
+    <h1 class="entete" >Bonjour {{.CSessions.Pseudo}}</h1>
     <img src="/static/css/utilisateurs2.png">
     <time class="datesite">{{.Date_jour}}</time>
   </header>
@@ -18,12 +18,12 @@
             <div>La session exipirera le : {{.Date_Expire}} !</div>
             <button id="subbtn" type="submit" class="bouton2">Deconnexion</button>
         </form>
-    </div>
-    <label for="story">Voici le cookie:</label>
-    <div class="CookieHolder">
-        <div class="Cookie">
-            {{.SToken}}
+        <label for="story">Voici le cookie:</label>
+        <div class="CookieHolder">
+            <div class="Cookie">
+                {{.SToken}}
+            </div>
         </div>
-    </div>
+    </div> 
 </body>
 </html>

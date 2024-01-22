@@ -7,3 +7,4 @@ home.html : formulaire affiché au démarrage d'ou l'on peut se connecter ou cr�
 index.html : un formulaire qui s'affiche quand la connexion a été réalisée,
 login.html: le formulaire de connexion,
 register3.html: le formulaire qui permet de créer un utilisateur. Ce formulaire utilise le fichier codew3.js
+createuser.html: affichage des éléments après création d'un utilisateur
