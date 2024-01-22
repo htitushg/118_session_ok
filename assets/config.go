@@ -52,34 +52,18 @@ type Credentials struct {
 	Message     string
 }
 
-//var Creds = Credentials{
-//	Pseudo:      "",
-//	Email:       "",
-//	Password:    "", //, db:"password"`
-//	Password2:   "", //, db:"password2"`
-//	Firstname:   "", //go.mod, db:"firstname"`
-//	Lastname:    "", //go.mod, db:"lastname"`
-//	Address:     "",
-//	Town:        "",
-//	ZipCode:     "",
-//	Country:     "",
-//	Language:    "",
-//	Genre:       "",
-//	Description: "",
-//}
-//var CredsR = CredentialsR{
-//	Pseudo:    "",
-//	Email:     "",
-//	Password:  "", //, db:"password"`
-//	Firstname: "", //go.mod, db:"firstname"`
-//	Lastname:  "", //go.mod, db:"lastname"`
-//}
-
 // this map stores the users sessions. For larger scale applications, you can use a database or cache for this purpose
 var Sessions = map[string]Session{}
 
 // each session contains the username of the user and the time at which it expires
 type Session struct {
-	Pseudo string
-	Expiry time.Time
+	Pseudo    string
+	Expiry    time.Time
+	Email     string
+	Firstname string
+	Lastname  string
+	Address   string
+	Town      string
+	ZipCode   string
+	Country   string
 }

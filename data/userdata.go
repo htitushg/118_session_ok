@@ -60,6 +60,26 @@ func UserIsValid(creds assets.CredentialsR) bool {
 	}
 	return _isValid
 }
+func LireValeursUser(pseudo string) (unuser assets.CredentialsR) {
+	// DB simulation
+	// Il faut ici se connecter à la base et vérifier si l'utilisateur
+	// est bien enregistré
+	var err error
+	assets.Db, err = sql.Open("mysql", "henry:11nhri04p@tcp(127.0.0.1:3306)/sessiondb")
+	assets.CheckError(err)
+
+	rows, err := assets.Db.Query("SELECT pseudo, email, firstname, lastname FROM users where pseudo = ? ", pseudo)
+	assets.CheckError(err)
+	defer rows.Close()
+	i := 0
+	for rows.Next() {
+		err = rows.Scan(&unuser.Pseudo, &unuser.Email, &unuser.Firstname, &unuser.Lastname)
+		assets.CheckError(err)
+		i++
+	}
+
+	return unuser
+}
 func UserCreate(creds assets.Credentials) bool {
 	// DB simulation
 	// Il faut ici se connecter à la base et vérifier si l'utilisateur

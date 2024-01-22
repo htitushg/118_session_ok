@@ -84,12 +84,15 @@ func LoginPost(w http.ResponseWriter, r *http.Request) {
 			// we use the "github.com/google/uuid" library to generate UUIDs
 			sessionToken := uuid.NewString()
 			/*On peut ici paramétrer la durée de validité du cookie*/
-			expiresAt := time.Now().Add(120 * time.Second) //actuellement 2minutes
+			expiresAt := time.Now().Add(300 * time.Second) //actuellement 2minutes
 
 			// Set the token in the session map, along with the session information
 			assets.Sessions[sessionToken] = assets.Session{
-				Pseudo: creds.Pseudo,
-				Expiry: expiresAt,
+				Pseudo:    creds.Pseudo,
+				Expiry:    expiresAt,
+				Email:     creds.Email,
+				Firstname: creds.Firstname,
+				Lastname:  creds.Lastname,
 			}
 
 			// Finally, we set the client cookie for "session_token" as the session token we just generated
@@ -232,13 +235,12 @@ func Index(w http.ResponseWriter, r *http.Request) {
 				} else {
 					DatedeCreation := assets.Sessions[sessionToken].Expiry.Format("“2006-01-02 15h04 05 secondes”")
 					DJour := time.Now().Format("2006-01-02")
-					type data struct {
+					data := struct {
 						CSessions   assets.Session
 						Date_Expire string
 						Date_jour   string
 						SToken      string
-					}
-					Data := data{
+					}{
 						CSessions:   assets.Sessions[sessionToken],
 						Date_Expire: DatedeCreation,
 						Date_jour:   DJour,
@@ -250,7 +252,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 						http.Error(w, err.Error(), 500)
 						return
 					}
-					err = t.Execute(w, Data)
+					err = t.Execute(w, data)
 					if err != nil {
 						http.Error(w, err.Error(), 500)
 						return
@@ -302,6 +304,42 @@ func DeconnexionPost(w http.ResponseWriter, r *http.Request) {
 		})
 	}
 	http.Redirect(w, r, "/", http.StatusFound)
+}
+func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
+	log.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
+	fmt.Println("AfficheUserInfo")
+	c, err := r.Cookie("session_token")
+	assets.CheckError(err)
+	sessionToken := c.Value
+	credsR := data.LireValeursUser(assets.Sessions[sessionToken].Pseudo)
+	// remove the users session from the session map
+	//delete(assets.Sessions, sessionToken)
+
+	// We need to let the client know that the cookie is expired
+	// In the w, we set the session token to an empty
+	// value and set its expiry as the current time
+	//http.SetCookie(w, &http.Cookie{
+	//	Name:    "session_token",
+	//	Value:   "",
+	//	Expires: time.Now(),
+	//})
+	expiresAt := time.Now().Add(300 * time.Second)
+	assets.Sessions[sessionToken] = assets.Session{
+		Pseudo:    credsR.Pseudo,
+		Expiry:    expiresAt,
+		Email:     credsR.Email,
+		Firstname: credsR.Firstname,
+		Lastname:  credsR.Lastname,
+	}
+	templates, err := template.ParseFiles(assets.Chemin + "templates/createuser.html")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	//var rcreds assets.Credentials
+	if err := templates.Execute(w, credsR); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 // Cookie
