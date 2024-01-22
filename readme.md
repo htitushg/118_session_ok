@@ -1,7 +1,9 @@
-Commande :
-http :8088/signin?username="henry"&password="1nhri96p"
-
-pas sure:
-http://localhost:8080/signup?username=henry&email=htitushg@gmail.com&password=1nhri96p&confirm=1nhri96p
-
-http :8088/signin?json={username:"henry",password:"1nhri96p"}
+#118_session_ok#
+Ce programme utilise 
+-les sessions, 
+-une base mysql "sessiondb", 
+-des formulaires:
+home.html : formulaire affiché au démarrage d'ou l'on peut se connecter ou créer un utilisateur,
+index.html : un formulaire qui s'affiche quand la connexion a été réalisée,
+login.html: le formulaire de connexion,
+register3.html: le formulaire qui permet de créer un utilisateur. Ce formulaire utilise le fichier codew3.js
