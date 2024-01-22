@@ -124,12 +124,12 @@ func UserCreate(creds assets.Credentials) (assets.Credentials, bool) {
 		hashedPassword, err := bcrypt.GenerateFromPassword([]byte(creds.Password), 8)
 		assets.CheckError(err)
 		creds.Password = string(hashedPassword)
-		assets.Db, err = sql.Open("mysql", "henry:11nhri04p@tcp(127.	0.0.1:3306)/sessiondb")
+		assets.Db, err = sql.Open("mysql", "henry:11nhri04p@tcp(127.0.0.1:3306)/sessiondb")
 		assets.CheckError(err)
 		var DatedeCreation, DatedeMaj []uint8
 		DatedeCreation = []byte(time.Now().Format("2006-01-02"))
 		DatedeMaj = []byte(time.Now().Format("2006-01-02"))
-		query := "INSERT INTO users (pseudo, email, password, 	firstname, lastname, address, town, zipcode, country, genre, createdat, updatedat, description ) VALUES 	(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+		query := "INSERT INTO users (pseudo, email, password, 	firstname, lastname,  address, town, zipcode, country, genre, createdat, updatedat, description )  VALUES 	(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 		insertResult, err := assets.Db.ExecContext(context.Background(), query, creds.Pseudo, creds.Email, creds.Password, creds.Firstname, creds.Lastname, creds.Address, creds.Town, creds.ZipCode, creds.Country, creds.Genre, DatedeCreation, DatedeMaj, creds.Description)
 		if err != nil {
 			log.Fatalf("Impossible d'inserer le nouvel utilisateur: 	%s\n", err)
