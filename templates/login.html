@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
+    <link rel="icon" href="/static/css/faviconhb.png" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Connection: entrez vos identifiant et mot de passe</h2>
+        <form action="/LoginPost" method="POST">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" required><br>
+            <label for="passid">Password</label>
+            <input type="password" id="passid" name="passid" required><br>
+            <button type="submit" class="bouton2">Se Connecter</button>
+        </form>
+        <form action="/Register" method="post">
+            <button id="subbtn" type="submit" class="bouton2">S'enregistrer</button>
+          </form>
+    </div>
+</body>
+</html>

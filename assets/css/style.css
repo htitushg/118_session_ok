@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #9d1e13;
+}
+.bouton2{
+    background-color: #113412;
+    color: rgb(238, 143, 143);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.CookieHolder {
+    display: flex;
+    justify-content: center;
+}
+.Cookie{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 0.5em solid black;
+    width: 60rem;
+    height: 6rem;
+    box-shadow: 0px 0px 10px #888888;
+    border-radius: 100%;
+    border-color: beige;
+    overflow-wrap: anywhere;
+    padding: .5rem 3rem;
+}
+.joli {
+    text-align: center;
+  
+    /* On utilise la même astuce que pour
+       cercles vus avant */
+    box-sizing: border-box;
+    width: 60rem;
+    height: 10rem;
+    padding: 20px 1em 0 1em;
+  
+    /* On fait de la place pour les « oreilles »
+       du nuage */
+    margin: 0 100px;
+  
+    position: relative;
+  
+    background-color: #a4c9cf;
+  
+    /* Enfin, le cercle n'est pas tout à fait complet
+       car on veut que la base soit plate.
+       Vous pouvez adapter ici comme bon vous semble
+       si vous souhaitez que la base ne soit pas
+       linéaire */
+    border-radius: 100% 100% 0 0;
+  }
+  
+  /* Voici les styles qu'on appliquera aux deux
+     pseudo-éléments ::before et ::after. */
+  .joli::before,
+  .joli::after {
+    /* Cette déclaration est nécessaire pour afficher
+       les pseudo-éléments même si leur valeur est la
+       chaîne vide */
+    content: "";
+  
+    /* On positionne les pseudo-éléments à droite et à
+       gauche de la boîte mais toujours en bas */
+    position: absolute;
+    bottom: 0;
+  
+    /* On s'assure que les pseudo-éléments passent sous
+       le contenu qu'il y aurait. */
+    z-index: -1;
+  
+    background-color: #a4c9cf;
+    border-radius: 100%;
+  }
+  
+  .joli::before {
+    /* Voici la taille pour l'oreille gauche
+       du nuage */
+    width: 125px;
+    height: 125px;
+  
+    /* On la décale un peu à gauche */
+    left: -80px;
+  
+    /* Pour que le bas du nuage reste droit, il
+       faut s'assurer que le coin en bas à gauche
+       soit bien un angle droit. */
+    border-bottom-right-radius: 0;
+  }
+  
+  .joli::after {
+    /* Voici la taille pour l'oreille droite */
+    width: 100px;
+    height: 100px;
+  
+    /* On la décale un peu à droite */
+    right: -60px;
+  
+    /* Pour que le bas du nuage reste droit, il
+      faut s'assurer que le coin en bas à droite
+      soit bien un angle droit. */
+    border-bottom-left-radius: 0;
+  }
