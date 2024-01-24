@@ -110,6 +110,40 @@ func LoginPost(w http.ResponseWriter, r *http.Request) {
 	}
 	http.Redirect(w, r, redirectTarget, http.StatusFound)
 }
+func Refresh(w http.ResponseWriter, r *http.Request) bool {
+	// (BEGIN) The code from this point is the same as the first part of the `Welcome` route
+	c, err := r.Cookie("session_token")
+	if err != nil {
+		if err == http.ErrNoCookie {
+			//w.WriteHeader(http.StatusUnauthorized)
+			return false
+		}
+		//w.WriteHeader(http.StatusBadRequest)
+		return false
+	}
+	sessionToken := c.Value
+
+	userSession, exists := assets.Sessions[sessionToken]
+	if !exists {
+		w.WriteHeader(http.StatusUnauthorized)
+		return false
+	}
+	if userSession.IsExpired() {
+		delete(assets.Sessions, sessionToken)
+		w.WriteHeader(http.StatusUnauthorized)
+		return false
+	}
+	// (END) The code until this point is the same as the first part of the `Welcome` route
+	// If the previous session is valid, create a new session token for the current user
+	newSessionToken := uuid.NewString()
+	expiresAt := time.Now().Add(120 * time.Second)
+	// Set the token in the session map, along with the user whom it represents
+	assets.Sessions[newSessionToken] = assets.Session{
+		Pseudo: userSession.Pseudo,
+		Expiry: expiresAt,
+	}
+	return true
+}
 
 // for GET
 func Register(w http.ResponseWriter, r *http.Request) {
@@ -308,37 +342,49 @@ func DeconnexionPost(w http.ResponseWriter, r *http.Request) {
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 	log.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
 	fmt.Println("AfficheUserInfo")
-	c, err := r.Cookie("session_token")
-	assets.CheckError(err)
-	sessionToken := c.Value
-	credsR := data.LireValeursUser(assets.Sessions[sessionToken].Pseudo)
-	// remove the users session from the session map
-	//delete(assets.Sessions, sessionToken)
+	if Refresh(w, r) {
+		c, err := r.Cookie("session_token")
+		assets.CheckError(err)
+		sessionToken := c.Value
+		credsR := data.LireValeursUser(assets.Sessions[sessionToken].Pseudo)
+		// remove the users session from the session map
+		//delete(assets.Sessions, sessionToken)
 
-	// We need to let the client know that the cookie is expired
-	// In the w, we set the session token to an empty
-	// value and set its expiry as the current time
-	//http.SetCookie(w, &http.Cookie{
-	//	Name:    "session_token",
-	//	Value:   "",
-	//	Expires: time.Now(),
-	//})
-	expiresAt := time.Now().Add(300 * time.Second)
-	assets.Sessions[sessionToken] = assets.Session{
-		Pseudo:    credsR.Pseudo,
-		Expiry:    expiresAt,
-		Email:     credsR.Email,
-		Firstname: credsR.Firstname,
-		Lastname:  credsR.Lastname,
-	}
-	templates, err := template.ParseFiles(assets.Chemin + "templates/createuser.html")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-	//var rcreds assets.Credentials
-	if err := templates.Execute(w, credsR); err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		// We need to let the client know that the cookie is expired
+		// In the w, we set the session token to an empty
+		// value and set its expiry as the current time
+		//http.SetCookie(w, &http.Cookie{
+		//	Name:    "session_token",
+		//	Value:   "",
+		//	Expires: time.Now(),
+		//})
+		expiresAt := time.Now().Add(300 * time.Second)
+		assets.Sessions[sessionToken] = assets.Session{
+			Pseudo:    credsR.Pseudo,
+			Expiry:    expiresAt,
+			Email:     credsR.Email,
+			Firstname: credsR.Firstname,
+			Lastname:  credsR.Lastname,
+		}
+		templates, err := template.ParseFiles(assets.Chemin + "templates/createuser.html")
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		//var rcreds assets.Credentials
+		if err := templates.Execute(w, credsR); err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
+	} else {
+		templates, err := template.ParseFiles(assets.Chemin + "templates/home.html")
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		//var rcreds assets.Credentials
+		if err := templates.Execute(w, nil); err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
 	}
 }
 
