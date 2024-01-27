@@ -18,7 +18,8 @@ var (
 )
 
 const (
-	Port = ":8080"
+	Port    = ":8080"
+	NomBase = "sessiondb"
 )
 
 func CheckError(err error) {
@@ -34,7 +35,7 @@ func (s Session) IsExpired() bool {
 
 // Create a struct that models the structure of a user in the request body
 type CredentialsR struct {
-	Pseudo    string `json:"pseudo"` //go.mod, db:"username"`
+	Pseudo    string `json:"pseudo"` //go.mod, db:"pseudo"`
 	Email     string `json:"email"`
 	Password  string `json:"password"`  //, db:"password"`
 	Firstname string `json:"firstname"` //go.mod, db:"firstname"`
@@ -60,7 +61,7 @@ type Credentials struct {
 // this map stores the users sessions. For larger scale applications, you can use a database or cache for this purpose
 var Sessions = map[string]Session{}
 
-// each session contains the username of the user and the time at which it expires
+// each session contains the pseudo of the user and the time at which it expires
 type Session struct {
 	Pseudo    string
 	Expiry    time.Time
@@ -71,4 +72,19 @@ type Session struct {
 	Town      string
 	ZipCode   string
 	Country   string
+}
+type Data struct {
+	CSessions   Session
+	Date_Expire time.Time
+	Date_jour   string
+	SToken      string
+	/* Email       string
+	Firstname   string
+	Lastname    string*/
+}
+
+// On crée une map pour stocker les paires (Pseudo, password). Dans une application réelle on pourrait utiliser une base de données.
+var Users = map[string]string{
+	"henry": "1nhri96p",
+	"marie": "marie123",
 }

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create User</title>
+    <title>Affichage utilisateur</title>
     <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
     <link rel="icon" href="/static/css/faviconhb.png" type="image/x-icon">
 </head>
 <body>
     <div class="login-container">
-        <h2>Affichage de l'utilisateur</h2>  
-        <div>Pseudo: {{.Pseudo}} </div> 
-        <div>Email: {{.Email}} </div> 
-        <div>Nom: {{.Firstname}} </div>
-        <div>Prénom: {{.Lastname}} </div>
-        <form action="/" method="post">
+        <h2>Affichage de l'utilisateur {{.CSessions.Pseudo}}</h2>  
+        <div>Date_Expire: {{.Date_Expire}} </div> 
+        <div>SToken: {{.SToken}} </div> 
+        
+        <form action="/Refresh/{{.SToken}}" method="post">
             <button id="subbtn" type="submit" class="bouton2">Valider</button>
         </form>
     </div>
