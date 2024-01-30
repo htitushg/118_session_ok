@@ -14,7 +14,7 @@ func main() {
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/Login", Login)
 	http.HandleFunc("/Signin", Signin)
-	http.HandleFunc("/Refresh/", Refresh)
+	http.HandleFunc("/Refresh", Refresh)
 	http.HandleFunc("/Logout", Logout)
 	http.HandleFunc("/AfficheUserInfo/", AfficheUserInfo)
 	// start the server on port 8080

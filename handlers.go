@@ -102,7 +102,7 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	// if NOT, then we return an "Unauthorized" status
 	if !ok || expectedPassword != creds.Password {
 		w.WriteHeader(http.StatusUnauthorized)
-		t, err = template.ParseFiles(assets.Chemin + "templates/index.html")
+		t, err = template.ParseFiles(assets.Chemin + "templates/home.html")
 		if err != nil {
 			http.Error(w, err.Error(), 500)
 			return
@@ -165,7 +165,7 @@ func Refresh(w http.ResponseWriter, r *http.Request) {
 		// (END) The code until this point is the same as the first part of the `Welcome` route
 		// If the previous session is valid, create a new session token for the current user
 		newSessionToken := uuid.NewString()
-		expiresAt := time.Now().Add(120 * time.Second)
+		expiresAt := time.Now().Add(30 * time.Second)
 
 		// Set the token in the session map, along with the user whom it represents
 		assets.Sessions[newSessionToken] = assets.Session{
@@ -178,7 +178,7 @@ func Refresh(w http.ResponseWriter, r *http.Request) {
 		http.SetCookie(w, &http.Cookie{
 			Name:    "session_token",
 			Value:   newSessionToken,
-			Expires: time.Now().Add(120 * time.Second),
+			Expires: expiresAt,
 		})
 		DJour := time.Now().Format("2006-01-02")
 		data.CSessions = assets.Sessions[newSessionToken]

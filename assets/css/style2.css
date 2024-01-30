@@ -5,8 +5,9 @@
     text-decoration:none;
 }
 body {
-    background: url('papier1.jpg');
-    background-size: cover;
+    /*background: url('papier1.jpg');
+    background-size: cover;*/
+    background-color:#e5c99f;
     font-family: Verdana, sans-serif; 
     margin: 5px;
 }

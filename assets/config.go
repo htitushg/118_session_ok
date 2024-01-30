@@ -85,6 +85,6 @@ type Data struct {
 
 // On crée une map pour stocker les paires (Pseudo, password). Dans une application réelle on pourrait utiliser une base de données.
 var Users = map[string]string{
-	"henry": "1nhri96p",
-	"marie": "marie123",
+	"henry": "henry",
+	"marie": "marie",
 }
