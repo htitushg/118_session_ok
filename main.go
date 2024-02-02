@@ -14,9 +14,9 @@ func main() {
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/Login", Login)
 	http.HandleFunc("/Signin", Signin)
-	http.HandleFunc("/Refresh", Refresh)
 	http.HandleFunc("/Logout", Logout)
-	http.HandleFunc("/AfficheUserInfo/", AfficheUserInfo)
-	// start the server on port 8080
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	http.HandleFunc("/AfficheUserInfo", AfficheUserInfo)
+	// start the server
+	fmt.Printf("http://localhost%v , Cliquez sur le lien pour lancer le navigateur", assets.Port)
+	log.Fatal(http.ListenAndServe(assets.Port, nil))
 }

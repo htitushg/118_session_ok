@@ -5,9 +5,9 @@
     text-decoration:none;
 }
 body {
-    /*background: url('papier1.jpg');
-    background-size: cover;*/
+    /* background: url('papier1.jpg'); */
     background-color:#e5c99f;
+    background-size: cover;
     font-family: Verdana, sans-serif; 
     margin: 5px;
 }
@@ -67,6 +67,22 @@ h1{
   display: flex;
   justify-content: space-around; /*evenly;*/
   align-items:center;
+}
+.part3 {
+  margin:0.2rem;
+  display: flex;
+  justify-content: left;
+  width:60%;
+  border-radius: .5rem;
+  border: 2px solid #3551b7;
+}
+.part30{
+  margin:0.5rem;
+  width:80px;
+}
+.part31{
+  margin:0.5rem;
+  width:100px;
 }
 .s1{
   width: 100%;

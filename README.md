@@ -1,6 +1,8 @@
 # Programme en Go avec authentification des utilisateurs avec Sessions et Cookies
 
-Tiré de:(https://www.sohamkamani.com/golang/session-cookie-authentication/)
+
+ _Tiré de:(https://www.sohamkamani.com/golang/session-cookie-authentication/)_
+
 
 ## Démarrer cette application
 
@@ -103,13 +105,13 @@ Il vérifie lexactitude du nom (Pseudo) et du mot de passe(Password),
 création du jeton (sessionToken) et de sa date d'expiration (expiresAt)
 ```go
     sessionToken := uuid.NewString()
-	expiresAt := time.Now().Add(120 * time.Second)
+	maxAge := 120
 ```
 Initialisation dans la map du Pseudo est de la date d'expiration:
 ```go
     assets.Sessions[sessionToken] = assets.Session{
 		Pseudo: creds.Pseudo,
-		Expiry: expiresAt,
+		MaxAge: maxAge,
 	}
 ```
 Mise à jour du Cookie :
@@ -117,7 +119,7 @@ Mise à jour du Cookie :
     http.SetCookie(w, &http.Cookie{
 		Name:    "session_token",
 		Value:   sessionToken,
-		Expires: expiresAt,
+		MaxAge: maxAge,
 	})
 ```
 Appel du template index.html
@@ -126,7 +128,7 @@ Appel du template index.html
 
 Appel de la page home.html
 
-### Refresh(w http.ResponseWriter, r *http.Request)
+### SessionValide(w http.ResponseWriter, r *http.Request)
 On verifie si la session est valide
 
 ### Si non valide 
@@ -137,13 +139,13 @@ on affiche le template home.html
 On crée un nouveau jeton(newSessionToken) et une nouvelle date d'expiration
 ```go
     newSessionToken := uuid.NewString()
-	expiresAt := time.Now().Add(120 * time.Second)
+	MaxAge := 120
 ```
 On stocke dans la map le pseudo et la date d'expiration
 ```go
     assets.Sessions[newSessionToken] = assets.Session{
 		Pseudo: assets.Sessions[sessionToken].Pseudo,
-		Expiry: expiresAt,
+		MaxAge: 120,
 	}
 ```
 On efface l'ancien jeton dans la map
@@ -155,7 +157,7 @@ On met à jour le cookie
     http.SetCookie(w, &http.Cookie{
 		Name:    "session_token",
 		Value:   newSessionToken,
-		Expires: time.Now().Add(120 * time.Second),
+		MaxAge: 120,
 	})
 ```
 Appel du template index.html
@@ -172,7 +174,7 @@ On met à jour le cookie
     http.SetCookie(w, &http.Cookie{
 		Name:    "session_token",
 		Value:   "",
-		Expires: time.Now(),
+		MaxAge: -1,
 	})
 ```
 Appel du template home.html

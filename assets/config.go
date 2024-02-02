@@ -28,10 +28,10 @@ func CheckError(err error) {
 	}
 }
 
-// we'll use this method later to determine if the session has expired
+/* // we'll use this method later to determine if the session has expired
 func (s Session) IsExpired() bool {
 	return s.Expiry.Before(time.Now())
-}
+} */
 
 // Create a struct that models the structure of a user in the request body
 type CredentialsR struct {
@@ -64,7 +64,7 @@ var Sessions = map[string]Session{}
 // each session contains the pseudo of the user and the time at which it expires
 type Session struct {
 	Pseudo    string
-	Expiry    time.Time
+	MaxAge    int
 	Email     string
 	Firstname string
 	Lastname  string
@@ -85,6 +85,6 @@ type Data struct {
 
 // On crée une map pour stocker les paires (Pseudo, password). Dans une application réelle on pourrait utiliser une base de données.
 var Users = map[string]string{
-	"henry": "henry",
-	"marie": "marie",
+	"henry": "1nhri96p",
+	"marie": "marie123",
 }

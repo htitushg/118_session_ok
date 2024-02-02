@@ -13,9 +13,9 @@
 <body>
     <div class="login-container">
         <h2>Page home</h2>
-        <form action="/Deconnexion/{{.CSessions.Pseudo}}" method="post">
+        <form action="/Logout" method="post">
             <div>Bonjour {{.CSessions.Pseudo}} vous êtes connecté !</div>
-            <div>La session exipirera le : {{.Date_Expire}} !</div>
+            <div>La session exipirera dans : {{.CSessions.MaxAge}} secondes!</div>
             <button id="subbtn" type="submit" class="bouton2">Deconnexion</button>
         </form>
         <label for="story">Voici le token:</label>
@@ -25,8 +25,9 @@
             </div>
         </div>
     </div> 
-    <form action="/AfficheUserInfo/{{.SToken}}" method="post" >
+    <form action="/AfficheUserInfo" method="post" >
         <button id="subbtn" type="submit" class="bouton3">Profil</button> 
     </form>
+    <div class="login-container">Contenu du site partie privée</div>
 </body>
 </html>
