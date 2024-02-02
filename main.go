@@ -15,6 +15,7 @@ func main() {
 	http.HandleFunc("/Login", Login)
 	http.HandleFunc("/Signin", Signin)
 	http.HandleFunc("/Logout", Logout)
+	http.HandleFunc("/Register", Register)
 	http.HandleFunc("/AfficheUserInfo", AfficheUserInfo)
 	// start the server
 	fmt.Printf("http://localhost%v , Cliquez sur le lien pour lancer le navigateur", assets.Port)

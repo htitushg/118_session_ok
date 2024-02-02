@@ -2,14 +2,30 @@ package main
 
 import (
 	"118_session_ok/assets"
+	"crypto/rand"
 	"fmt"
 	"html/template"
 	"net/http"
 	"time"
-
-	"github.com/google/uuid"
 )
 
+// Ajouté le 02/02/2024
+// Note - NOT RFC4122 compliant
+func pseudo_uuid() (uuid string) {
+
+	b := make([]byte, 16)
+	_, err := rand.Read(b)
+	if err != nil {
+		fmt.Println("Error: ", err)
+		return
+	}
+
+	uuid = fmt.Sprintf("%X-%X-%X-%X-%X", b[0:4], b[4:6], b[6:8], b[8:10], b[10:])
+
+	return
+}
+
+// Fin de l'Ajout du 02/02/2024
 func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
 	c, err := r.Cookie("session_token")
 	resultat = false
@@ -32,7 +48,11 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 		return stoken, resultat
 	}
 	// If the previous session is valid, create a new session token for the current user
-	newSessionToken := uuid.NewString()
+	// on peut utiliser google : "github.com/google/uuid"
+	// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
+
+	/* newSessionToken := uuid.NewString() */
+	newSessionToken := pseudo_uuid()
 	maxAge := 120
 
 	// Set the token in the session map, along with the user whom it represents
@@ -44,9 +64,9 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 	delete(assets.Sessions, stoken)
 	// Set the new token as the users `session_token` cookie
 	http.SetCookie(w, &http.Cookie{
-		Name:    "session_token",
-		Value:   newSessionToken,
-		MaxAge: maxAge
+		Name:   "session_token",
+		Value:  newSessionToken,
+		MaxAge: maxAge,
 	})
 	/* if assets.Sessions[stoken].Expiry.Before(time.Now()) {
 		delete(assets.Sessions, stoken)
@@ -126,7 +146,11 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	} else {
 
 		// Create a new random session token
-		sessionToken := uuid.NewString()
+		// on peut utiliser google : "github.com/google/uuid"
+		// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
+
+		/* newSessionToken := uuid.NewString() */
+		sessionToken := pseudo_uuid()
 		maxAge := 120
 
 		// Set the token in the session map, along with the user whom it represents
@@ -208,6 +232,24 @@ func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if err := t.Execute(w, data); err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+}
+
+// Ajouté le 02/02/2024
+// for GET
+func Register(w http.ResponseWriter, r *http.Request) {
+	var err error
+	var t *template.Template
+	fmt.Printf("Register log: UrlPath: %#v\n", r.URL.Path) // testing
+	t, err = template.ParseFiles(assets.Chemin + "templates/register.html")
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+
+	if err := t.Execute(w, nil); err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
