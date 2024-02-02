@@ -46,7 +46,7 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 	http.SetCookie(w, &http.Cookie{
 		Name:    "session_token",
 		Value:   newSessionToken,
-		Expires: time.Now().Add(120 * time.Second),
+		MaxAge: maxAge
 	})
 	/* if assets.Sessions[stoken].Expiry.Before(time.Now()) {
 		delete(assets.Sessions, stoken)
