@@ -72,16 +72,11 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 		Value:  newSessionToken,
 		MaxAge: maxAge,
 	})
-	/* if assets.Sessions[stoken].Expiry.Before(time.Now()) {
-		delete(assets.Sessions, stoken)
-		w.WriteHeader(http.StatusUnauthorized)
-		return stoken, resultat
-	} */
 	resultat = true
 	return newSessionToken, resultat
 }
 
-// Controlleur Home: Affiche le Page publique si la session n'est pas valide, sinon affiche la page d'Index
+// Controlleur Home: Affiche le Page publique(home) si la session n'est pas valide, sinon affiche la page privée(index)
 func Home(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Home log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
@@ -130,7 +125,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Controlleur Signin: Traite les informations de connexin fournies par login 
+// Controlleur Signin: Traite les informations de connexin fournies par login,
 // Si les informations sont incorrectes, renvoie vers home
 // Sinon crée la session et renvoie vers index
 func Signin(w http.ResponseWriter, r *http.Request) {
@@ -196,7 +191,7 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Controlleur Logout: Ferme la session et renvoie vers home
+// Controlleur Logout: Si la session est valide, Ferme la session et renvoie vers home
 func Logout(w http.ResponseWriter, r *http.Request) {
 	sessionToken, exists := SessionValide(w, r)
 	if exists {
@@ -222,8 +217,8 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//Controlleur AfficheUserInfo: Si la session est valide renvoie vers afficheuserinfo
-// Sinon renvoie ver home
+// Controlleur AfficheUserInfo: Si la session est valide renvoie vers afficheuserinfo
+// Sinon renvoie vers home
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
