@@ -11,6 +11,8 @@ import (
 
 // Ajouté le 02/02/2024
 // Note - NOT RFC4122 compliant
+
+// Génère un UUID (Jeton de session : Token)
 func pseudo_uuid() (uuid string) {
 
 	b := make([]byte, 16)
@@ -26,6 +28,8 @@ func pseudo_uuid() (uuid string) {
 }
 
 // Fin de l'Ajout du 02/02/2024
+
+// Si la session est valide, renvoie le Token et true, sinon nil et false
 func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
 	c, err := r.Cookie("session_token")
 	resultat = false
@@ -76,6 +80,8 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 	resultat = true
 	return newSessionToken, resultat
 }
+
+// Controlleur Home: Affiche le Page publique si la session n'est pas valide, sinon affiche la page d'Index
 func Home(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Home log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
@@ -109,6 +115,8 @@ func Home(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+// Controlleur Login: Affiche la page de connexion
 func Login(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Login log: UrlPath: %#v\n", r.URL.Path)
 	t, err := template.ParseFiles(assets.Chemin + "templates/login.html")
@@ -121,6 +129,10 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+// Controlleur Signin: Traite les informations de connexin fournies par login 
+// Si les informations sont incorrectes, renvoie vers home
+// Sinon crée la session et renvoie vers index
 func Signin(w http.ResponseWriter, r *http.Request) {
 	var creds assets.Credentials
 	var data assets.Data
@@ -137,7 +149,7 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	// if NOT, then we return an "Unauthorized" status
 	if !ok || expectedPassword != creds.Password {
 		w.WriteHeader(http.StatusUnauthorized)
-		t, err = template.ParseFiles(assets.Chemin + "templates/index.html")
+		t, err = template.ParseFiles(assets.Chemin + "templates/home.html")
 		if err != nil {
 			http.Error(w, err.Error(), 500)
 			return
@@ -184,6 +196,7 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Controlleur Logout: Ferme la session et renvoie vers home
 func Logout(w http.ResponseWriter, r *http.Request) {
 	sessionToken, exists := SessionValide(w, r)
 	if exists {
@@ -208,6 +221,9 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+//Controlleur AfficheUserInfo: Si la session est valide renvoie vers afficheuserinfo
+// Sinon renvoie ver home
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
@@ -239,6 +255,8 @@ func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 
 // Ajouté le 02/02/2024
 // for GET
+
+// Controlleur Register: Renvoie vers register pour enregistrement
 func Register(w http.ResponseWriter, r *http.Request) {
 	var err error
 	var t *template.Template
