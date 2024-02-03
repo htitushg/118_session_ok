@@ -11,6 +11,7 @@ func main() {
 	// On relie le fichier css et le favicon au nom static
 	fmt.Printf("Main Chemin= %s\n", assets.Chemin+"assets/") //
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(assets.Chemin+"assets/"))))
+	// routes
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/Login", Login)
 	http.HandleFunc("/Signin", Signin)

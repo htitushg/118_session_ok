@@ -129,11 +129,11 @@ func Login(w http.ResponseWriter, r *http.Request) {
 // Si les informations sont incorrectes, renvoie vers home
 // Sinon crée la session et renvoie vers index
 func Signin(w http.ResponseWriter, r *http.Request) {
+	fmt.Printf("Signin log: UrlPath: %#v\n", r.URL.Path)
 	var creds assets.Credentials
 	var data assets.Data
 	var t *template.Template
 	var err error
-	fmt.Printf("Signin log: UrlPath: %#v\n", r.URL.Path)
 	creds.Pseudo = r.FormValue("pseudo")
 	creds.Password = r.FormValue("passid")
 	// Get the expected password from our in memory map
@@ -149,9 +149,7 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), 500)
 			return
 		}
-
 	} else {
-
 		// Create a new random session token
 		// on peut utiliser google : "github.com/google/uuid"
 		// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
@@ -159,13 +157,11 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 		/* newSessionToken := uuid.NewString() */
 		sessionToken := pseudo_uuid()
 		maxAge := 120
-
 		// Set the token in the session map, along with the user whom it represents
 		assets.Sessions[sessionToken] = assets.Session{
 			Pseudo: creds.Pseudo,
 			MaxAge: maxAge,
 		}
-
 		// Finally, we set the client cookie for "session_token" as the session token we just generated
 		// we also set an expiry time of 120 seconds
 		http.SetCookie(w, &http.Cookie{
@@ -201,9 +197,9 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 		// In the response, we set the session token to an empty
 		// value and set its expiry as the current time
 		http.SetCookie(w, &http.Cookie{
-			Name:    "session_token",
-			Value:   "",
-			Expires: time.Now(),
+			Name:   "session_token",
+			Value:  "",
+			MaxAge: -1,
 		})
 	}
 	t, err := template.ParseFiles(assets.Chemin + "templates/home.html")
@@ -253,15 +249,14 @@ func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 
 // Controlleur Register: Renvoie vers register pour enregistrement
 func Register(w http.ResponseWriter, r *http.Request) {
+	fmt.Printf("Register log: UrlPath: %#v\n", r.URL.Path) // testing
 	var err error
 	var t *template.Template
-	fmt.Printf("Register log: UrlPath: %#v\n", r.URL.Path) // testing
 	t, err = template.ParseFiles(assets.Chemin + "templates/register.html")
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
-
 	if err := t.Execute(w, nil); err != nil {
 		http.Error(w, err.Error(), 500)
 		return
