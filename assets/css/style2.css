@@ -90,6 +90,13 @@ h1{
   margin:1rem;
   display: flex;
 }
+.token{
+  border-radius: .5rem;
+  border: 2px solid #3551b7;
+  text-align: center;
+  overflow-wrap: break-word;
+  {{/* display:block; */}}
+}
 .bouton1 {
     /*width:10vw;*/
     min-width:60px;

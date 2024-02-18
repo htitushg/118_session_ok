@@ -14,7 +14,7 @@
     <div class="login-container">
       <h2>Affichage de l'utilisateur {{.CSessions.Pseudo}}</h2>
       <div>Cette session expirera dans {{.CSessions.MaxAge}} secondes</div>
-      <div>SToken: {{.SToken}}</div>
+      <div class="token">SToken: {{.SToken}}</div>
 
       <form action="/Index" method="post">
         <button id="subbtn" type="submit" class="bouton2">Valider</button>
