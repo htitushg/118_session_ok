@@ -8,9 +8,45 @@
   <body>
     <div class="login-container">
       <h2>Connection: entrez vos identifiant et mot de passe</h2>
-      <form action="/Signin" method="POST" class="">
-        <div class="part3">
-          <label for="pseudo" class="part30">Pseudo</label>
+      <form action="/Signin" method="POST">
+        <div class="part2">
+          <div class="wave-group">
+            <input
+              id="pseudo"
+              name="pseudo"
+              required=""
+              type="text"
+              class="input"
+            />
+            <span class="bar"></span>
+            <label class="label">
+              <span class="label-char" style="--index: 0">N</span>
+              <span class="label-char" style="--index: 1">a</span>
+              <span class="label-char" style="--index: 2">m</span>
+              <span class="label-char" style="--index: 3">e</span>
+            </label>
+          </div>
+          <div class="wave-group">
+            <input
+              id="passid"
+              name="passid"
+              required=""
+              type="password"
+              class="input"
+            />
+            <span class="bar"></span>
+            <label class="label">
+              <span class="label-char" style="--index: 0">P</span>
+              <span class="label-char" style="--index: 1">a</span>
+              <span class="label-char" style="--index: 2">s</span>
+              <span class="label-char" style="--index: 3">s</span>
+              <span class="label-char" style="--index: 3">w</span>
+              <span class="label-char" style="--index: 3">o</span>
+              <span class="label-char" style="--index: 3">r</span>
+              <span class="label-char" style="--index: 3">d</span>
+            </label>
+          </div>
+          <!-- <label for="pseudo" class="part30">Pseudo</label>
           <input
             type="text"
             id="pseudo"
@@ -18,9 +54,9 @@
             class="part31"
             autofocus
             required
-          /><br />
+          /><br /> -->
         </div>
-        <div class="part3">
+        <!-- <div class="part3">
           <label for="passid" class="part30">Password</label>
           <input
             type="password"
@@ -29,7 +65,7 @@
             class="part31"
             required
           /><br />
-        </div>
+        </div> -->
         <button type="submit" class="bouton2">Se Connecter</button>
       </form>
     </div>

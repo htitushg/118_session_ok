@@ -5,6 +5,7 @@ import (
 	"crypto/rand"
 	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 	"time"
 )
@@ -18,7 +19,7 @@ func pseudo_uuid() (uuid string) {
 	b := make([]byte, 16)
 	_, err := rand.Read(b)
 	if err != nil {
-		fmt.Println("Error: ", err)
+		log.Println("Error: ", err)
 		return
 	}
 
@@ -28,9 +29,23 @@ func pseudo_uuid() (uuid string) {
 }
 
 // Fin de l'Ajout du 02/02/2024
+// Ajouté le 22/02/2024 18h59
+func LogMiddleware(h http.HandlerFunc) http.HandlerFunc {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
+		//log.SetOutput(os.Stdout) // logs go to Stderr by default
+		log.Println("Middleware : ", r.Method, r.URL)
+		h.ServeHTTP(w, r) // call ServeHTTP on the original handler
+
+	})
+}
+
+// Fin Ajout le 22/02/2024 18h59
 // Si la session est valide, renvoie le Token et true, sinon nil et false
 func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
+	fmt.Printf("r.Method= %v\n", r.Method)
+	co := r.Cookies()
+	fmt.Printf("co= %v\n", co)
 	c, err := r.Cookie("session_token")
 	resultat = false
 	stoken = ""
@@ -78,7 +93,7 @@ func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resul
 
 // Controlleur Home: Affiche le Page publique(home) si la session n'est pas valide, sinon affiche la page privée(index)
 func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("Home log: UrlPath: %#v\n", r.URL.Path) // testing
+	log.Printf("Home log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
 	var t *template.Template
 	var err error
@@ -113,7 +128,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 
 // Controlleur Login: Affiche la page de connexion
 func Login(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("Login log: UrlPath: %#v\n", r.URL.Path)
+	log.Printf("Login log: UrlPath: %#v\n", r.URL.Path)
 	t, err := template.ParseFiles(assets.Chemin + "templates/login.html")
 	if err != nil {
 		http.Error(w, err.Error(), 500)
@@ -129,7 +144,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 // Si les informations sont incorrectes, renvoie vers home
 // Sinon crée la session et renvoie vers index
 func Signin(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("Signin log: UrlPath: %#v\n", r.URL.Path)
+	log.Printf("Signin log: UrlPath: %#v\n", r.URL.Path)
 	var creds assets.Credentials
 	var data assets.Data
 	var t *template.Template
@@ -216,7 +231,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 // Controlleur AfficheUserInfo: Si la session est valide renvoie vers afficheuserinfo
 // Sinon renvoie vers home
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
+	log.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
 	var data assets.Data
 	var err error
 	var t *template.Template
@@ -249,13 +264,27 @@ func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 
 // Controlleur Register: Renvoie vers register pour enregistrement
 func Register(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("Register log: UrlPath: %#v\n", r.URL.Path) // testing
-	var err error
+	log.Printf("Register log: UrlPath: %#v\n", r.URL.Path) // testing
+	var data assets.Data
 	var t *template.Template
-	t, err = template.ParseFiles(assets.Chemin + "templates/register.html")
-	if err != nil {
-		http.Error(w, err.Error(), 500)
-		return
+	var err error
+	sessionToken, exists := SessionValide(w, r)
+	if exists {
+		DJour := time.Now().Format("2006-01-02")
+		data.CSessions = assets.Sessions[sessionToken]
+		data.Date_jour = DJour
+		data.SToken = sessionToken
+		t, err = template.ParseFiles(assets.Chemin + "templates/index.html")
+		if err != nil {
+			http.Error(w, err.Error(), 500)
+			return
+		}
+	} else {
+		t, err = template.ParseFiles(assets.Chemin + "templates/register.html")
+		if err != nil {
+			http.Error(w, err.Error(), 500)
+			return
+		}
 	}
 	if err := t.Execute(w, nil); err != nil {
 		http.Error(w, err.Error(), 500)
