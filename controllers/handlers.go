@@ -17,14 +17,14 @@ import (
 // Génère un UUID (Jeton de session : Token)
 func Pseudo_uuid() (uuid string) {
 
-	b := make([]byte, 64)
+	b := make([]byte, 32)
 	_, err := rand.Read(b)
 	if err != nil {
 		log.Println("Error: ", err)
 		return
 	}
 	uuid = hex.EncodeToString(b)
-	uuid = fmt.Sprintf("%X-%X-%X-%X-%X", b[0:4], b[4:7], b[7:10], b[10:13], b[13:])
+	uuid = fmt.Sprintf("%X-%X-%X-%X-%X-%X", uuid[0:10], uuid[10:20], uuid[20:30], uuid[30:40], uuid[40:50], uuid[50:])
 
 	return
 }
