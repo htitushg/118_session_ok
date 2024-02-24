@@ -30,6 +30,12 @@ func main() {
 	mux.HandleFunc("POST /Logout", controllers.LogoutBundle)
 	mux.HandleFunc("POST /Register", controllers.RegisterBundle)
 	mux.HandleFunc("POST /AfficheUserInfo", controllers.LogMiddleware(controllers.AfficheUserInfoBundle))
+
+	// Handling MethodNotAllowed error on /
+	mux.HandleFunc("/{$}", controllers.IndexHandlerNoMethBundle)
+
+	// Handling StatusNotFound error everywhere else
+	mux.HandleFunc("/", controllers.IndexHandlerOtherBundle)
 	// start the server
 	fmt.Printf("http://localhost%v , Cliquez sur le lien pour lancer le navigateur", assets.Port)
 	log.Fatal(http.ListenAndServe(assets.Port, mux))

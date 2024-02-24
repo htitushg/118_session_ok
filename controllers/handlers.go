@@ -2,11 +2,13 @@ package controllers
 
 import (
 	"118_session_ok/assets"
+	"118_session_ok/models"
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
 	"html/template"
 	"log"
+	"log/slog"
 	"net/http"
 	"time"
 )
@@ -289,4 +291,18 @@ func Register(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), 500)
 		return
 	}
+}
+func IndexHandlerNoMeth(w http.ResponseWriter, r *http.Request) {
+	log.Println(models.GetCurrentFuncName())
+	log.Println("HTTP Error", http.StatusMethodNotAllowed)
+	w.WriteHeader(http.StatusMethodNotAllowed)
+	Logger.Warn("indexHandlerNoMeth", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusMethodNotAllowed))
+	w.Write([]byte("Error " + fmt.Sprint(http.StatusMethodNotAllowed) + " !"))
+}
+func IndexHandlerOther(w http.ResponseWriter, r *http.Request) {
+	log.Println(models.GetCurrentFuncName())
+	log.Println("HTTP Error", http.StatusNotFound)
+	w.WriteHeader(http.StatusNotFound)
+	Logger.Warn("indexHandlerOther", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusNotFound))
+	w.Write([]byte("Error " + fmt.Sprint(http.StatusNotFound) + " !"))
 }
