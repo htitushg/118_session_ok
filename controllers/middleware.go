@@ -1,66 +1,62 @@
 package controllers
 
 import (
-	//"log"
-	log "github.com/go-kit/kit/log"
+	"118_session_ok/models"
+	"log"
+	"log/slog"
 	"net/http"
-	"runtime/debug"
-	"time"
+	"os"
 )
 
-// responseWriter is a minimal wrapper for http.ResponseWriter that allows the
-// written HTTP status code to be captured for logging.
-type responseWriter struct {
-	http.ResponseWriter
-	status      int
-	wroteHeader bool
-}
+var logs, _ = os.Create("logs/logs.log")
+var jsonHandler = slog.NewJSONHandler(logs, &slog.HandlerOptions{
+	Level:     slog.LevelDebug,
+	AddSource: true,
+}).WithAttrs([]slog.Attr{
+	slog.Int("Info", 13),
+})
+var Logger = slog.New(jsonHandler)
+var LogId = 0
 
-func wrapResponseWriter(w http.ResponseWriter) *responseWriter {
-	return &responseWriter{ResponseWriter: w}
-}
-
-func (rw *responseWriter) Status() int {
-	return rw.status
-}
-
-func (rw *responseWriter) WriteHeader(code int) {
-	if rw.wroteHeader {
-		return
-	}
-
-	rw.status = code
-	rw.ResponseWriter.WriteHeader(code)
-	rw.wroteHeader = true
-
-	return
-}
-
-// LoggingMiddleware logs the incoming HTTP request & its duration.
-func LoggingMiddleware(logger log.Logger) func(http.Handler) http.Handler {
-	return func(next http.Handler) http.Handler {
-		fn := func(w http.ResponseWriter, r *http.Request) {
-			defer func() {
-				if err := recover(); err != nil {
-					w.WriteHeader(http.StatusInternalServerError)
-					logger.Log(
-						"err", err,
-						"trace", debug.Stack(),
-					)
-				}
-			}()
-
-			start := time.Now()
-			wrapped := wrapResponseWriter(w)
-			next.ServeHTTP(wrapped, r)
-			logger.Log(
-				"status", wrapped.status,
-				"method", r.Method,
-				"path", r.URL.EscapedPath(),
-				"duration", time.Since(start),
-			)
+// Log is a models.Middleware that writes a series of information in logs/logs.log
+// in JSON format: time, function name, request Id (incremented int),
+// client IP, request Method, and request URL.
+func Log() models.Middleware {
+	return func(handler http.HandlerFunc) http.HandlerFunc {
+		return func(w http.ResponseWriter, r *http.Request) {
+			LogId++
+			log.Println("Log()")
+			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+			handler.ServeHTTP(w, r)
 		}
-
-		return http.HandlerFunc(fn)
 	}
+}
+
+func Guard() models.Middleware {
+	return func(handler http.HandlerFunc) http.HandlerFunc {
+		return func(w http.ResponseWriter, r *http.Request) {
+			log.Println("Guard()")
+			handler.ServeHTTP(w, r)
+		}
+	}
+}
+
+func Foo() models.Middleware {
+	return func(handler http.HandlerFunc) http.HandlerFunc {
+		return func(w http.ResponseWriter, r *http.Request) {
+			log.Println("Foo()")
+			handler.ServeHTTP(w, r)
+		}
+	}
+}
+
+// Join is used to concatenate various middlewares, for better visibility.
+// it takes the http.HandlerFunc corresponding to the route, and then
+// any number of models.Middleware that will be concatenated in order like this:
+// middlewares[0](middlewares[1](middlewares[2](handlerFunc))).
+func Join(handlerFunc http.HandlerFunc, middlewares ...models.Middleware) http.HandlerFunc {
+	if len(middlewares) == 1 {
+		return middlewares[0](handlerFunc)
+	}
+	return middlewares[0](Join(handlerFunc, middlewares[1:]...))
 }

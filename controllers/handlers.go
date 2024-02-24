@@ -3,6 +3,7 @@ package controllers
 import (
 	"118_session_ok/assets"
 	"crypto/rand"
+	"encoding/hex"
 	"fmt"
 	"html/template"
 	"log"
@@ -16,14 +17,14 @@ import (
 // Génère un UUID (Jeton de session : Token)
 func Pseudo_uuid() (uuid string) {
 
-	b := make([]byte, 16)
+	b := make([]byte, 64)
 	_, err := rand.Read(b)
 	if err != nil {
 		log.Println("Error: ", err)
 		return
 	}
-
-	uuid = fmt.Sprintf("%X-%X-%X-%X-%X", b[0:4], b[4:6], b[6:8], b[8:10], b[10:])
+	uuid = hex.EncodeToString(b)
+	uuid = fmt.Sprintf("%X-%X-%X-%X-%X", b[0:4], b[4:7], b[7:10], b[10:13], b[13:])
 
 	return
 }
@@ -43,9 +44,7 @@ func LogMiddleware(h http.HandlerFunc) http.HandlerFunc {
 // Fin Ajout le 22/02/2024 18h59
 // Si la session est valide, renvoie le Token et true, sinon nil et false
 func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
-	fmt.Printf("r.Method= %v\n", r.Method)
-	co := r.Cookies()
-	fmt.Printf("co= %v\n", co)
+	log.Printf("SessionValide r.Method= %v\n", r.Method)
 	c, err := r.Cookie("session_token")
 	resultat = false
 	stoken = ""

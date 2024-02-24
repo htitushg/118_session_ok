@@ -24,12 +24,12 @@ func main() {
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(assets.Chemin+"assets/"))))
 	// routes
 
-	mux.HandleFunc("GET /{$}", controllers.LogMiddleware(controllers.Home))
-	mux.HandleFunc("POST /Login", controllers.LogMiddleware(controllers.Login))
-	mux.HandleFunc("POST /Signin", controllers.LogMiddleware(controllers.Signin))
-	mux.HandleFunc("POST /Logout", controllers.LogMiddleware(controllers.Logout))
-	mux.HandleFunc("POST /Register", controllers.LogMiddleware(controllers.Register))
-	mux.HandleFunc("POST /AfficheUserInfo", controllers.LogMiddleware(controllers.AfficheUserInfo))
+	mux.HandleFunc("GET /{$}", controllers.HomeBundle)
+	mux.HandleFunc("POST /Login", controllers.LoginBundle)
+	mux.HandleFunc("POST /Signin", controllers.SigninBundle)
+	mux.HandleFunc("POST /Logout", controllers.LogoutBundle)
+	mux.HandleFunc("POST /Register", controllers.RegisterBundle)
+	mux.HandleFunc("POST /AfficheUserInfo", controllers.LogMiddleware(controllers.AfficheUserInfoBundle))
 	// start the server
 	fmt.Printf("http://localhost%v , Cliquez sur le lien pour lancer le navigateur", assets.Port)
 	log.Fatal(http.ListenAndServe(assets.Port, mux))
