@@ -375,3 +375,261 @@
 2024/02/24 02:16:42 Log()
 2024/02/24 02:16:42 Home log: UrlPath: "/"
 2024/02/24 02:16:42 SessionValide r.Method= GET
+2024/02/24 09:18:55 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 09:18:57 Log()
+2024/02/24 09:18:57 Guard()
+2024/02/24 09:18:57 Foo()
+2024/02/24 09:18:57 SessionValide r.Method= POST
+2024/02/24 09:18:58 Log()
+2024/02/24 09:18:58 Login log: UrlPath: "/Login"
+2024/02/24 09:19:02 Log()
+2024/02/24 09:19:02 Guard()
+2024/02/24 09:19:02 Signin log: UrlPath: "/Signin"
+2024/02/24 09:19:04 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:19:04 Log()
+2024/02/24 09:19:04 Foo()
+2024/02/24 09:19:04 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:19:04 SessionValide r.Method= POST
+2024/02/24 09:19:05 Log()
+2024/02/24 09:19:05 Home log: UrlPath: "/"
+2024/02/24 09:19:05 SessionValide r.Method= GET
+2024/02/24 09:19:07 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:19:07 Log()
+2024/02/24 09:19:07 Foo()
+2024/02/24 09:19:07 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:19:07 SessionValide r.Method= POST
+2024/02/24 09:19:08 Log()
+2024/02/24 09:19:08 Home log: UrlPath: "/"
+2024/02/24 09:19:08 SessionValide r.Method= GET
+2024/02/24 09:21:17 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:21:17 Log()
+2024/02/24 09:21:17 Foo()
+2024/02/24 09:21:17 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:21:17 SessionValide r.Method= POST
+2024/02/24 09:21:20 Log()
+2024/02/24 09:21:20 Foo()
+2024/02/24 09:21:20 Register log: UrlPath: "/Register"
+2024/02/24 09:21:20 SessionValide r.Method= POST
+2024/02/24 09:21:21 Log()
+2024/02/24 09:21:21 Home log: UrlPath: "/"
+2024/02/24 09:21:21 SessionValide r.Method= GET
+2024/02/24 09:21:22 Log()
+2024/02/24 09:21:22 Login log: UrlPath: "/Login"
+2024/02/24 09:21:29 Log()
+2024/02/24 09:21:29 Guard()
+2024/02/24 09:21:29 Signin log: UrlPath: "/Signin"
+2024/02/24 09:21:32 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:21:32 Log()
+2024/02/24 09:21:32 Foo()
+2024/02/24 09:21:32 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:21:32 SessionValide r.Method= POST
+2024/02/24 09:21:33 Log()
+2024/02/24 09:21:33 Home log: UrlPath: "/"
+2024/02/24 09:21:33 SessionValide r.Method= GET
+2024/02/24 09:21:45 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:21:45 Log()
+2024/02/24 09:21:45 Foo()
+2024/02/24 09:21:45 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:21:45 SessionValide r.Method= POST
+2024/02/24 09:21:47 Log()
+2024/02/24 09:21:47 Home log: UrlPath: "/"
+2024/02/24 09:21:47 SessionValide r.Method= GET
+2024/02/24 09:21:53 Log()
+2024/02/24 09:21:53 Guard()
+2024/02/24 09:21:53 Foo()
+2024/02/24 09:21:53 SessionValide r.Method= POST
+2024/02/24 09:21:54 Log()
+2024/02/24 09:21:54 Login log: UrlPath: "/Login"
+2024/02/24 09:21:57 Log()
+2024/02/24 09:21:57 Guard()
+2024/02/24 09:21:57 Signin log: UrlPath: "/Signin"
+2024/02/24 09:22:04 Log()
+2024/02/24 09:22:04 Guard()
+2024/02/24 09:22:04 Foo()
+2024/02/24 09:22:04 118_session_ok/controllers.IndexHandlerOther
+2024/02/24 09:22:04 HTTP Error 404
+2024/02/24 09:22:21 Log()
+2024/02/24 09:22:21 Guard()
+2024/02/24 09:22:21 Foo()
+2024/02/24 09:22:21 118_session_ok/controllers.IndexHandlerOther
+2024/02/24 09:22:21 HTTP Error 404
+2024/02/24 09:22:58 Log()
+2024/02/24 09:22:58 Home log: UrlPath: "/"
+2024/02/24 09:22:58 SessionValide r.Method= GET
+2024/02/24 09:23:07 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:23:07 Log()
+2024/02/24 09:23:07 Foo()
+2024/02/24 09:23:07 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:23:07 SessionValide r.Method= POST
+2024/02/24 09:23:08 Log()
+2024/02/24 09:23:08 Home log: UrlPath: "/"
+2024/02/24 09:23:08 SessionValide r.Method= GET
+2024/02/24 09:23:11 Log()
+2024/02/24 09:23:11 Guard()
+2024/02/24 09:23:11 Foo()
+2024/02/24 09:23:11 SessionValide r.Method= POST
+2024/02/24 09:23:13 Log()
+2024/02/24 09:23:13 Foo()
+2024/02/24 09:23:13 Register log: UrlPath: "/Register"
+2024/02/24 09:23:13 SessionValide r.Method= POST
+2024/02/24 09:23:14 Log()
+2024/02/24 09:23:14 Home log: UrlPath: "/"
+2024/02/24 09:23:14 SessionValide r.Method= GET
+2024/02/24 09:23:16 Log()
+2024/02/24 09:23:16 Login log: UrlPath: "/Login"
+2024/02/24 09:23:22 Log()
+2024/02/24 09:23:22 Guard()
+2024/02/24 09:23:22 Signin log: UrlPath: "/Signin"
+2024/02/24 09:24:59 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:24:59 Log()
+2024/02/24 09:24:59 Foo()
+2024/02/24 09:24:59 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:24:59 SessionValide r.Method= POST
+2024/02/24 09:25:01 Log()
+2024/02/24 09:25:01 Home log: UrlPath: "/"
+2024/02/24 09:25:01 SessionValide r.Method= GET
+2024/02/24 09:25:06 Log()
+2024/02/24 09:25:06 Guard()
+2024/02/24 09:25:06 Foo()
+2024/02/24 09:25:06 SessionValide r.Method= POST
+2024/02/24 09:25:08 Log()
+2024/02/24 09:25:08 Foo()
+2024/02/24 09:25:08 Register log: UrlPath: "/Register"
+2024/02/24 09:25:08 SessionValide r.Method= POST
+2024/02/24 09:25:09 Log()
+2024/02/24 09:25:09 Home log: UrlPath: "/"
+2024/02/24 09:25:09 SessionValide r.Method= GET
+2024/02/24 09:25:10 Log()
+2024/02/24 09:25:10 Login log: UrlPath: "/Login"
+2024/02/24 09:35:12 Log()
+2024/02/24 09:35:12 Guard()
+2024/02/24 09:35:12 Foo()
+2024/02/24 09:35:12 118_session_ok/controllers.IndexHandlerOther
+2024/02/24 09:35:12 HTTP Error 404
+2024/02/24 09:35:28 Log()
+2024/02/24 09:35:28 Home log: UrlPath: "/"
+2024/02/24 09:35:28 SessionValide r.Method= GET
+2024/02/24 09:35:33 Log()
+2024/02/24 09:35:33 Login log: UrlPath: "/Login"
+2024/02/24 09:35:56 Log()
+2024/02/24 09:35:56 Guard()
+2024/02/24 09:35:56 Signin log: UrlPath: "/Signin"
+2024/02/24 09:36:03 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:36:03 Log()
+2024/02/24 09:36:03 Foo()
+2024/02/24 09:36:03 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:36:03 SessionValide r.Method= POST
+2024/02/24 09:36:07 Log()
+2024/02/24 09:36:07 Home log: UrlPath: "/"
+2024/02/24 09:36:07 SessionValide r.Method= GET
+2024/02/24 09:36:13 Log()
+2024/02/24 09:36:13 Guard()
+2024/02/24 09:36:13 Foo()
+2024/02/24 09:36:13 SessionValide r.Method= POST
+2024/02/24 09:36:17 Log()
+2024/02/24 09:36:17 Foo()
+2024/02/24 09:36:17 Register log: UrlPath: "/Register"
+2024/02/24 09:36:17 SessionValide r.Method= POST
+2024/02/24 09:36:21 Log()
+2024/02/24 09:36:21 Home log: UrlPath: "/"
+2024/02/24 09:36:21 SessionValide r.Method= GET
+2024/02/24 09:36:23 Log()
+2024/02/24 09:36:23 Login log: UrlPath: "/Login"
+2024/02/24 09:36:35 Log()
+2024/02/24 09:36:35 Guard()
+2024/02/24 09:36:35 Signin log: UrlPath: "/Signin"
+2024/02/24 09:36:43 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:36:43 Log()
+2024/02/24 09:36:43 Foo()
+2024/02/24 09:36:43 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:36:43 SessionValide r.Method= POST
+2024/02/24 09:36:46 Log()
+2024/02/24 09:36:46 Home log: UrlPath: "/"
+2024/02/24 09:36:46 SessionValide r.Method= GET
+2024/02/24 09:36:51 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:36:51 Log()
+2024/02/24 09:36:51 Foo()
+2024/02/24 09:36:51 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:36:51 SessionValide r.Method= POST
+2024/02/24 09:36:54 Log()
+2024/02/24 09:36:54 Home log: UrlPath: "/"
+2024/02/24 09:36:54 SessionValide r.Method= GET
+2024/02/24 09:36:56 Log()
+2024/02/24 09:36:56 Guard()
+2024/02/24 09:36:56 Foo()
+2024/02/24 09:36:56 SessionValide r.Method= POST
+2024/02/24 09:37:03 Log()
+2024/02/24 09:37:03 Login log: UrlPath: "/Login"
+2024/02/24 09:37:13 Log()
+2024/02/24 09:37:13 Guard()
+2024/02/24 09:37:13 Signin log: UrlPath: "/Signin"
+2024/02/24 09:37:19 Log()
+2024/02/24 09:37:19 Login log: UrlPath: "/Login"
+2024/02/24 09:37:30 Log()
+2024/02/24 09:37:30 Guard()
+2024/02/24 09:37:30 Signin log: UrlPath: "/Signin"
+2024/02/24 09:37:49 Log()
+2024/02/24 09:37:49 Guard()
+2024/02/24 09:37:49 Signin log: UrlPath: "/Signin"
+2024/02/24 09:38:32 Log()
+2024/02/24 09:38:32 Guard()
+2024/02/24 09:38:32 Foo()
+2024/02/24 09:38:32 SessionValide r.Method= POST
+2024/02/24 09:38:36 Log()
+2024/02/24 09:38:36 Login log: UrlPath: "/Login"
+2024/02/24 09:38:44 Log()
+2024/02/24 09:38:44 Guard()
+2024/02/24 09:38:44 Signin log: UrlPath: "/Signin"
+2024/02/24 09:39:08 Log()
+2024/02/24 09:39:08 Guard()
+2024/02/24 09:39:08 Signin log: UrlPath: "/Signin"
+2024/02/24 09:39:22 Log()
+2024/02/24 09:39:22 Login log: UrlPath: "/Login"
+2024/02/24 09:39:25 Log()
+2024/02/24 09:39:25 Guard()
+2024/02/24 09:39:25 Signin log: UrlPath: "/Signin"
+2024/02/24 09:39:29 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:39:29 Log()
+2024/02/24 09:39:29 Foo()
+2024/02/24 09:39:29 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:39:29 SessionValide r.Method= POST
+2024/02/24 09:39:30 Log()
+2024/02/24 09:39:30 Home log: UrlPath: "/"
+2024/02/24 09:39:30 SessionValide r.Method= GET
+2024/02/24 09:39:45 Log()
+2024/02/24 09:39:45 Login log: UrlPath: "/Login"
+2024/02/24 09:40:03 Log()
+2024/02/24 09:40:03 Guard()
+2024/02/24 09:40:03 Signin log: UrlPath: "/Signin"
+2024/02/24 09:40:11 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:40:11 Log()
+2024/02/24 09:40:11 Foo()
+2024/02/24 09:40:11 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:40:11 SessionValide r.Method= POST
+2024/02/24 09:40:12 Log()
+2024/02/24 09:40:12 Home log: UrlPath: "/"
+2024/02/24 09:40:12 SessionValide r.Method= GET
+2024/02/24 09:40:14 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:40:14 Log()
+2024/02/24 09:40:14 Foo()
+2024/02/24 09:40:14 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:40:14 SessionValide r.Method= POST
+2024/02/24 09:40:15 Log()
+2024/02/24 09:40:15 Home log: UrlPath: "/"
+2024/02/24 09:40:15 SessionValide r.Method= GET
+2024/02/24 09:40:18 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:40:18 Log()
+2024/02/24 09:40:18 Foo()
+2024/02/24 09:40:18 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:40:18 SessionValide r.Method= POST
+2024/02/24 09:40:20 Log()
+2024/02/24 09:40:20 Home log: UrlPath: "/"
+2024/02/24 09:40:20 SessionValide r.Method= GET
+2024/02/24 09:40:24 Middleware :  POST /AfficheUserInfo
+2024/02/24 09:40:24 Log()
+2024/02/24 09:40:24 Foo()
+2024/02/24 09:40:24 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 09:40:24 SessionValide r.Method= POST
+2024/02/24 09:40:25 Log()
+2024/02/24 09:40:25 Home log: UrlPath: "/"
+2024/02/24 09:40:25 SessionValide r.Method= GET

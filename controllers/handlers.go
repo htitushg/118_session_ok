@@ -306,3 +306,17 @@ func IndexHandlerOther(w http.ResponseWriter, r *http.Request) {
 	Logger.Warn("indexHandlerOther", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusNotFound))
 	w.Write([]byte("Error " + fmt.Sprint(http.StatusNotFound) + " !"))
 }
+
+func GetCurrentName(w http.ResponseWriter, r *http.Request) string {
+	c, err := r.Cookie("session_token")
+	if err != nil {
+		log.Printf("invalid cookie: %v", err)
+		return ""
+	} else {
+		log.Printf("Cookie: %v", c)
+
+		//err = cookie.Valid()
+		stoken := c.Value
+		return assets.Sessions[stoken].Pseudo
+	}
+}

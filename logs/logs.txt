@@ -1,0 +1,185 @@
+2024/02/24 11:21:14 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 11:21:18 Log()
+2024/02/24 11:21:18 Guard()
+2024/02/24 11:21:18 Foo()
+2024/02/24 11:21:18 SessionValide r.Method= POST
+2024/02/24 11:21:19 Log()
+2024/02/24 11:21:19 Login log: UrlPath: "/Login"
+2024/02/24 11:21:22 Log()
+2024/02/24 11:21:22 Guard()
+2024/02/24 11:21:22 Signin log: UrlPath: "/Signin"
+2024/02/24 11:21:24 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:21:24 Log()
+2024/02/24 11:21:24 Foo()
+2024/02/24 11:21:24 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:21:24 SessionValide r.Method= POST
+2024/02/24 11:21:25 Log()
+2024/02/24 11:21:25 Home log: UrlPath: "/"
+2024/02/24 11:21:25 SessionValide r.Method= GET
+2024/02/24 11:21:26 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:21:26 Log()
+2024/02/24 11:21:26 Foo()
+2024/02/24 11:21:26 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:21:26 SessionValide r.Method= POST
+2024/02/24 11:23:55 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 11:23:58 Log()
+2024/02/24 11:23:58 Guard()
+2024/02/24 11:23:58 Foo()
+2024/02/24 11:23:58 SessionValide r.Method= POST
+2024/02/24 11:23:59 Log()
+2024/02/24 11:23:59 Login log: UrlPath: "/Login"
+2024/02/24 11:24:02 Log()
+2024/02/24 11:24:02 Guard()
+2024/02/24 11:24:02 Signin log: UrlPath: "/Signin"
+2024/02/24 11:24:03 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:24:03 Log()
+2024/02/24 11:24:03 Foo()
+2024/02/24 11:24:03 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:24:03 SessionValide r.Method= POST
+2024/02/24 11:24:04 Log()
+2024/02/24 11:24:04 Home log: UrlPath: "/"
+2024/02/24 11:24:04 SessionValide r.Method= GET
+2024/02/24 11:24:05 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:24:05 Log()
+2024/02/24 11:24:05 Foo()
+2024/02/24 11:24:05 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:24:05 SessionValide r.Method= POST
+2024/02/24 11:24:06 Log()
+2024/02/24 11:24:06 Home log: UrlPath: "/"
+2024/02/24 11:24:06 SessionValide r.Method= GET
+2024/02/24 11:24:07 Log()
+2024/02/24 11:24:07 Guard()
+2024/02/24 11:24:07 Foo()
+2024/02/24 11:24:07 SessionValide r.Method= POST
+2024/02/24 11:24:08 Log()
+2024/02/24 11:24:08 Foo()
+2024/02/24 11:24:08 Register log: UrlPath: "/Register"
+2024/02/24 11:24:08 SessionValide r.Method= POST
+2024/02/24 11:24:09 Log()
+2024/02/24 11:24:09 Home log: UrlPath: "/"
+2024/02/24 11:24:09 SessionValide r.Method= GET
+2024/02/24 11:24:11 Log()
+2024/02/24 11:24:11 Login log: UrlPath: "/Login"
+2024/02/24 11:24:13 Log()
+2024/02/24 11:24:13 Guard()
+2024/02/24 11:24:13 Signin log: UrlPath: "/Signin"
+2024/02/24 11:56:47 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 11:57:47 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 11:57:54 Log()
+2024/02/24 11:57:54 Cookie: 
+2024/02/24 11:57:54 Guard()
+2024/02/24 11:57:54 Foo()
+2024/02/24 11:57:54 SessionValide r.Method= POST
+2024/02/24 11:57:55 Log()
+2024/02/24 11:57:55 Cookie: 
+2024/02/24 11:57:55 Login log: UrlPath: "/Login"
+2024/02/24 11:58:00 Log()
+2024/02/24 11:58:00 Cookie: 
+2024/02/24 11:58:00 Guard()
+2024/02/24 11:58:00 Signin log: UrlPath: "/Signin"
+2024/02/24 11:58:04 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:58:04 Log()
+2024/02/24 11:58:04 Cookie: 
+2024/02/24 11:58:04 Foo()
+2024/02/24 11:58:04 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:58:04 SessionValide r.Method= POST
+2024/02/24 11:58:06 Log()
+2024/02/24 11:58:06 Cookie: 
+2024/02/24 11:58:06 Home log: UrlPath: "/"
+2024/02/24 11:58:06 SessionValide r.Method= GET
+2024/02/24 11:58:07 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:58:07 Log()
+2024/02/24 11:58:07 Cookie: 
+2024/02/24 11:58:07 Foo()
+2024/02/24 11:58:07 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:58:07 SessionValide r.Method= POST
+2024/02/24 11:58:08 Log()
+2024/02/24 11:58:08 Cookie: 
+2024/02/24 11:58:08 Home log: UrlPath: "/"
+2024/02/24 11:58:08 SessionValide r.Method= GET
+2024/02/24 11:58:30 Middleware :  POST /AfficheUserInfo
+2024/02/24 11:58:30 Log()
+2024/02/24 11:58:30 Cookie: 
+2024/02/24 11:58:30 Foo()
+2024/02/24 11:58:30 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 11:58:30 SessionValide r.Method= POST
+2024/02/24 11:58:31 Log()
+2024/02/24 11:58:31 Cookie: 
+2024/02/24 11:58:31 Home log: UrlPath: "/"
+2024/02/24 11:58:31 SessionValide r.Method= GET
+2024/02/24 12:00:49 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/24 12:00:52 Log()
+2024/02/24 12:00:52 invalid cookie: http: named cookie not present
+2024/02/24 12:00:52 Guard()
+2024/02/24 12:00:52 Foo()
+2024/02/24 12:00:52 SessionValide r.Method= POST
+2024/02/24 12:00:53 Log()
+2024/02/24 12:00:53 Cookie: session_token=sessionToken
+2024/02/24 12:00:53 Login log: UrlPath: "/Login"
+2024/02/24 12:00:56 Log()
+2024/02/24 12:00:56 invalid cookie: http: named cookie not present
+2024/02/24 12:00:56 Guard()
+2024/02/24 12:00:56 Signin log: UrlPath: "/Signin"
+2024/02/24 12:00:58 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:00:58 Log()
+2024/02/24 12:00:58 Cookie: session_token=38303434343263613032-38373431373264663165-39643134333865353535-31663865643836393233-30323034386334353631-6231383536373431333063373863
+2024/02/24 12:00:58 Foo()
+2024/02/24 12:00:58 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:00:58 SessionValide r.Method= POST
+2024/02/24 12:00:59 Log()
+2024/02/24 12:00:59 Cookie: session_token=62663436633261356637-31613463323233346662-64656234373064346535-34626132373938306434-62303963316462373738-3763663830323731333535373833
+2024/02/24 12:00:59 Home log: UrlPath: "/"
+2024/02/24 12:00:59 SessionValide r.Method= GET
+2024/02/24 12:01:18 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:01:18 Log()
+2024/02/24 12:01:18 Cookie: session_token=30333863393066623061-35343538336162316237-61396332633636383561-38666536663537383636-62663164643264396665-3032363338386237623730393866
+2024/02/24 12:01:18 Foo()
+2024/02/24 12:01:18 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:01:18 SessionValide r.Method= POST
+2024/02/24 12:01:20 Log()
+2024/02/24 12:01:20 Cookie: session_token=38323161636637653338-32666336353534666439-66396562343865616339-31313435363161616530-35373664306231616338-3038393436666437333563333936
+2024/02/24 12:01:20 Home log: UrlPath: "/"
+2024/02/24 12:01:20 SessionValide r.Method= GET
+2024/02/24 12:01:41 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:01:41 Log()
+2024/02/24 12:01:41 invalid cookie: http: named cookie not present
+2024/02/24 12:01:41 Foo()
+2024/02/24 12:01:41 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:01:41 SessionValide r.Method= POST
+2024/02/24 12:01:47 Log()
+2024/02/24 12:01:47 invalid cookie: http: named cookie not present
+2024/02/24 12:01:47 Login log: UrlPath: "/Login"
+2024/02/24 12:01:56 Log()
+2024/02/24 12:01:56 invalid cookie: http: named cookie not present
+2024/02/24 12:01:56 Guard()
+2024/02/24 12:01:56 Signin log: UrlPath: "/Signin"
+2024/02/24 12:02:06 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:02:06 Log()
+2024/02/24 12:02:06 Cookie: session_token=39623865626262376430-61373935343839303666-37383439326662313332-31333163333037343565-38303232316463303436-3963386637613536663232656165
+2024/02/24 12:02:06 Foo()
+2024/02/24 12:02:06 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:02:06 SessionValide r.Method= POST
+2024/02/24 12:02:12 Log()
+2024/02/24 12:02:12 Cookie: session_token=39663634646139656361-66363465373535663438-30613938643035393363-64383236323230616161-36626465613736646462-3062373066666638386531333963
+2024/02/24 12:02:12 Home log: UrlPath: "/"
+2024/02/24 12:02:12 SessionValide r.Method= GET
+2024/02/24 12:02:21 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:02:21 Log()
+2024/02/24 12:02:21 Cookie: session_token=36386165386239303035-64336534643163333135-62383037393466363962-33373631343537346134-38666539626565326331-6338313035363432323934393537
+2024/02/24 12:02:21 Foo()
+2024/02/24 12:02:21 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:02:21 SessionValide r.Method= POST
+2024/02/24 12:02:24 Log()
+2024/02/24 12:02:24 Cookie: session_token=66396461386330396435-66666364383061353963-30316563363766366664-61666163343132663835-32336462663364306162-3162353332643865653661306362
+2024/02/24 12:02:24 Home log: UrlPath: "/"
+2024/02/24 12:02:24 SessionValide r.Method= GET
+2024/02/24 12:02:30 Middleware :  POST /AfficheUserInfo
+2024/02/24 12:02:30 Log()
+2024/02/24 12:02:30 Cookie: session_token=63626535643831323235-61336664316137313738-32303566343933393330-38656463633136653663-30356538366230373933-6335383331613264366637383935
+2024/02/24 12:02:30 Foo()
+2024/02/24 12:02:30 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/24 12:02:30 SessionValide r.Method= POST
+2024/02/24 12:02:33 Log()
+2024/02/24 12:02:33 Cookie: session_token=38346532396132383062-62633065376362333335-35383537316532666564-66353236623336376537-64393864343733303063-3464643832313237613633383032
+2024/02/24 12:02:33 Home log: UrlPath: "/"
+2024/02/24 12:02:33 SessionValide r.Method= GET

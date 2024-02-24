@@ -26,12 +26,13 @@ func Log() models.Middleware {
 		return func(w http.ResponseWriter, r *http.Request) {
 			LogId++
 			log.Println("Log()")
-			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("Name", GetCurrentName(w, r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
 			handler.ServeHTTP(w, r)
 		}
 	}
 }
 
+// slog.String("Name", GetCurrentName(w, r)),
 func Guard() models.Middleware {
 	return func(handler http.HandlerFunc) http.HandlerFunc {
 		return func(w http.ResponseWriter, r *http.Request) {
