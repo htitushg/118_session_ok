@@ -13,7 +13,7 @@
   <body>
     <div class="login-container">
       <h2>Page home</h2>
-      <form action="/Logout" method="post">
+      <form action="/Logout" method="POST">
         <div>Bonjour {{.CSessions.Pseudo}} vous êtes connecté !</div>
         <div>La session exipirera dans : {{.CSessions.MaxAge}} secondes!</div>
         <button id="subbtn" type="submit" class="bouton2">Deconnexion</button>
@@ -23,7 +23,7 @@
         <div class="token">{{.SToken}}</div>
       </div>
     </div>
-    <form action="/AfficheUserInfo" method="post">
+    <form action="/AfficheUserInfo" method="POST">
       <button id="subbtn" type="submit" class="bouton3">Profil</button>
     </form>
     <div class="login-container">Contenu du site partie privée</div>
