@@ -7,6 +7,7 @@ import (
 	"log/slog"
 	"net/http"
 	"os"
+	"time"
 )
 
 // Ajouté le 24/02/2024 19h20
@@ -61,9 +62,16 @@ func Log() models.Middleware {
 				token := c.Value
 				pseudo = assets.Sessions[token].Pseudo
 			}
+			start := time.Now()
+			wrapped := wrapResponseWriter(w)
+			//next.ServeHTTP(wrapped, r)
+
+			/* "method", r.Method,
+			 */
+
 			LogId++
 			log.Println("Log()")
-			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("pseudo", pseudo), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.Duration("duration", time.Since(start)), slog.Int("status", wrapped.status), slog.String("path", r.URL.EscapedPath()), slog.String("clientIP", models.GetIP(r)), slog.String("pseudo", pseudo), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
 			handler.ServeHTTP(w, r)
 		}
 	}

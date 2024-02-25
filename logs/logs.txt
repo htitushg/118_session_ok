@@ -884,3 +884,173 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/02/25 23:31:28 Log()
 2024/02/25 23:31:28 Guard()
 2024/02/25 23:31:28 SessionValide r.Method= GET
+2024/02/25 23:33:23 Log()
+2024/02/25 23:33:23 Guard()
+2024/02/25 23:33:23 SessionValide r.Method= POST
+2024/02/25 23:33:23 Foo()
+2024/02/25 23:33:25 Log()
+2024/02/25 23:33:25 Foo()
+2024/02/25 23:33:25 Register log: UrlPath: "/Register"
+2024/02/25 23:33:25 SessionExiste r.Method= GET
+2024/02/25 23:33:27 Log()
+2024/02/25 23:33:27 Home log: UrlPath: "/"
+2024/02/25 23:33:27 SessionValide r.Method= GET
+2024/02/25 23:33:27 Log()
+2024/02/25 23:33:27 Login log: UrlPath: "/Login"
+2024/02/25 23:33:31 Log()
+2024/02/25 23:33:31 Signin log: UrlPath: "/Signin"
+2024/02/25 23:33:31 Log()
+2024/02/25 23:33:31 Guard()
+2024/02/25 23:33:31 SessionValide r.Method= GET
+2024/02/25 23:33:32 Log()
+2024/02/25 23:33:32 Guard()
+2024/02/25 23:33:32 SessionValide r.Method= POST
+2024/02/25 23:33:32 Foo()
+2024/02/25 23:33:32 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:33:33 Log()
+2024/02/25 23:33:33 Guard()
+2024/02/25 23:33:33 SessionValide r.Method= GET
+2024/02/25 23:33:35 Log()
+2024/02/25 23:33:35 Guard()
+2024/02/25 23:33:35 SessionValide r.Method= POST
+2024/02/25 23:33:35 Foo()
+2024/02/25 23:33:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:33:36 Log()
+2024/02/25 23:33:36 Guard()
+2024/02/25 23:33:36 SessionValide r.Method= GET
+2024/02/25 23:33:37 Log()
+2024/02/25 23:33:37 Guard()
+2024/02/25 23:33:37 SessionValide r.Method= POST
+2024/02/25 23:33:37 Foo()
+2024/02/25 23:33:39 Log()
+2024/02/25 23:33:39 Foo()
+2024/02/25 23:33:39 Register log: UrlPath: "/Register"
+2024/02/25 23:33:39 SessionExiste r.Method= GET
+2024/02/25 23:33:40 Log()
+2024/02/25 23:33:40 Home log: UrlPath: "/"
+2024/02/25 23:33:40 SessionValide r.Method= GET
+2024/02/25 23:33:41 Log()
+2024/02/25 23:33:41 Login log: UrlPath: "/Login"
+2024/02/25 23:33:46 Log()
+2024/02/25 23:33:46 Signin log: UrlPath: "/Signin"
+2024/02/25 23:33:46 Log()
+2024/02/25 23:33:46 Guard()
+2024/02/25 23:33:46 SessionValide r.Method= GET
+2024/02/25 23:33:49 Log()
+2024/02/25 23:33:49 Guard()
+2024/02/25 23:33:49 SessionValide r.Method= POST
+2024/02/25 23:33:49 Foo()
+2024/02/25 23:33:49 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:33:50 Log()
+2024/02/25 23:33:50 Guard()
+2024/02/25 23:33:50 SessionValide r.Method= GET
+2024/02/25 23:33:51 Log()
+2024/02/25 23:33:51 Guard()
+2024/02/25 23:33:51 SessionValide r.Method= POST
+2024/02/25 23:33:51 Foo()
+2024/02/25 23:33:51 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:33:53 Log()
+2024/02/25 23:33:53 Guard()
+2024/02/25 23:33:53 SessionValide r.Method= GET
+2024/02/25 23:33:53 Log()
+2024/02/25 23:33:53 Guard()
+2024/02/25 23:33:53 SessionValide r.Method= POST
+2024/02/25 23:33:53 Foo()
+2024/02/25 23:33:53 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:33:54 Log()
+2024/02/25 23:33:54 Guard()
+2024/02/25 23:33:54 SessionValide r.Method= GET
+2024/02/25 23:42:04 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:42:12 Log()
+2024/02/25 23:42:12 Home log: UrlPath: "/"
+2024/02/25 23:42:12 SessionValide r.Method= GET
+2024/02/25 23:42:13 Log()
+2024/02/25 23:42:13 Login log: UrlPath: "/Login"
+2024/02/25 23:42:16 Log()
+2024/02/25 23:42:16 Signin log: UrlPath: "/Signin"
+2024/02/25 23:42:16 Log()
+2024/02/25 23:42:16 Guard()
+2024/02/25 23:42:16 SessionValide r.Method= GET
+2024/02/25 23:42:17 Log()
+2024/02/25 23:42:17 Guard()
+2024/02/25 23:42:17 SessionValide r.Method= POST
+2024/02/25 23:42:17 Foo()
+2024/02/25 23:42:17 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:42:19 Log()
+2024/02/25 23:42:19 Guard()
+2024/02/25 23:42:19 SessionValide r.Method= GET
+2024/02/25 23:42:20 Log()
+2024/02/25 23:42:20 Guard()
+2024/02/25 23:42:20 SessionValide r.Method= POST
+2024/02/25 23:42:20 Foo()
+2024/02/25 23:42:20 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:42:21 Log()
+2024/02/25 23:42:21 Guard()
+2024/02/25 23:42:21 SessionValide r.Method= GET
+2024/02/25 23:42:22 Log()
+2024/02/25 23:42:22 Guard()
+2024/02/25 23:42:22 SessionValide r.Method= POST
+2024/02/25 23:42:22 Foo()
+2024/02/25 23:42:24 Log()
+2024/02/25 23:42:24 Foo()
+2024/02/25 23:42:24 Register log: UrlPath: "/Register"
+2024/02/25 23:42:24 SessionExiste r.Method= GET
+2024/02/25 23:42:24 Log()
+2024/02/25 23:42:24 Home log: UrlPath: "/"
+2024/02/25 23:42:24 SessionValide r.Method= GET
+2024/02/25 23:42:25 Log()
+2024/02/25 23:42:25 Login log: UrlPath: "/Login"
+2024/02/25 23:42:28 Log()
+2024/02/25 23:42:28 Signin log: UrlPath: "/Signin"
+2024/02/25 23:42:28 Log()
+2024/02/25 23:42:28 Guard()
+2024/02/25 23:42:28 SessionValide r.Method= GET
+2024/02/25 23:44:19 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:44:24 Log()
+2024/02/25 23:44:24 Guard()
+2024/02/25 23:44:24 SessionValide r.Method= GET
+2024/02/25 23:44:24 http: superfluous response.WriteHeader call from 118_session_ok/controllers.init.Guard.func5.1 (middleware.go:112)
+2024/02/25 23:44:32 Log()
+2024/02/25 23:44:32 Home log: UrlPath: "/"
+2024/02/25 23:44:32 SessionValide r.Method= GET
+2024/02/25 23:44:33 Log()
+2024/02/25 23:44:33 Login log: UrlPath: "/Login"
+2024/02/25 23:44:36 Log()
+2024/02/25 23:44:36 Signin log: UrlPath: "/Signin"
+2024/02/25 23:44:36 Log()
+2024/02/25 23:44:36 Guard()
+2024/02/25 23:44:36 SessionValide r.Method= GET
+2024/02/25 23:44:38 Log()
+2024/02/25 23:44:38 Guard()
+2024/02/25 23:44:38 SessionValide r.Method= POST
+2024/02/25 23:44:38 Foo()
+2024/02/25 23:44:38 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:44:39 Log()
+2024/02/25 23:44:39 Guard()
+2024/02/25 23:44:39 SessionValide r.Method= GET
+2024/02/25 23:44:40 Log()
+2024/02/25 23:44:40 Guard()
+2024/02/25 23:44:40 SessionValide r.Method= POST
+2024/02/25 23:44:40 Foo()
+2024/02/25 23:44:40 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:44:41 Log()
+2024/02/25 23:44:41 Guard()
+2024/02/25 23:44:41 SessionValide r.Method= GET
+2024/02/25 23:44:42 Log()
+2024/02/25 23:44:42 Guard()
+2024/02/25 23:44:42 SessionValide r.Method= POST
+2024/02/25 23:44:42 Foo()
+2024/02/25 23:44:43 Log()
+2024/02/25 23:44:43 Foo()
+2024/02/25 23:44:43 Register log: UrlPath: "/Register"
+2024/02/25 23:44:43 SessionExiste r.Method= GET
+2024/02/25 23:44:44 Log()
+2024/02/25 23:44:44 Home log: UrlPath: "/"
+2024/02/25 23:44:44 SessionValide r.Method= GET
+2024/02/25 23:44:45 Log()
+2024/02/25 23:44:45 Login log: UrlPath: "/Login"
+2024/02/25 23:44:48 Log()
+2024/02/25 23:44:48 Signin log: UrlPath: "/Signin"
+2024/02/25 23:44:48 Log()
+2024/02/25 23:44:48 Guard()
+2024/02/25 23:44:48 SessionValide r.Method= GET
