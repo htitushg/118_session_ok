@@ -33,7 +33,7 @@ func Pseudo_uuid() (uuid string) {
 
 // Fin de l'Ajout du 02/02/2024
 // Ajouté le 22/02/2024 18h59
-func LogMiddleware(h http.HandlerFunc) http.HandlerFunc {
+/* func LogMiddleware(h http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 		//log.SetOutput(os.Stdout) // logs go to Stderr by default
@@ -41,10 +41,39 @@ func LogMiddleware(h http.HandlerFunc) http.HandlerFunc {
 		h.ServeHTTP(w, r) // call ServeHTTP on the original handler
 
 	})
-}
+} */
 
 // Fin Ajout le 22/02/2024 18h59
 // Si la session est valide, renvoie le Token et true, sinon nil et false
+func SessionExiste(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
+	log.Printf("SessionExiste r.Method= %v\n", r.Method)
+	resultat = false
+	stoken = ""
+	c, err := r.Cookie("session_token")
+	if err != nil {
+		if err == http.ErrNoCookie {
+			// If the cookie is not set, return an unauthorized status
+			w.WriteHeader(http.StatusUnauthorized)
+			return stoken, resultat
+		}
+		// For any other type of error, return a bad request status
+		w.WriteHeader(http.StatusBadRequest)
+		return stoken, resultat
+	}
+	stoken = c.Value
+	_, exists := assets.Sessions[stoken]
+	if !exists {
+		// If the session token is not present in session map, return an unauthorized error
+		w.WriteHeader(http.StatusUnauthorized)
+		return stoken, resultat
+	}
+	// If the previous session is valid, create a new session token for the current user
+	// on peut utiliser google : "github.com/google/uuid"
+	// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
+
+	resultat = true
+	return stoken, resultat
+}
 func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
 	log.Printf("SessionValide r.Method= %v\n", r.Method)
 	c, err := r.Cookie("session_token")
@@ -130,12 +159,19 @@ func Home(w http.ResponseWriter, r *http.Request) {
 // Controlleur Login: Affiche la page de connexion
 func Login(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Login log: UrlPath: %#v\n", r.URL.Path)
+	var message template.HTML
+	switch r.URL.Query().Get("err") {
+	case "pass":
+		message = "<div class=\"message\">Wrong username or password!</div>"
+	case "restricted":
+		message = "<div class=\"message\">You need to sign in to access to this resource!</div>"
+	}
 	t, err := template.ParseFiles(assets.Chemin + "templates/login.html")
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
-	if err := t.Execute(w, nil); err != nil {
+	if err := t.Execute(w, message); err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
@@ -147,9 +183,9 @@ func Login(w http.ResponseWriter, r *http.Request) {
 func Signin(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Signin log: UrlPath: %#v\n", r.URL.Path)
 	var creds assets.Credentials
-	var data assets.Data
+	/* var data assets.Data
 	var t *template.Template
-	var err error
+	var err error */
 	creds.Pseudo = r.FormValue("pseudo")
 	creds.Password = r.FormValue("passid")
 	// Get the expected password from our in memory map
@@ -160,42 +196,65 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	// if NOT, then we return an "Unauthorized" status
 	if !ok || expectedPassword != creds.Password {
 		w.WriteHeader(http.StatusUnauthorized)
-		t, err = template.ParseFiles(assets.Chemin + "templates/home.html")
+		http.Redirect(w, r, "/Login?err=pass", http.StatusSeeOther)
+		return
+		/* t, err = template.ParseFiles(assets.Chemin + "templates/home.html")
 		if err != nil {
 			http.Error(w, err.Error(), 500)
 			return
-		}
-	} else {
-		// Create a new random session token
-		// on peut utiliser google : "github.com/google/uuid"
-		// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
+		} */
+	}
+	// Create a new random session token
+	// on peut utiliser google : "github.com/google/uuid"
+	// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
 
-		/* newSessionToken := uuid.NewString() */
-		sessionToken := Pseudo_uuid()
-		maxAge := 120
-		// Set the token in the session map, along with the user whom it represents
-		assets.Sessions[sessionToken] = assets.Session{
-			Pseudo: creds.Pseudo,
-			MaxAge: maxAge,
-		}
-		// Finally, we set the client cookie for "session_token" as the session token we just generated
-		// we also set an expiry time of 120 seconds
-		http.SetCookie(w, &http.Cookie{
-			Name:   "session_token",
-			Value:  sessionToken,
-			MaxAge: maxAge,
-		})
-		//DatedeCreation := assets.Sessions[sessionToken].Expiry.Format("“2006-01-02 15h04 05 secondes”")
-		DJour := time.Now().Format("2006-01-02")
-		data.CSessions = assets.Sessions[sessionToken]
-		data.Date_jour = DJour
-		data.SToken = sessionToken
+	/* newSessionToken := uuid.NewString() */
+	sessionToken := Pseudo_uuid()
+	maxAge := 120
+	// Set the token in the session map, along with the user whom it represents
+	assets.Sessions[sessionToken] = assets.Session{
+		Pseudo: creds.Pseudo,
+		MaxAge: maxAge,
+	}
+	// Finally, we set the client cookie for "session_token" as the session token we just generated
+	// we also set an expiry time of 120 seconds
+	var cookie = http.Cookie{
+		Name:   "session_token",
+		Value:  sessionToken,
+		MaxAge: maxAge,
+	}
+	http.SetCookie(w, &cookie)
+	//DatedeCreation := assets.Sessions[sessionToken].Expiry.Format("“2006-01-02 15h04 05 secondes”")
+	/* DJour := time.Now().Format("2006-01-02")
+	data.CSessions = assets.Sessions[sessionToken]
+	data.Date_jour = DJour
+	data.SToken = sessionToken */
+	r.AddCookie(&cookie)
+	http.Redirect(w, r, "/Index", http.StatusSeeOther)
 
-		t, err = template.ParseFiles(assets.Chemin + "templates/index.html")
-		if err != nil {
-			http.Error(w, err.Error(), 500)
-			return
-		}
+	/* t, err = template.ParseFiles(assets.Chemin + "templates/index.html")
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+
+	if err := t.Execute(w, data); err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	} */
+}
+func Index(w http.ResponseWriter, r *http.Request) {
+	cookie, _ := r.Cookie("session_token")
+	var sessionToken = cookie.Value
+	var data = assets.Data{
+		SToken:    sessionToken,
+		CSessions: assets.Sessions[sessionToken],
+		Date_jour: time.Now().Format("2006-01-02"),
+	}
+	t, err := template.ParseFiles(assets.Chemin + "templates/index.html")
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
 	}
 	if err := t.Execute(w, data); err != nil {
 		http.Error(w, err.Error(), 500)
@@ -205,8 +264,11 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 
 // Controlleur Logout: Si la session est valide, Ferme la session et renvoie vers home
 func Logout(w http.ResponseWriter, r *http.Request) {
-	sessionToken, exists := SessionValide(w, r)
-	if exists {
+	//sessionToken, exists := SessionExiste(w, r)
+	var err error
+	c, err := r.Cookie("session_token")
+	if err == nil {
+		sessionToken := c.Value
 		// remove the users session from the session map
 		delete(assets.Sessions, sessionToken)
 		// We need to let the client know that the cookie is expired
@@ -217,6 +279,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 			Value:  "",
 			MaxAge: -1,
 		})
+
 	}
 	t, err := template.ParseFiles(assets.Chemin + "templates/home.html")
 	if err != nil {
@@ -233,26 +296,17 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 // Sinon renvoie vers home
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 	log.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
-	var data assets.Data
-	var err error
-	var t *template.Template
-	sessionToken, exists := SessionValide(w, r)
-	if exists {
-		DJour := time.Now().Format("2006-01-02")
-		data.CSessions = assets.Sessions[sessionToken]
-		data.Date_jour = DJour
-		data.SToken = sessionToken
-		t, err = template.ParseFiles(assets.Chemin + "templates/afficheuserinfo.html")
-		if err != nil {
-			http.Error(w, err.Error(), 500)
-			return
-		}
-	} else {
-		t, err = template.ParseFiles(assets.Chemin + "templates/home.html")
-		if err != nil {
-			http.Error(w, err.Error(), 500)
-			return
-		}
+	cookie, _ := r.Cookie("session_token")
+	var sessionToken = cookie.Value
+	var data = assets.Data{
+		SToken:    sessionToken,
+		CSessions: assets.Sessions[sessionToken],
+		Date_jour: time.Now().Format("2006-01-02"),
+	}
+	t, err := template.ParseFiles(assets.Chemin + "templates/afficheuserinfo.html")
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
 	}
 	if err := t.Execute(w, data); err != nil {
 		http.Error(w, err.Error(), 500)
@@ -269,7 +323,7 @@ func Register(w http.ResponseWriter, r *http.Request) {
 	var data assets.Data
 	var t *template.Template
 	var err error
-	sessionToken, exists := SessionValide(w, r)
+	sessionToken, exists := SessionExiste(w, r)
 	if exists {
 		DJour := time.Now().Format("2006-01-02")
 		data.CSessions = assets.Sessions[sessionToken]

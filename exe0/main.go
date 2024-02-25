@@ -17,7 +17,6 @@ func main() {
 		log.Fatal(err)
 	}
 	log.SetOutput(file)
-
 	mux := http.NewServeMux()
 	// On relie le fichier css et le favicon au nom static
 	log.Printf("Main Chemin= %s\n", assets.Chemin+"assets/") //
@@ -25,11 +24,12 @@ func main() {
 	// routes
 
 	mux.HandleFunc("GET /{$}", controllers.HomeBundle)
-	mux.HandleFunc("POST /Login", controllers.LoginBundle)
+	mux.HandleFunc("GET /Login", controllers.LoginBundle)
 	mux.HandleFunc("POST /Signin", controllers.SigninBundle)
+	mux.HandleFunc("GET /Index", controllers.IndexBundle)
 	mux.HandleFunc("POST /Logout", controllers.LogoutBundle)
-	mux.HandleFunc("POST /Register", controllers.RegisterBundle)
-	mux.HandleFunc("POST /AfficheUserInfo", controllers.LogMiddleware(controllers.AfficheUserInfoBundle))
+	mux.HandleFunc("GET /Register", controllers.RegisterBundle)
+	mux.HandleFunc("POST /AfficheUserInfo", controllers.AfficheUserInfoBundle)
 
 	// Handling MethodNotAllowed error on /
 	mux.HandleFunc("/{$}", controllers.IndexHandlerNoMethBundle)

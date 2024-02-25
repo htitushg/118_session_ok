@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"118_session_ok/assets"
 	"118_session_ok/models"
 	"log"
 	"log/slog"
@@ -8,13 +9,41 @@ import (
 	"os"
 )
 
+// Ajouté le 24/02/2024 19h20
+// responseWriter is a minimal wrapper for http.ResponseWriter that allows the
+// written HTTP status code to be captured for logging.
+type responseWriter struct {
+	http.ResponseWriter
+	status      int
+	wroteHeader bool
+}
+
+func wrapResponseWriter(w http.ResponseWriter) *responseWriter {
+	return &responseWriter{ResponseWriter: w}
+}
+
+func (rw *responseWriter) Status() int {
+	return rw.status
+}
+
+func (rw *responseWriter) WriteHeader(code int) {
+	if rw.wroteHeader {
+		return
+	}
+
+	rw.status = code
+	rw.ResponseWriter.WriteHeader(code)
+	rw.wroteHeader = true
+
+	//return
+}
+
+// Ajout du 24/02/2024 19h20
 var logs, _ = os.Create("logs/logs.log")
 var jsonHandler = slog.NewJSONHandler(logs, &slog.HandlerOptions{
 	Level:     slog.LevelDebug,
 	AddSource: true,
-}).WithAttrs([]slog.Attr{
-	slog.Int("Info", 13),
-})
+}).WithAttrs([]slog.Attr{slog.Int("Info", 13)})
 var Logger = slog.New(jsonHandler)
 var LogId = 0
 
@@ -24,19 +53,57 @@ var LogId = 0
 func Log() models.Middleware {
 	return func(handler http.HandlerFunc) http.HandlerFunc {
 		return func(w http.ResponseWriter, r *http.Request) {
+			c, err := r.Cookie("session_token")
+			var pseudo string
+			if err != nil {
+				pseudo = ""
+			} else {
+				token := c.Value
+				pseudo = assets.Sessions[token].Pseudo
+			}
 			LogId++
 			log.Println("Log()")
-			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("Name", GetCurrentName(w, r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+			Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("pseudo", pseudo), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
 			handler.ServeHTTP(w, r)
 		}
 	}
 }
+
+/* func Log() models.Middleware {
+	return func(handler http.HandlerFunc) http.HandlerFunc {
+		return func(w http.ResponseWriter, r *http.Request) {
+			fn := func(w http.ResponseWriter, r *http.Request) {
+				defer func() {
+					if err := recover(); err != nil {
+						w.WriteHeader(http.StatusInternalServerError)
+						Logger.Info(
+							"err", err,
+							"trace", debug.Stack(),
+						)
+					}
+				}()
+
+				LogId++
+				log.Println("Log()")
+				Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+				handler.ServeHTTP(w, r)
+
+			}
+			return fn
+		}
+	}
+} */
 
 // slog.String("Name", GetCurrentName(w, r)),
 func Guard() models.Middleware {
 	return func(handler http.HandlerFunc) http.HandlerFunc {
 		return func(w http.ResponseWriter, r *http.Request) {
 			log.Println("Guard()")
+			_, exists := SessionValide(w, r)
+			if !exists {
+				http.Redirect(w, r, "/Login?err=restricted", http.StatusSeeOther)
+				return
+			}
 			handler.ServeHTTP(w, r)
 		}
 	}

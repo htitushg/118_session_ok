@@ -1,16 +1,11 @@
 package controllers
 
-import (
-	//"log"
-	log "github.com/go-kit/kit/log"
-	"net/http"
-	"runtime/debug"
-	"time"
-)
+//"log"
+//log "github.com/go-kit/log"
 
 // responseWriter is a minimal wrapper for http.ResponseWriter that allows the
 // written HTTP status code to be captured for logging.
-type responseWriter struct {
+/* type responseWriter struct {
 	http.ResponseWriter
 	status      int
 	wroteHeader bool
@@ -33,11 +28,11 @@ func (rw *responseWriter) WriteHeader(code int) {
 	rw.ResponseWriter.WriteHeader(code)
 	rw.wroteHeader = true
 
-	return
-}
+	//return
+} */
 
 // LoggingMiddleware logs the incoming HTTP request & its duration.
-func LoggingMiddleware(logger log.Logger) func(http.Handler) http.Handler {
+/* func LoggingMiddleware(logger log.Logger) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		fn := func(w http.ResponseWriter, r *http.Request) {
 			defer func() {
@@ -63,4 +58,4 @@ func LoggingMiddleware(logger log.Logger) func(http.Handler) http.Handler {
 
 		return http.HandlerFunc(fn)
 	}
-}
+} */

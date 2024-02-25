@@ -1,185 +1,886 @@
-2024/02/24 11:21:14 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/24 11:21:18 Log()
-2024/02/24 11:21:18 Guard()
-2024/02/24 11:21:18 Foo()
-2024/02/24 11:21:18 SessionValide r.Method= POST
-2024/02/24 11:21:19 Log()
-2024/02/24 11:21:19 Login log: UrlPath: "/Login"
-2024/02/24 11:21:22 Log()
-2024/02/24 11:21:22 Guard()
-2024/02/24 11:21:22 Signin log: UrlPath: "/Signin"
-2024/02/24 11:21:24 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:21:24 Log()
-2024/02/24 11:21:24 Foo()
-2024/02/24 11:21:24 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:21:24 SessionValide r.Method= POST
-2024/02/24 11:21:25 Log()
-2024/02/24 11:21:25 Home log: UrlPath: "/"
-2024/02/24 11:21:25 SessionValide r.Method= GET
-2024/02/24 11:21:26 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:21:26 Log()
-2024/02/24 11:21:26 Foo()
-2024/02/24 11:21:26 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:21:26 SessionValide r.Method= POST
-2024/02/24 11:23:55 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/24 11:23:58 Log()
-2024/02/24 11:23:58 Guard()
-2024/02/24 11:23:58 Foo()
-2024/02/24 11:23:58 SessionValide r.Method= POST
-2024/02/24 11:23:59 Log()
-2024/02/24 11:23:59 Login log: UrlPath: "/Login"
-2024/02/24 11:24:02 Log()
-2024/02/24 11:24:02 Guard()
-2024/02/24 11:24:02 Signin log: UrlPath: "/Signin"
-2024/02/24 11:24:03 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:24:03 Log()
-2024/02/24 11:24:03 Foo()
-2024/02/24 11:24:03 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:24:03 SessionValide r.Method= POST
-2024/02/24 11:24:04 Log()
-2024/02/24 11:24:04 Home log: UrlPath: "/"
-2024/02/24 11:24:04 SessionValide r.Method= GET
-2024/02/24 11:24:05 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:24:05 Log()
-2024/02/24 11:24:05 Foo()
-2024/02/24 11:24:05 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:24:05 SessionValide r.Method= POST
-2024/02/24 11:24:06 Log()
-2024/02/24 11:24:06 Home log: UrlPath: "/"
-2024/02/24 11:24:06 SessionValide r.Method= GET
-2024/02/24 11:24:07 Log()
-2024/02/24 11:24:07 Guard()
-2024/02/24 11:24:07 Foo()
-2024/02/24 11:24:07 SessionValide r.Method= POST
-2024/02/24 11:24:08 Log()
-2024/02/24 11:24:08 Foo()
-2024/02/24 11:24:08 Register log: UrlPath: "/Register"
-2024/02/24 11:24:08 SessionValide r.Method= POST
-2024/02/24 11:24:09 Log()
-2024/02/24 11:24:09 Home log: UrlPath: "/"
-2024/02/24 11:24:09 SessionValide r.Method= GET
-2024/02/24 11:24:11 Log()
-2024/02/24 11:24:11 Login log: UrlPath: "/Login"
-2024/02/24 11:24:13 Log()
-2024/02/24 11:24:13 Guard()
-2024/02/24 11:24:13 Signin log: UrlPath: "/Signin"
-2024/02/24 11:56:47 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/24 11:57:47 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/24 11:57:54 Log()
-2024/02/24 11:57:54 Cookie: 
-2024/02/24 11:57:54 Guard()
-2024/02/24 11:57:54 Foo()
-2024/02/24 11:57:54 SessionValide r.Method= POST
-2024/02/24 11:57:55 Log()
-2024/02/24 11:57:55 Cookie: 
-2024/02/24 11:57:55 Login log: UrlPath: "/Login"
-2024/02/24 11:58:00 Log()
-2024/02/24 11:58:00 Cookie: 
-2024/02/24 11:58:00 Guard()
-2024/02/24 11:58:00 Signin log: UrlPath: "/Signin"
-2024/02/24 11:58:04 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:58:04 Log()
-2024/02/24 11:58:04 Cookie: 
-2024/02/24 11:58:04 Foo()
-2024/02/24 11:58:04 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:58:04 SessionValide r.Method= POST
-2024/02/24 11:58:06 Log()
-2024/02/24 11:58:06 Cookie: 
-2024/02/24 11:58:06 Home log: UrlPath: "/"
-2024/02/24 11:58:06 SessionValide r.Method= GET
-2024/02/24 11:58:07 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:58:07 Log()
-2024/02/24 11:58:07 Cookie: 
-2024/02/24 11:58:07 Foo()
-2024/02/24 11:58:07 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:58:07 SessionValide r.Method= POST
-2024/02/24 11:58:08 Log()
-2024/02/24 11:58:08 Cookie: 
-2024/02/24 11:58:08 Home log: UrlPath: "/"
-2024/02/24 11:58:08 SessionValide r.Method= GET
-2024/02/24 11:58:30 Middleware :  POST /AfficheUserInfo
-2024/02/24 11:58:30 Log()
-2024/02/24 11:58:30 Cookie: 
-2024/02/24 11:58:30 Foo()
-2024/02/24 11:58:30 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 11:58:30 SessionValide r.Method= POST
-2024/02/24 11:58:31 Log()
-2024/02/24 11:58:31 Cookie: 
-2024/02/24 11:58:31 Home log: UrlPath: "/"
-2024/02/24 11:58:31 SessionValide r.Method= GET
-2024/02/24 12:00:49 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/24 12:00:52 Log()
-2024/02/24 12:00:52 invalid cookie: http: named cookie not present
-2024/02/24 12:00:52 Guard()
-2024/02/24 12:00:52 Foo()
-2024/02/24 12:00:52 SessionValide r.Method= POST
-2024/02/24 12:00:53 Log()
-2024/02/24 12:00:53 Cookie: session_token=sessionToken
-2024/02/24 12:00:53 Login log: UrlPath: "/Login"
-2024/02/24 12:00:56 Log()
-2024/02/24 12:00:56 invalid cookie: http: named cookie not present
-2024/02/24 12:00:56 Guard()
-2024/02/24 12:00:56 Signin log: UrlPath: "/Signin"
-2024/02/24 12:00:58 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:00:58 Log()
-2024/02/24 12:00:58 Cookie: session_token=38303434343263613032-38373431373264663165-39643134333865353535-31663865643836393233-30323034386334353631-6231383536373431333063373863
-2024/02/24 12:00:58 Foo()
-2024/02/24 12:00:58 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:00:58 SessionValide r.Method= POST
-2024/02/24 12:00:59 Log()
-2024/02/24 12:00:59 Cookie: session_token=62663436633261356637-31613463323233346662-64656234373064346535-34626132373938306434-62303963316462373738-3763663830323731333535373833
-2024/02/24 12:00:59 Home log: UrlPath: "/"
-2024/02/24 12:00:59 SessionValide r.Method= GET
-2024/02/24 12:01:18 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:01:18 Log()
-2024/02/24 12:01:18 Cookie: session_token=30333863393066623061-35343538336162316237-61396332633636383561-38666536663537383636-62663164643264396665-3032363338386237623730393866
-2024/02/24 12:01:18 Foo()
-2024/02/24 12:01:18 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:01:18 SessionValide r.Method= POST
-2024/02/24 12:01:20 Log()
-2024/02/24 12:01:20 Cookie: session_token=38323161636637653338-32666336353534666439-66396562343865616339-31313435363161616530-35373664306231616338-3038393436666437333563333936
-2024/02/24 12:01:20 Home log: UrlPath: "/"
-2024/02/24 12:01:20 SessionValide r.Method= GET
-2024/02/24 12:01:41 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:01:41 Log()
-2024/02/24 12:01:41 invalid cookie: http: named cookie not present
-2024/02/24 12:01:41 Foo()
-2024/02/24 12:01:41 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:01:41 SessionValide r.Method= POST
-2024/02/24 12:01:47 Log()
-2024/02/24 12:01:47 invalid cookie: http: named cookie not present
-2024/02/24 12:01:47 Login log: UrlPath: "/Login"
-2024/02/24 12:01:56 Log()
-2024/02/24 12:01:56 invalid cookie: http: named cookie not present
-2024/02/24 12:01:56 Guard()
-2024/02/24 12:01:56 Signin log: UrlPath: "/Signin"
-2024/02/24 12:02:06 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:02:06 Log()
-2024/02/24 12:02:06 Cookie: session_token=39623865626262376430-61373935343839303666-37383439326662313332-31333163333037343565-38303232316463303436-3963386637613536663232656165
-2024/02/24 12:02:06 Foo()
-2024/02/24 12:02:06 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:02:06 SessionValide r.Method= POST
-2024/02/24 12:02:12 Log()
-2024/02/24 12:02:12 Cookie: session_token=39663634646139656361-66363465373535663438-30613938643035393363-64383236323230616161-36626465613736646462-3062373066666638386531333963
-2024/02/24 12:02:12 Home log: UrlPath: "/"
-2024/02/24 12:02:12 SessionValide r.Method= GET
-2024/02/24 12:02:21 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:02:21 Log()
-2024/02/24 12:02:21 Cookie: session_token=36386165386239303035-64336534643163333135-62383037393466363962-33373631343537346134-38666539626565326331-6338313035363432323934393537
-2024/02/24 12:02:21 Foo()
-2024/02/24 12:02:21 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:02:21 SessionValide r.Method= POST
-2024/02/24 12:02:24 Log()
-2024/02/24 12:02:24 Cookie: session_token=66396461386330396435-66666364383061353963-30316563363766366664-61666163343132663835-32336462663364306162-3162353332643865653661306362
-2024/02/24 12:02:24 Home log: UrlPath: "/"
-2024/02/24 12:02:24 SessionValide r.Method= GET
-2024/02/24 12:02:30 Middleware :  POST /AfficheUserInfo
-2024/02/24 12:02:30 Log()
-2024/02/24 12:02:30 Cookie: session_token=63626535643831323235-61336664316137313738-32303566343933393330-38656463633136653663-30356538366230373933-6335383331613264366637383935
-2024/02/24 12:02:30 Foo()
-2024/02/24 12:02:30 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/24 12:02:30 SessionValide r.Method= POST
-2024/02/24 12:02:33 Log()
-2024/02/24 12:02:33 Cookie: session_token=38346532396132383062-62633065376362333335-35383537316532666564-66353236623336376537-64393864343733303063-3464643832313237613633383032
-2024/02/24 12:02:33 Home log: UrlPath: "/"
-2024/02/24 12:02:33 SessionValide r.Method= GET
+2024/02/25 23:17:05 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:17:11 Log()
+2024/02/25 23:17:11 Home log: UrlPath: "/"
+2024/02/25 23:17:11 SessionValide r.Method= GET
+2024/02/25 23:17:12 Log()
+2024/02/25 23:17:12 Login log: UrlPath: "/Login"
+2024/02/25 23:17:15 Log()
+2024/02/25 23:17:15 Signin log: UrlPath: "/Signin"
+2024/02/25 23:17:15 Log()
+2024/02/25 23:17:15 Guard()
+2024/02/25 23:17:15 SessionValide r.Method= GET
+2024/02/25 23:17:17 Log()
+2024/02/25 23:17:17 Guard()
+2024/02/25 23:17:17 SessionValide r.Method= POST
+2024/02/25 23:17:17 Foo()
+2024/02/25 23:17:17 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:17:18 Log()
+2024/02/25 23:17:18 Guard()
+2024/02/25 23:17:18 SessionValide r.Method= GET
+2024/02/25 23:17:19 Log()
+2024/02/25 23:17:19 Guard()
+2024/02/25 23:17:19 SessionValide r.Method= POST
+2024/02/25 23:17:19 Foo()
+2024/02/25 23:17:19 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:17:20 Log()
+2024/02/25 23:17:20 Guard()
+2024/02/25 23:17:20 SessionValide r.Method= GET
+2024/02/25 23:17:21 Log()
+2024/02/25 23:17:21 Guard()
+2024/02/25 23:17:21 SessionValide r.Method= POST
+2024/02/25 23:17:21 Foo()
+2024/02/25 23:17:24 Log()
+2024/02/25 23:17:24 Foo()
+2024/02/25 23:17:24 Register log: UrlPath: "/Register"
+2024/02/25 23:17:24 SessionExiste r.Method= GET
+2024/02/25 23:17:26 Log()
+2024/02/25 23:17:26 Login log: UrlPath: "/Login"
+2024/02/25 23:17:30 Log()
+2024/02/25 23:17:30 Signin log: UrlPath: "/Signin"
+2024/02/25 23:17:30 Log()
+2024/02/25 23:17:30 Guard()
+2024/02/25 23:17:30 SessionValide r.Method= GET
+2024/02/25 23:17:35 Log()
+2024/02/25 23:17:35 Guard()
+2024/02/25 23:17:35 SessionValide r.Method= POST
+2024/02/25 23:17:35 Foo()
+2024/02/25 23:17:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:17:36 Log()
+2024/02/25 23:17:36 Guard()
+2024/02/25 23:17:36 SessionValide r.Method= GET
+2024/02/25 23:17:37 Log()
+2024/02/25 23:17:37 Guard()
+2024/02/25 23:17:37 SessionValide r.Method= POST
+2024/02/25 23:17:37 Foo()
+2024/02/25 23:17:37 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:17:38 Log()
+2024/02/25 23:17:38 Guard()
+2024/02/25 23:17:38 SessionValide r.Method= GET
+2024/02/25 23:17:39 Log()
+2024/02/25 23:17:39 Guard()
+2024/02/25 23:17:39 SessionValide r.Method= POST
+2024/02/25 23:17:39 Foo()
+2024/02/25 23:17:42 Log()
+2024/02/25 23:17:42 Foo()
+2024/02/25 23:17:42 Register log: UrlPath: "/Register"
+2024/02/25 23:17:42 SessionExiste r.Method= GET
+2024/02/25 23:17:43 Log()
+2024/02/25 23:17:43 Login log: UrlPath: "/Login"
+2024/02/25 23:17:47 Log()
+2024/02/25 23:17:47 Signin log: UrlPath: "/Signin"
+2024/02/25 23:17:47 Log()
+2024/02/25 23:17:47 Guard()
+2024/02/25 23:17:47 SessionValide r.Method= GET
+2024/02/25 23:18:37 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:18:43 Log()
+2024/02/25 23:18:43 Home log: UrlPath: "/"
+2024/02/25 23:18:43 SessionValide r.Method= GET
+2024/02/25 23:18:45 Log()
+2024/02/25 23:18:45 Login log: UrlPath: "/Login"
+2024/02/25 23:18:48 Log()
+2024/02/25 23:18:48 Signin log: UrlPath: "/Signin"
+2024/02/25 23:18:48 Log()
+2024/02/25 23:18:48 Guard()
+2024/02/25 23:18:48 SessionValide r.Method= GET
+2024/02/25 23:18:49 Log()
+2024/02/25 23:18:49 Guard()
+2024/02/25 23:18:49 SessionValide r.Method= POST
+2024/02/25 23:18:49 Foo()
+2024/02/25 23:18:49 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:18:51 Log()
+2024/02/25 23:18:51 Guard()
+2024/02/25 23:18:51 SessionValide r.Method= GET
+2024/02/25 23:18:52 Log()
+2024/02/25 23:18:52 Guard()
+2024/02/25 23:18:52 SessionValide r.Method= POST
+2024/02/25 23:18:52 Foo()
+2024/02/25 23:18:52 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:18:53 Log()
+2024/02/25 23:18:53 Guard()
+2024/02/25 23:18:53 SessionValide r.Method= GET
+2024/02/25 23:18:54 Log()
+2024/02/25 23:18:54 Guard()
+2024/02/25 23:18:54 SessionValide r.Method= POST
+2024/02/25 23:18:54 Foo()
+2024/02/25 23:18:54 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:18:55 Log()
+2024/02/25 23:18:55 Guard()
+2024/02/25 23:18:55 SessionValide r.Method= GET
+2024/02/25 23:18:56 Log()
+2024/02/25 23:18:56 Guard()
+2024/02/25 23:18:56 SessionValide r.Method= POST
+2024/02/25 23:18:56 Foo()
+2024/02/25 23:18:58 Log()
+2024/02/25 23:18:58 Foo()
+2024/02/25 23:18:58 Register log: UrlPath: "/Register"
+2024/02/25 23:18:58 SessionExiste r.Method= GET
+2024/02/25 23:18:59 Log()
+2024/02/25 23:18:59 Home log: UrlPath: "/"
+2024/02/25 23:18:59 SessionValide r.Method= GET
+2024/02/25 23:26:45 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55698: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cca80}, 0xc0000c65a0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cca80?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cca80}, 0xc0000c65a0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a92c0?}, {0x870b88?, 0xc0000cca80?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c41b0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55702: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccb60}, 0xc0000c6900)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccb60?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccb60}, 0xc0000c6900)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9470?}, {0x870b88?, 0xc0000ccb60?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4360, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55708: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccc40}, 0xc0000c6a20)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccc40?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccc40}, 0xc0000c6a20)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a95c0?}, {0x870b88?, 0xc0000ccc40?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4510, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55718: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c000}, 0xc0000c6b40)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c000?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c000}, 0xc0000c6b40)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9710?}, {0x870b88?, 0xc00012c000?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c46c0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55728: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccd20}, 0xc0000c6c60)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccd20?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccd20}, 0xc0000c6c60)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9770?}, {0x870b88?, 0xc0000ccd20?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110120, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55742: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232000}, 0xc00021a000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232000?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232000}, 0xc00021a000)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206090?}, {0x870b88?, 0xc000232000?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a000, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55758: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cce00}, 0xc0000c6d80)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cce00?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cce00}, 0xc0000c6d80)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9890?}, {0x870b88?, 0xc0000cce00?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a1b0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55760: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccee0}, 0xc0000c6ea0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccee0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccee0}, 0xc0000c6ea0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a99e0?}, {0x870b88?, 0xc0000ccee0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4990, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55768: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccfc0}, 0xc0000c6fc0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccfc0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccfc0}, 0xc0000c6fc0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9b30?}, {0x870b88?, 0xc0000ccfc0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4b40, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:49 http: panic serving 127.0.0.1:55772: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002320e0}, 0xc00021a120)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002320e0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002320e0}, 0xc00021a120)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206210?}, {0x870b88?, 0xc0002320e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001101b0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55782: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002321c0}, 0xc00021a240)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002321c0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002321c0}, 0xc00021a240)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206360?}, {0x870b88?, 0xc0002321c0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a360, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55798: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002322a0}, 0xc00021a360)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002322a0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002322a0}, 0xc00021a360)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002064b0?}, {0x870b88?, 0xc0002322a0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a510, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55802: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232380}, 0xc00021a480)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232380?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232380}, 0xc00021a480)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002065a0?}, {0x870b88?, 0xc000232380?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110240, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55818: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c0e0}, 0xc000152000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c0e0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c0e0}, 0xc000152000)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001142a0?}, {0x870b88?, 0xc00012c0e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001102d0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55834: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c1c0}, 0xc000152120)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c1c0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c1c0}, 0xc000152120)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001143f0?}, {0x870b88?, 0xc00012c1c0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110480, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55842: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c2a0}, 0xc000152240)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c2a0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c2a0}, 0xc000152240)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000114540?}, {0x870b88?, 0xc00012c2a0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110630, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55846: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c380}, 0xc000152360)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c380?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c380}, 0xc000152360)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000114690?}, {0x870b88?, 0xc00012c380?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001107e0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55848: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c460}, 0xc000152480)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c460?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c460}, 0xc000152480)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001147e0?}, {0x870b88?, 0xc00012c460?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110990, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55864: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c540}, 0xc0001525a0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c540?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c540}, 0xc0001525a0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000114930?}, {0x870b88?, 0xc00012c540?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110b40, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:52 http: panic serving 127.0.0.1:55880: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232460}, 0xc0000c70e0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232460?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232460}, 0xc0000c70e0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9c20?}, {0x870b88?, 0xc000232460?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110cf0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54090: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c700}, 0xc00021a5a0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c700?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c700}, 0xc00021a5a0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206810?}, {0x870b88?, 0xc00012c700?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a900, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54098: runtime error: invalid memory address or nil pointer dereference
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232620}, 0xc00021a6c0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232620?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232620}, 0xc00021a6c0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002068d0?}, {0x870b88?, 0xc000232620?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a990, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54110: runtime error: invalid memory address or nil pointer dereference
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cd180}, 0xc0000c7200)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cd180?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cd180}, 0xc0000c7200)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9c80?}, {0x870b88?, 0xc0000cd180?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020ab40, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54120: runtime error: invalid memory address or nil pointer dereference
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cd340}, 0xc0000c7320)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cd340?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cd340}, 0xc0000c7320)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9dd0?}, {0x870b88?, 0xc0000cd340?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4e10, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54128: runtime error: invalid memory address or nil pointer dereference
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c8c0}, 0xc0000c7440)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c8c0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c8c0}, 0xc0000c7440)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9f20?}, {0x870b88?, 0xc00012c8c0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4fc0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54138: runtime error: invalid memory address or nil pointer dereference
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012ca80}, 0xc0001526c0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012ca80?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012ca80}, 0xc0001526c0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000114c30?}, {0x870b88?, 0xc00012ca80?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000110fc0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54152: runtime error: invalid memory address or nil pointer dereference
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002327e0}, 0xc00021a7e0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002327e0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002327e0}, 0xc00021a7e0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206a80?}, {0x870b88?, 0xc0002327e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020abd0, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54168: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002329a0}, 0xc00021a900)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002329a0?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002329a0}, 0xc00021a900)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206bd0?}, {0x870b88?, 0xc0002329a0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020ad80, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54184: runtime error: invalid memory address or nil pointer dereference
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232b60}, 0xc00021aa20)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232b60?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232b60}, 0xc00021aa20)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206d20?}, {0x870b88?, 0xc000232b60?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020af30, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:26:59 http: panic serving 127.0.0.1:54196: runtime error: invalid memory address or nil pointer dereference
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77ab40?, 0xabbf90?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012cc40}, 0xc0001527e0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012cc40?}, 0x6a4fda?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012cc40}, 0xc0001527e0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000114d80?}, {0x870b88?, 0xc00012cc40?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000111170, {0x871338, 0xc0000a91d0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:35 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54506: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccb60}, 0xc0000c65a0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccb60?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccb60}, 0xc0000c65a0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9260?}, {0x870748?, 0xc0000ccb60?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c41b0, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54512: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c0e0}, 0xc00021a000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c0e0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c0e0}, 0xc00021a000)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x870748?, 0xc00021c0e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54520: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccd20}, 0xc0000c67e0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccd20?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccd20}, 0xc0000c67e0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a9470?}, {0x870748?, 0xc0000ccd20?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4360, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54522: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0001340e0}, 0xc000130000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0001340e0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0001340e0}, 0xc000130000)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000112090?}, {0x870748?, 0xc0001340e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000116000, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54526: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccee0}, 0xc0000c6900)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccee0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccee0}, 0xc0000c6900)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a95c0?}, {0x870748?, 0xc0000ccee0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c4510, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54538: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c2a0}, 0xc00021a120)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c2a0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c2a0}, 0xc00021a120)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002041b0?}, {0x870748?, 0xc00021c2a0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000c46c0, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54542: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c460}, 0xc00021a240)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c460?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c460}, 0xc00021a240)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002042a0?}, {0x870748?, 0xc00021c460?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001161b0, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54548: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c620}, 0xc00021a360)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c620?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c620}, 0xc00021a360)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002043f0?}, {0x870748?, 0xc00021c620?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002083f0, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54560: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c7e0}, 0xc00021a480)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c7e0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c7e0}, 0xc00021a480)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000204540?}, {0x870748?, 0xc00021c7e0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002085a0, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:28:39 http: panic serving 127.0.0.1:54576: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0xbe
+panic({0x77aac0?, 0xabaef0?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x132
+118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0001342a0}, 0xc000130120)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0001342a0?}, 0x6a4f9a?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0001342a0}, 0xc000130120)
+	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000112210?}, {0x870748?, 0xc0001342a0?}, 0x6?)
+	/snap/go/10506/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208750, {0x870ef8, 0xc0000a9170})
+	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
+2024/02/25 23:31:07 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/25 23:31:10 Log()
+2024/02/25 23:31:10 Home log: UrlPath: "/"
+2024/02/25 23:31:10 SessionValide r.Method= GET
+2024/02/25 23:31:12 Log()
+2024/02/25 23:31:12 Login log: UrlPath: "/Login"
+2024/02/25 23:31:15 Log()
+2024/02/25 23:31:15 Signin log: UrlPath: "/Signin"
+2024/02/25 23:31:15 Log()
+2024/02/25 23:31:15 Guard()
+2024/02/25 23:31:15 SessionValide r.Method= GET
+2024/02/25 23:31:16 Log()
+2024/02/25 23:31:16 Guard()
+2024/02/25 23:31:16 SessionValide r.Method= POST
+2024/02/25 23:31:16 Foo()
+2024/02/25 23:31:16 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:31:17 Log()
+2024/02/25 23:31:17 Guard()
+2024/02/25 23:31:17 SessionValide r.Method= GET
+2024/02/25 23:31:19 Log()
+2024/02/25 23:31:19 Guard()
+2024/02/25 23:31:19 SessionValide r.Method= POST
+2024/02/25 23:31:19 Foo()
+2024/02/25 23:31:19 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/25 23:31:20 Log()
+2024/02/25 23:31:20 Guard()
+2024/02/25 23:31:20 SessionValide r.Method= GET
+2024/02/25 23:31:21 Log()
+2024/02/25 23:31:21 Guard()
+2024/02/25 23:31:21 SessionValide r.Method= POST
+2024/02/25 23:31:21 Foo()
+2024/02/25 23:31:22 Log()
+2024/02/25 23:31:22 Foo()
+2024/02/25 23:31:22 Register log: UrlPath: "/Register"
+2024/02/25 23:31:22 SessionExiste r.Method= GET
+2024/02/25 23:31:23 Log()
+2024/02/25 23:31:23 Home log: UrlPath: "/"
+2024/02/25 23:31:23 SessionValide r.Method= GET
+2024/02/25 23:31:24 Log()
+2024/02/25 23:31:24 Login log: UrlPath: "/Login"
+2024/02/25 23:31:28 Log()
+2024/02/25 23:31:28 Signin log: UrlPath: "/Signin"
+2024/02/25 23:31:28 Log()
+2024/02/25 23:31:28 Guard()
+2024/02/25 23:31:28 SessionValide r.Method= GET
