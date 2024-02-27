@@ -27,9 +27,9 @@ func main() {
 	mux.HandleFunc("GET /Login", controllers.LoginBundle)
 	mux.HandleFunc("POST /Signin", controllers.SigninBundle)
 	mux.HandleFunc("GET /Index", controllers.IndexBundle)
-	mux.HandleFunc("POST /Logout", controllers.LogoutBundle)
+	mux.HandleFunc("GET /Logout", controllers.LogoutBundle)
 	mux.HandleFunc("GET /Register", controllers.RegisterBundle)
-	mux.HandleFunc("POST /AfficheUserInfo", controllers.AfficheUserInfoBundle)
+	mux.HandleFunc("GET /AfficheUserInfo", controllers.AfficheUserInfoBundle)
 
 	// Handling MethodNotAllowed error on /
 	mux.HandleFunc("/{$}", controllers.IndexHandlerNoMethBundle)

@@ -73,7 +73,8 @@ var Guard models.Middleware = func(next http.HandlerFunc) http.HandlerFunc {
 		if err != nil || !models.ValidateSessionID(cookie.Value) {
 			// Handle invalid session (e.g., redirect to login)
 			Logger.Warn("Invalid session", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusUnauthorized))
-			http.Error(w, "Invalid session", http.StatusUnauthorized)
+			http.Redirect(w, r, "/Login?err=restricted", http.StatusSeeOther)
+			/* http.Error(w, "Invalid session", http.StatusUnauthorized) */
 			return
 		}
 
@@ -82,16 +83,18 @@ var Guard models.Middleware = func(next http.HandlerFunc) http.HandlerFunc {
 		if !ok {
 			// Handle missing session (e.g., redirect to login)
 			Logger.Warn("Invalid session", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusUnauthorized))
-			http.Error(w, "Invalid session", http.StatusUnauthorized)
-			return
+			http.Redirect(w, r, "/Login?err=restricted", http.StatusSeeOther)
+			/* 			http.Error(w, "Invalid session", http.StatusUnauthorized)
+			 */return
 		}
 
 		// Verify user IP address
 		if userData.IpAddress != models.GetIP(r) {
 			// Handle missing session (e.g., redirect to login)
 			Logger.Warn("Invalid session", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusUnauthorized))
-			http.Error(w, "Invalid session", http.StatusUnauthorized)
-			return
+			http.Redirect(w, r, "/Login?err=restricted", http.StatusSeeOther)
+			/* 			http.Error(w, "Invalid session", http.StatusUnauthorized)
+			 */return
 		}
 
 		// Verify expiration time
@@ -99,8 +102,9 @@ var Guard models.Middleware = func(next http.HandlerFunc) http.HandlerFunc {
 		if userData.ExpirationTime.Before(time.Now()) {
 			// Handle missing session (e.g., redirect to login)
 			Logger.Warn("Invalid session", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusUnauthorized))
-			http.Error(w, "Invalid session", http.StatusUnauthorized)
-			return
+			http.Redirect(w, r, "/Login?err=restricted", http.StatusSeeOther)
+			/* 			http.Error(w, "Invalid session", http.StatusUnauthorized)
+			 */return
 		}
 
 		err = models.RefreshSession(&w, r)

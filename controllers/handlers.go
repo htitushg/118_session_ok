@@ -102,31 +102,19 @@ func Index(w http.ResponseWriter, r *http.Request) {
 func Logout(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Logout log: UrlPath: %#v\n", r.URL.Path)
 	log.Printf("%#v\n", models.GetCurrentFuncName())
-	var err error
-	c, err := r.Cookie("session_id")
-	if err == nil {
-		sessionToken := c.Value
-
-		// remove the users session from the session map
-		delete(models.SessionsData, sessionToken)
-		// We need to let the client know that the cookie is expired
-		// In the response, we set the session token to an empty
-		// value and set its expiry as the current time
-		http.SetCookie(w, &http.Cookie{
-			Name:   "session_id",
-			Value:  "",
-			MaxAge: -1,
-		})
-	}
-	t, err := template.ParseFiles(assets.Chemin + "templates/home.html")
-	if err != nil {
-		http.Error(w, err.Error(), 500)
-		return
-	}
-	if err := t.ExecuteTemplate(w, "home", nil); err != nil {
-		http.Error(w, err.Error(), 500)
-		return
-	}
+	c, _ := r.Cookie("updatedCookie")
+	sessionToken := c.Value
+	// remove the users session from the session map
+	delete(models.SessionsData, sessionToken)
+	// We need to let the client know that the cookie is expired
+	// In the response, we set the session token to an empty
+	// value and set its expiry as the current time
+	http.SetCookie(w, &http.Cookie{
+		Name:   "session_id",
+		Value:  "",
+		MaxAge: -1,
+	})
+	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 
 // Controlleur AfficheUserInfo: Si la session est valide renvoie vers afficheuserinfo
@@ -134,10 +122,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 	log.Printf("AfficheUserInfo log: UrlPath: %#v\n", r.URL.Path) // testing
 	log.Println(models.GetCurrentFuncName())
-	cookie, err := r.Cookie("updatedCookie")
-	if err != nil {
-		http.Redirect(w, r, "/Home?err=pass", http.StatusSeeOther)
-	}
+	cookie, _ := r.Cookie("updatedCookie")
 	var sessionToken = cookie.Value
 	duration := models.SessionsData[sessionToken].ExpirationTime.Sub(time.Now())
 	//newFormat := models.SessionsData[sessionToken].ExpirationTime.Format("2006-01-02 15:00:00 +0800")

@@ -1,8 +1,7 @@
-{"time":"2024-02-27T12:19:05.453199115+01:00","level":"INFO","msg":"Log() Middleware","reqId":1,"duration":17348,"status":0,"path":"/","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/"}
-{"time":"2024-02-27T12:19:06.703079954+01:00","level":"INFO","msg":"Log() Middleware","reqId":2,"duration":144832,"status":0,"path":"/Login","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/Login?"}
-{"time":"2024-02-27T12:19:09.215960513+01:00","level":"INFO","msg":"Log() Middleware","reqId":3,"duration":77819,"status":0,"path":"/Signin","clientIP":"127.0.0.1","pseudo":"","reqMethod":"POST","reqURL":"/Signin"}
-{"time":"2024-02-27T12:19:09.220162556+01:00","level":"INFO","msg":"Log() Middleware","reqId":4,"duration":70610,"status":0,"path":"/Index","clientIP":"127.0.0.1","pseudo":"henry","reqMethod":"GET","reqURL":"/Index"}
-{"time":"2024-02-27T12:19:18.904363554+01:00","level":"INFO","msg":"Log() Middleware","reqId":5,"duration":42623,"status":0,"path":"/AfficheUserInfo","clientIP":"127.0.0.1","pseudo":"henry","reqMethod":"POST","reqURL":"/AfficheUserInfo"}
-{"time":"2024-02-27T12:19:26.754211683+01:00","level":"INFO","msg":"Log() Middleware","reqId":6,"duration":40982,"status":0,"path":"/Index","clientIP":"127.0.0.1","pseudo":"henry","reqMethod":"GET","reqURL":"/Index?"}
-{"time":"2024-02-27T12:19:33.404116566+01:00","level":"INFO","msg":"Log() Middleware","reqId":7,"duration":41158,"status":0,"path":"/AfficheUserInfo","clientIP":"127.0.0.1","pseudo":"henry","reqMethod":"POST","reqURL":"/AfficheUserInfo"}
-{"time":"2024-02-27T12:19:34.835123257+01:00","level":"INFO","msg":"Log() Middleware","reqId":8,"duration":30833,"status":0,"path":"/Index","clientIP":"127.0.0.1","pseudo":"henry","reqMethod":"GET","reqURL":"/Index?"}
+{"time":"2024-02-27T12:46:43.923639335+01:00","level":"INFO","msg":"Log() Middleware","reqId":1,"duration":35672,"status":0,"path":"/","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/"}
+{"time":"2024-02-27T12:46:52.593043488+01:00","level":"INFO","msg":"Log() Middleware","reqId":2,"duration":237060,"status":0,"path":"/Logout","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/Logout"}
+{"time":"2024-02-27T12:46:52.593078348+01:00","level":"WARN","msg":"Invalid session","reqURL":"/Logout","HttpStatus":401}
+{"time":"2024-02-27T12:46:52.598067181+01:00","level":"INFO","msg":"Log() Middleware","reqId":3,"duration":23246,"status":0,"path":"/Login","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/Login?err=restricted"}
+{"time":"2024-02-27T12:47:10.276135871+01:00","level":"INFO","msg":"Log() Middleware","reqId":4,"duration":71455,"status":0,"path":"/Logout","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/Logout"}
+{"time":"2024-02-27T12:47:10.276203669+01:00","level":"WARN","msg":"Invalid session","reqURL":"/Logout","HttpStatus":401}
+{"time":"2024-02-27T12:47:10.280233157+01:00","level":"INFO","msg":"Log() Middleware","reqId":5,"duration":50135,"status":0,"path":"/Login","clientIP":"127.0.0.1","pseudo":"","reqMethod":"GET","reqURL":"/Login?err=restricted"}
