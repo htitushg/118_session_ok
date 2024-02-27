@@ -11,6 +11,31 @@ import (
 	"time"
 )
 
+// responseWriter is a minimal wrapper for http.ResponseWriter that allows the
+// written HTTP status code to be captured for logging.
+type responseWriter struct {
+	http.ResponseWriter
+	status      int
+	wroteHeader bool
+}
+
+func wrapResponseWriter(w http.ResponseWriter) *responseWriter {
+	return &responseWriter{ResponseWriter: w}
+}
+
+func (rw *responseWriter) Status() int {
+	return rw.status
+}
+
+func (rw *responseWriter) WriteHeader(code int) {
+	if rw.wroteHeader {
+		return
+	}
+	rw.status = code
+	rw.ResponseWriter.WriteHeader(code)
+	rw.wroteHeader = true
+}
+
 var logs, _ = os.Create("logs/logs.log")
 var jsonHandler = slog.NewJSONHandler(logs, nil)
 var Logger = slog.New(jsonHandler)
@@ -21,9 +46,19 @@ var LogId = 0
 // client IP, request Method, and request URL.
 var Log models.Middleware = func(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+		c, err := r.Cookie("session_id")
+		var pseudo string
+		if err != nil {
+			pseudo = ""
+		} else {
+			token := c.Value
+			pseudo = models.SessionsData[token].Username
+		}
+		start := time.Now()
+		wrapped := wrapResponseWriter(w)
 		LogId++
 		log.Println("Log()")
-		Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.String("clientIP", models.GetIP(r)), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
+		Logger.Info("Log() Middleware", slog.Int("reqId", LogId), slog.Duration("duration", time.Since(start)), slog.Int("status", wrapped.status), slog.String("path", r.URL.EscapedPath()), slog.String("clientIP", models.GetIP(r)), slog.String("pseudo", pseudo), slog.String("reqMethod", r.Method), slog.String("reqURL", r.URL.String()))
 		next.ServeHTTP(w, r)
 	}
 }
