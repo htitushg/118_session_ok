@@ -3,104 +3,12 @@ package controllers
 import (
 	"118_session_ok/assets"
 	"118_session_ok/models"
-	"crypto/rand"
-	"fmt"
 	"html/template"
 	"log"
 	"log/slog"
 	"net/http"
 	"time"
 )
-
-// Ajouté le 02/02/2024
-// Note - NOT RFC4122 compliant
-
-// Génère un UUID (Jeton de session : Token)
-func Pseudo_uuid() (uuid string) {
-	b := make([]byte, 32)
-	_, err := rand.Read(b)
-	if err != nil {
-		log.Println("Error: ", err)
-		return
-	}
-	/* uuid = hex.EncodeToString(b)
-	uuid = fmt.Sprintf("%X-%X-%X-%X-%X-%X", uuid[0:10], uuid[10:20], uuid[20:30], uuid[30:40], uuid[40:50], uuid[50:]) */
-	uuid = fmt.Sprintf("%X-%X-%X-%X", b[0:10], b[10:20], b[20:30], b[30:])
-	return
-}
-
-// Si la session est valide, renvoie le Token et true, sinon nil et false
-func SessionExiste(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
-	log.Printf("SessionExiste r.Method= %v\n", r.Method)
-	resultat = false
-	stoken = ""
-	c, err := r.Cookie("session_token")
-	if err != nil {
-		if err == http.ErrNoCookie {
-			// If the cookie is not set, return an unauthorized status
-			w.WriteHeader(http.StatusUnauthorized)
-			return stoken, resultat
-		}
-		// For any other type of error, return a bad request status
-		w.WriteHeader(http.StatusBadRequest)
-		return stoken, resultat
-	}
-	stoken = c.Value
-	_, exists := models.SessionsData[stoken]
-	if !exists {
-		// If the session token is not present in session map, return an unauthorized error
-		w.WriteHeader(http.StatusUnauthorized)
-		return stoken, resultat
-	}
-	resultat = true
-	return stoken, resultat
-}
-func SessionValide(w http.ResponseWriter, r *http.Request) (stoken string, resultat bool) {
-	log.Printf("SessionValide r.Method= %v\n", r.Method)
-	c, err := r.Cookie("session_token")
-	resultat = false
-	stoken = ""
-	if err != nil {
-		if err == http.ErrNoCookie {
-			// If the cookie is not set, return an unauthorized status
-			w.WriteHeader(http.StatusUnauthorized)
-			return stoken, resultat
-		}
-		// For any other type of error, return a bad request status
-		w.WriteHeader(http.StatusBadRequest)
-		return stoken, resultat
-	}
-	stoken = c.Value
-	_, exists := models.SessionsData[stoken]
-	if !exists {
-		// If the session token is not present in session map, return an unauthorized error
-		w.WriteHeader(http.StatusUnauthorized)
-		return stoken, resultat
-	}
-	// If the previous session is valid, create a new session token for the current user
-	// on peut utiliser google : "github.com/google/uuid"
-	// ou bien pseudo_uuid() fonction ci dessus qui utilise "crypto/rand"
-
-	/* newSessionToken := uuid.NewString() */
-	/* newSessionToken := Pseudo_uuid()
-	maxAge := 120 */
-
-	// Set the token in the session map, along with the user whom it represents
-	/* assets.Sessions[newSessionToken] = assets.Session{
-		Pseudo: assets.Sessions[stoken].Pseudo,
-		MaxAge: maxAge,
-	}
-	// Delete the older session token
-	delete(assets.Sessions, stoken)
-	// Set the new token as the users `session_token` cookie
-	http.SetCookie(w, &http.Cookie{
-		Name:   "session_token",
-		Value:  newSessionToken,
-		MaxAge: maxAge,
-	}) */
-	resultat = true
-	return stoken, resultat
-}
 
 // Controlleur Home: Affiche le Page publique(home) si la session n'est pas valide, sinon affiche la page privée(index)
 func Home(w http.ResponseWriter, r *http.Request) {
@@ -193,7 +101,6 @@ func Index(w http.ResponseWriter, r *http.Request) {
 func Logout(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Logout log: UrlPath: %#v\n", r.URL.Path)
 	log.Printf("%#v\n", models.GetCurrentFuncName())
-	//sessionToken, exists := SessionExiste(w, r)
 	var err error
 	c, err := r.Cookie("session_token")
 	if err == nil {
