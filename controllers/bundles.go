@@ -1,13 +1,15 @@
 package controllers
 
-//import "118_session_ok/controllers"
+import (
+	"118_session_ok/internal/middlewares"
+)
 
-var HomeBundle = Join(Home, Log)
-var LoginBundle = Join(Login, Log)
-var SigninBundle = Join(Signin, Log)
-var IndexBundle = Join(Index, Log, Guard)
-var LogoutBundle = Join(Logout, Log, Guard, Foo)
-var RegisterBundle = Join(Register, Log, Foo)
-var AfficheUserInfoBundle = Join(AfficheUserInfo, Log, Guard, Foo)
-var IndexHandlerNoMethBundle = Join(IndexHandlerNoMeth, Log, Foo)
-var IndexHandlerOtherBundle = Join(IndexHandlerOther, Log, Foo)
+var HomeBundle = middlewares.Join(Home, middlewares.Log)
+var LoginBundle = middlewares.Join(Login, middlewares.Log)
+var SigninBundle = middlewares.Join(Signin, middlewares.Log)
+var IndexBundle = middlewares.Join(Index, middlewares.Log, middlewares.Guard)
+var LogoutBundle = middlewares.Join(Logout, middlewares.Log, middlewares.Guard, middlewares.Foo)
+var RegisterBundle = middlewares.Join(Register, middlewares.Log, middlewares.Foo)
+var AfficheUserInfoBundle = middlewares.Join(AfficheUserInfo, middlewares.Log, middlewares.Guard, middlewares.Foo)
+var IndexHandlerNoMethBundle = middlewares.Join(IndexHandlerNoMeth, middlewares.Log, middlewares.Foo)
+var IndexHandlerOtherBundle = middlewares.Join(IndexHandlerOther, middlewares.Log, middlewares.Foo)

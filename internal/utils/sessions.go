@@ -1,7 +1,7 @@
-package models
+package utils
 
 import (
-	//"Middleware-test/internal/models"
+	"118_session_ok/internal/models"
 	"crypto/rand"
 	"encoding/base64"
 	"fmt"
@@ -10,7 +10,7 @@ import (
 )
 
 // In-memory Session data storage
-var SessionsData = make(map[string]Session)
+var SessionsData = make(map[string]models.Session)
 
 func OpenSession(w *http.ResponseWriter, r *http.Request, pseudo string) {
 
@@ -34,7 +34,7 @@ func OpenSession(w *http.ResponseWriter, r *http.Request, pseudo string) {
 	fmt.Printf("%#v\n", newCookie)
 
 	// Create Session data in memory
-	SessionsData[sessionID] = Session{
+	SessionsData[sessionID] = models.Session{
 		UserID:         777,
 		SessionID:      sessionID,
 		Username:       pseudo,

@@ -1,7 +1,7 @@
 package assets
 
 import (
-	"118_session_ok/models"
+	"118_session_ok/internal/models"
 	"context"
 	"database/sql"
 	"html/template"
