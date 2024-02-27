@@ -1,8 +1,10 @@
 package assets
 
 import (
+	"118_session_ok/models"
 	"context"
 	"database/sql"
+	"html/template"
 	"path/filepath"
 	"runtime"
 	"time"
@@ -59,10 +61,10 @@ type Credentials struct {
 }
 
 // this map stores the users sessions. For larger scale applications, you can use a database or cache for this purpose
-var Sessions = map[string]Session{}
+//var Sessions = map[string]Session{}
 
 // each session contains the pseudo of the user and the time at which it expires
-type Session struct {
+/* type Session struct {
 	Pseudo    string
 	MaxAge    int
 	Email     string
@@ -72,12 +74,13 @@ type Session struct {
 	Town      string
 	ZipCode   string
 	Country   string
-}
+} */
 type Data struct {
-	CSessions   Session
+	CSessions   models.Session
 	Date_Expire time.Time
 	Date_jour   string
 	SToken      string
+	Message     template.HTML
 	/* Email       string
 	Firstname   string
 	Lastname    string*/

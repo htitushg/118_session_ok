@@ -1,1056 +1,1292 @@
-2024/02/25 23:17:05 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:17:11 Log()
-2024/02/25 23:17:11 Home log: UrlPath: "/"
-2024/02/25 23:17:11 SessionValide r.Method= GET
-2024/02/25 23:17:12 Log()
-2024/02/25 23:17:12 Login log: UrlPath: "/Login"
-2024/02/25 23:17:15 Log()
-2024/02/25 23:17:15 Signin log: UrlPath: "/Signin"
-2024/02/25 23:17:15 Log()
-2024/02/25 23:17:15 Guard()
-2024/02/25 23:17:15 SessionValide r.Method= GET
-2024/02/25 23:17:17 Log()
-2024/02/25 23:17:17 Guard()
-2024/02/25 23:17:17 SessionValide r.Method= POST
-2024/02/25 23:17:17 Foo()
-2024/02/25 23:17:17 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:17:18 Log()
-2024/02/25 23:17:18 Guard()
-2024/02/25 23:17:18 SessionValide r.Method= GET
-2024/02/25 23:17:19 Log()
-2024/02/25 23:17:19 Guard()
-2024/02/25 23:17:19 SessionValide r.Method= POST
-2024/02/25 23:17:19 Foo()
-2024/02/25 23:17:19 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:17:20 Log()
-2024/02/25 23:17:20 Guard()
-2024/02/25 23:17:20 SessionValide r.Method= GET
-2024/02/25 23:17:21 Log()
-2024/02/25 23:17:21 Guard()
-2024/02/25 23:17:21 SessionValide r.Method= POST
-2024/02/25 23:17:21 Foo()
-2024/02/25 23:17:24 Log()
-2024/02/25 23:17:24 Foo()
-2024/02/25 23:17:24 Register log: UrlPath: "/Register"
-2024/02/25 23:17:24 SessionExiste r.Method= GET
-2024/02/25 23:17:26 Log()
-2024/02/25 23:17:26 Login log: UrlPath: "/Login"
-2024/02/25 23:17:30 Log()
-2024/02/25 23:17:30 Signin log: UrlPath: "/Signin"
-2024/02/25 23:17:30 Log()
-2024/02/25 23:17:30 Guard()
-2024/02/25 23:17:30 SessionValide r.Method= GET
-2024/02/25 23:17:35 Log()
-2024/02/25 23:17:35 Guard()
-2024/02/25 23:17:35 SessionValide r.Method= POST
-2024/02/25 23:17:35 Foo()
-2024/02/25 23:17:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:17:36 Log()
-2024/02/25 23:17:36 Guard()
-2024/02/25 23:17:36 SessionValide r.Method= GET
-2024/02/25 23:17:37 Log()
-2024/02/25 23:17:37 Guard()
-2024/02/25 23:17:37 SessionValide r.Method= POST
-2024/02/25 23:17:37 Foo()
-2024/02/25 23:17:37 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:17:38 Log()
-2024/02/25 23:17:38 Guard()
-2024/02/25 23:17:38 SessionValide r.Method= GET
-2024/02/25 23:17:39 Log()
-2024/02/25 23:17:39 Guard()
-2024/02/25 23:17:39 SessionValide r.Method= POST
-2024/02/25 23:17:39 Foo()
-2024/02/25 23:17:42 Log()
-2024/02/25 23:17:42 Foo()
-2024/02/25 23:17:42 Register log: UrlPath: "/Register"
-2024/02/25 23:17:42 SessionExiste r.Method= GET
-2024/02/25 23:17:43 Log()
-2024/02/25 23:17:43 Login log: UrlPath: "/Login"
-2024/02/25 23:17:47 Log()
-2024/02/25 23:17:47 Signin log: UrlPath: "/Signin"
-2024/02/25 23:17:47 Log()
-2024/02/25 23:17:47 Guard()
-2024/02/25 23:17:47 SessionValide r.Method= GET
-2024/02/25 23:18:37 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:18:43 Log()
-2024/02/25 23:18:43 Home log: UrlPath: "/"
-2024/02/25 23:18:43 SessionValide r.Method= GET
-2024/02/25 23:18:45 Log()
-2024/02/25 23:18:45 Login log: UrlPath: "/Login"
-2024/02/25 23:18:48 Log()
-2024/02/25 23:18:48 Signin log: UrlPath: "/Signin"
-2024/02/25 23:18:48 Log()
-2024/02/25 23:18:48 Guard()
-2024/02/25 23:18:48 SessionValide r.Method= GET
-2024/02/25 23:18:49 Log()
-2024/02/25 23:18:49 Guard()
-2024/02/25 23:18:49 SessionValide r.Method= POST
-2024/02/25 23:18:49 Foo()
-2024/02/25 23:18:49 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:18:51 Log()
-2024/02/25 23:18:51 Guard()
-2024/02/25 23:18:51 SessionValide r.Method= GET
-2024/02/25 23:18:52 Log()
-2024/02/25 23:18:52 Guard()
-2024/02/25 23:18:52 SessionValide r.Method= POST
-2024/02/25 23:18:52 Foo()
-2024/02/25 23:18:52 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:18:53 Log()
-2024/02/25 23:18:53 Guard()
-2024/02/25 23:18:53 SessionValide r.Method= GET
-2024/02/25 23:18:54 Log()
-2024/02/25 23:18:54 Guard()
-2024/02/25 23:18:54 SessionValide r.Method= POST
-2024/02/25 23:18:54 Foo()
-2024/02/25 23:18:54 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:18:55 Log()
-2024/02/25 23:18:55 Guard()
-2024/02/25 23:18:55 SessionValide r.Method= GET
-2024/02/25 23:18:56 Log()
-2024/02/25 23:18:56 Guard()
-2024/02/25 23:18:56 SessionValide r.Method= POST
-2024/02/25 23:18:56 Foo()
-2024/02/25 23:18:58 Log()
-2024/02/25 23:18:58 Foo()
-2024/02/25 23:18:58 Register log: UrlPath: "/Register"
-2024/02/25 23:18:58 SessionExiste r.Method= GET
-2024/02/25 23:18:59 Log()
-2024/02/25 23:18:59 Home log: UrlPath: "/"
-2024/02/25 23:18:59 SessionValide r.Method= GET
-2024/02/25 23:26:45 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55698: runtime error: invalid memory address or nil pointer dereference
-goroutine 6 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cca80}, 0xc0000c65a0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cca80?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cca80}, 0xc0000c65a0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a92c0?}, {0x870b88?, 0xc0000cca80?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c41b0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55702: runtime error: invalid memory address or nil pointer dereference
-goroutine 8 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccb60}, 0xc0000c6900)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccb60?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccb60}, 0xc0000c6900)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9470?}, {0x870b88?, 0xc0000ccb60?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4360, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55708: runtime error: invalid memory address or nil pointer dereference
-goroutine 10 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccc40}, 0xc0000c6a20)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccc40?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccc40}, 0xc0000c6a20)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a95c0?}, {0x870b88?, 0xc0000ccc40?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4510, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55718: runtime error: invalid memory address or nil pointer dereference
-goroutine 12 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c000}, 0xc0000c6b40)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c000?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c000}, 0xc0000c6b40)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9710?}, {0x870b88?, 0xc00012c000?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c46c0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55728: runtime error: invalid memory address or nil pointer dereference
+2024/02/26 11:30:16 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:30:20 Log()
+2024/02/26 11:30:20 Home log: UrlPath: "/"
+2024/02/26 11:30:22 Log()
+2024/02/26 11:30:22 Login log: UrlPath: "/Login"
+2024/02/26 11:30:25 Log()
+2024/02/26 11:30:25 Signin log: UrlPath: "/Signin"
+2024/02/26 11:30:25 http: panic serving 127.0.0.1:53444: runtime error: slice bounds out of range [:10] with length 0
 goroutine 19 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
+panic({0x7b1fa0?, 0xc00001e270?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccd20}, 0xc0000c6c60)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccd20?}, 0x6a4fda?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc0000aa000}, 0xc00009e000)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc0000aa000?}, 0xc0000318f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccd20}, 0xc0000c6c60)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc0000aa000}, 0xc00009e000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc00011ed00?, {0x8729c8?, 0xc0000aa000?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc0000aa000}, 0xc00009e000)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9770?}, {0x870b88?, 0xc0000ccd20?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc0000aa000?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110120, {0x871338, 0xc0000a91d0})
+net/http.(*conn).serve(0xc0001441b0, {0x873178, 0xc00011d170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55742: runtime error: invalid memory address or nil pointer dereference
-goroutine 34 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232000}, 0xc00021a000)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232000?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232000}, 0xc00021a000)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206090?}, {0x870b88?, 0xc000232000?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a000, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55758: runtime error: invalid memory address or nil pointer dereference
-goroutine 36 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cce00}, 0xc0000c6d80)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cce00?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cce00}, 0xc0000c6d80)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9890?}, {0x870b88?, 0xc0000cce00?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a1b0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55760: runtime error: invalid memory address or nil pointer dereference
-goroutine 15 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccee0}, 0xc0000c6ea0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccee0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccee0}, 0xc0000c6ea0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a99e0?}, {0x870b88?, 0xc0000ccee0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4990, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55768: runtime error: invalid memory address or nil pointer dereference
-goroutine 50 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000ccfc0}, 0xc0000c6fc0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000ccfc0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000ccfc0}, 0xc0000c6fc0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9b30?}, {0x870b88?, 0xc0000ccfc0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4b40, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:49 http: panic serving 127.0.0.1:55772: runtime error: invalid memory address or nil pointer dereference
-goroutine 20 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002320e0}, 0xc00021a120)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002320e0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002320e0}, 0xc00021a120)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206210?}, {0x870b88?, 0xc0002320e0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0001101b0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55782: runtime error: invalid memory address or nil pointer dereference
-goroutine 38 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002321c0}, 0xc00021a240)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002321c0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002321c0}, 0xc00021a240)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206360?}, {0x870b88?, 0xc0002321c0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a360, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55798: runtime error: invalid memory address or nil pointer dereference
-goroutine 40 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002322a0}, 0xc00021a360)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002322a0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002322a0}, 0xc00021a360)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002064b0?}, {0x870b88?, 0xc0002322a0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a510, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55802: runtime error: invalid memory address or nil pointer dereference
+2024/02/26 11:30:25 Log()
+2024/02/26 11:30:25 Signin log: UrlPath: "/Signin"
+2024/02/26 11:30:25 http: panic serving 127.0.0.1:53460: runtime error: slice bounds out of range [:10] with length 0
 goroutine 21 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
+panic({0x7b1fa0?, 0xc000148120?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232380}, 0xc00021a480)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232380?}, 0x6a4fda?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00017ac40}, 0xc00014ad80)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00017ac40?}, 0xc00016b8f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232380}, 0xc00021a480)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00017ac40}, 0xc00014ad80)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc00011ed00?, {0x8729c8?, 0xc00017ac40?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00017ac40}, 0xc00014ad80)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002065a0?}, {0x870b88?, 0xc000232380?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00017ac40?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110240, {0x871338, 0xc0000a91d0})
+net/http.(*conn).serve(0xc0001442d0, {0x873178, 0xc00011d170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55818: runtime error: invalid memory address or nil pointer dereference
-goroutine 22 [running]:
+2024/02/26 11:30:34 Log()
+2024/02/26 11:30:34 Signin log: UrlPath: "/Signin"
+2024/02/26 11:30:34 http: panic serving 127.0.0.1:52626: runtime error: slice bounds out of range [:10] with length 0
+goroutine 23 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
+panic({0x7b1fa0?, 0xc000148180?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c0e0}, 0xc000152000)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c0e0?}, 0x6a4fda?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00017ae00}, 0xc00014aea0)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00017ae00?}, 0xc00016b8f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c0e0}, 0xc000152000)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00017ae00}, 0xc00014aea0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc00011ed00?, {0x8729c8?, 0xc00017ae00?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00017ae00}, 0xc00014aea0)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0001142a0?}, {0x870b88?, 0xc00012c0e0?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00017ae00?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0001102d0, {0x871338, 0xc0000a91d0})
+net/http.(*conn).serve(0xc000144480, {0x873178, 0xc00011d170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55834: runtime error: invalid memory address or nil pointer dereference
-goroutine 24 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c1c0}, 0xc000152120)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c1c0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c1c0}, 0xc000152120)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0001143f0?}, {0x870b88?, 0xc00012c1c0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110480, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55842: runtime error: invalid memory address or nil pointer dereference
-goroutine 26 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c2a0}, 0xc000152240)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c2a0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c2a0}, 0xc000152240)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000114540?}, {0x870b88?, 0xc00012c2a0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110630, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55846: runtime error: invalid memory address or nil pointer dereference
-goroutine 28 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c380}, 0xc000152360)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c380?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c380}, 0xc000152360)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000114690?}, {0x870b88?, 0xc00012c380?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0001107e0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55848: runtime error: invalid memory address or nil pointer dereference
-goroutine 30 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c460}, 0xc000152480)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c460?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c460}, 0xc000152480)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0001147e0?}, {0x870b88?, 0xc00012c460?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110990, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55864: runtime error: invalid memory address or nil pointer dereference
-goroutine 32 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c540}, 0xc0001525a0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c540?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c540}, 0xc0001525a0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000114930?}, {0x870b88?, 0xc00012c540?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110b40, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:52 http: panic serving 127.0.0.1:55880: runtime error: invalid memory address or nil pointer dereference
-goroutine 66 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232460}, 0xc0000c70e0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232460?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232460}, 0xc0000c70e0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9c20?}, {0x870b88?, 0xc000232460?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110cf0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54090: runtime error: invalid memory address or nil pointer dereference
-goroutine 44 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c700}, 0xc00021a5a0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c700?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c700}, 0xc00021a5a0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206810?}, {0x870b88?, 0xc00012c700?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a900, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54098: runtime error: invalid memory address or nil pointer dereference
-goroutine 45 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232620}, 0xc00021a6c0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232620?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232620}, 0xc00021a6c0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002068d0?}, {0x870b88?, 0xc000232620?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020a990, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54110: runtime error: invalid memory address or nil pointer dereference
-goroutine 47 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cd180}, 0xc0000c7200)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cd180?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cd180}, 0xc0000c7200)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9c80?}, {0x870b88?, 0xc0000cd180?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020ab40, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54120: runtime error: invalid memory address or nil pointer dereference
-goroutine 53 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0000cd340}, 0xc0000c7320)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0000cd340?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0000cd340}, 0xc0000c7320)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9dd0?}, {0x870b88?, 0xc0000cd340?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4e10, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54128: runtime error: invalid memory address or nil pointer dereference
-goroutine 55 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012c8c0}, 0xc0000c7440)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012c8c0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012c8c0}, 0xc0000c7440)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9f20?}, {0x870b88?, 0xc00012c8c0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4fc0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54138: runtime error: invalid memory address or nil pointer dereference
-goroutine 69 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012ca80}, 0xc0001526c0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012ca80?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012ca80}, 0xc0001526c0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000114c30?}, {0x870b88?, 0xc00012ca80?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000110fc0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54152: runtime error: invalid memory address or nil pointer dereference
-goroutine 48 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002327e0}, 0xc00021a7e0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002327e0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002327e0}, 0xc00021a7e0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206a80?}, {0x870b88?, 0xc0002327e0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020abd0, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54168: runtime error: invalid memory address or nil pointer dereference
-goroutine 82 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc0002329a0}, 0xc00021a900)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc0002329a0?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc0002329a0}, 0xc00021a900)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206bd0?}, {0x870b88?, 0xc0002329a0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020ad80, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54184: runtime error: invalid memory address or nil pointer dereference
-goroutine 84 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc000232b60}, 0xc00021aa20)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc000232b60?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc000232b60}, 0xc00021aa20)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000206d20?}, {0x870b88?, 0xc000232b60?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc00020af30, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:26:59 http: panic serving 127.0.0.1:54196: runtime error: invalid memory address or nil pointer dereference
-goroutine 71 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77ab40?, 0xabbf90?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870b88, 0xc00012cc40}, 0xc0001527e0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aab60?, {0x870b88?, 0xc00012cc40?}, 0x6a4fda?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870b88, 0xc00012cc40}, 0xc0001527e0)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000114d80?}, {0x870b88?, 0xc00012cc40?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000111170, {0x871338, 0xc0000a91d0})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:35 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54506: runtime error: invalid memory address or nil pointer dereference
+2024/02/26 11:31:33 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:31:38 Log()
+2024/02/26 11:31:38 Signin log: UrlPath: "/Signin"
+2024/02/26 11:31:38 http: panic serving 127.0.0.1:40184: runtime error: slice bounds out of range [:10] with length 0
 goroutine 6 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
+panic({0x7b1fa0?, 0xc000122060?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccb60}, 0xc0000c65a0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccb60?}, 0x6a4f9a?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00013e000}, 0xc000120000)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00013e000?}, 0xc0000db8f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccb60}, 0xc0000c65a0)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00013e000}, 0xc000120000)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc0000aad00?, {0x8729c8?, 0xc00013e000?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00013e000}, 0xc000120000)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9260?}, {0x870748?, 0xc0000ccb60?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00013e000?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c41b0, {0x870ef8, 0xc0000a9170})
+net/http.(*conn).serve(0xc0000c41b0, {0x873178, 0xc0000a9170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54512: runtime error: invalid memory address or nil pointer dereference
-goroutine 18 [running]:
+2024/02/26 11:31:43 Log()
+2024/02/26 11:31:43 Home log: UrlPath: "/"
+2024/02/26 11:31:45 Log()
+2024/02/26 11:31:45 Login log: UrlPath: "/Login"
+2024/02/26 11:31:49 Log()
+2024/02/26 11:31:49 Signin log: UrlPath: "/Signin"
+2024/02/26 11:31:49 http: panic serving 127.0.0.1:44790: runtime error: slice bounds out of range [:10] with length 0
+goroutine 19 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
+panic({0x7b1fa0?, 0xc0001220c0?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c0e0}, 0xc00021a000)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c0e0?}, 0x6a4f9a?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00013e1c0}, 0xc0001205a0)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00013e1c0?}, 0xc0000318f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c0e0}, 0xc00021a000)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00013e1c0}, 0xc0001205a0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc0000aad00?, {0x8729c8?, 0xc00013e1c0?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00013e1c0}, 0xc0001205a0)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x870748?, 0xc00021c0e0?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00013e1c0?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000208000, {0x870ef8, 0xc0000a9170})
+net/http.(*conn).serve(0xc000124120, {0x873178, 0xc0000a9170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54520: runtime error: invalid memory address or nil pointer dereference
-goroutine 8 [running]:
+2024/02/26 11:31:49 Log()
+2024/02/26 11:31:49 Signin log: UrlPath: "/Signin"
+2024/02/26 11:31:49 http: panic serving 127.0.0.1:44804: runtime error: slice bounds out of range [:10] with length 0
+goroutine 21 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
+panic({0x7b1fa0?, 0xc000122120?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccd20}, 0xc0000c67e0)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccd20?}, 0x6a4f9a?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00013e380}, 0xc0001206c0)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00013e380?}, 0xc0000db8f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccd20}, 0xc0000c67e0)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00013e380}, 0xc0001206c0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc0000aad00?, {0x8729c8?, 0xc00013e380?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00013e380}, 0xc0001206c0)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a9470?}, {0x870748?, 0xc0000ccd20?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00013e380?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4360, {0x870ef8, 0xc0000a9170})
+net/http.(*conn).serve(0xc000124240, {0x873178, 0xc0000a9170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54522: runtime error: invalid memory address or nil pointer dereference
-goroutine 34 [running]:
+2024/02/26 11:31:53 Log()
+2024/02/26 11:31:53 Signin log: UrlPath: "/Signin"
+2024/02/26 11:31:53 http: panic serving 127.0.0.1:43558: runtime error: slice bounds out of range [:10] with length 0
+goroutine 23 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
+panic({0x7b1fa0?, 0xc000122180?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0001340e0}, 0xc000130000)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0001340e0?}, 0x6a4f9a?)
+118_session_ok/controllers.Pseudo_uuid()
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:27 +0xd2
+118_session_ok/controllers.Signin({0x8729c8, 0xc00013e540}, 0xc0001207e0)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:187 +0x1ed
+net/http.HandlerFunc.ServeHTTP(0x7aa140?, {0x8729c8?, 0xc00013e540?}, 0xc0000db8f8?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0001340e0}, 0xc000130000)
+118_session_ok/controllers.init.Log.func3.1({0x8729c8, 0xc00013e540}, 0xc0001207e0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:75 +0x69b
+net/http.HandlerFunc.ServeHTTP(0xc0000aad00?, {0x8729c8?, 0xc00013e540?}, 0x10?)
+	/snap/go/10506/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413765?, {0x8729c8, 0xc00013e540}, 0xc0001207e0)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000112090?}, {0x870748?, 0xc0001340e0?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0x871a78?}, {0x8729c8?, 0xc00013e540?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000116000, {0x870ef8, 0xc0000a9170})
+net/http.(*conn).serve(0xc0001243f0, {0x873178, 0xc0000a9170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54526: runtime error: invalid memory address or nil pointer dereference
-goroutine 10 [running]:
+2024/02/26 11:32:06 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:32:13 Log()
+2024/02/26 11:32:13 Home log: UrlPath: "/"
+2024/02/26 11:32:19 Log()
+2024/02/26 11:32:19 Login log: UrlPath: "/Login"
+2024/02/26 11:32:26 Log()
+2024/02/26 11:32:26 Signin log: UrlPath: "/Signin"
+2024/02/26 11:33:44 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:33:48 Log()
+2024/02/26 11:33:48 Home log: UrlPath: "/"
+2024/02/26 11:33:54 Log()
+2024/02/26 11:33:54 Login log: UrlPath: "/Login"
+2024/02/26 11:34:03 Log()
+2024/02/26 11:34:03 Signin log: UrlPath: "/Signin"
+2024/02/26 11:34:06 Log()
+2024/02/26 11:34:10 Guard()
+2024/02/26 11:34:10 Guard() 120
+2024/02/26 11:34:13 Log()
+2024/02/26 11:34:16 Guard()
+2024/02/26 11:34:16 Guard() 120
+2024/02/26 11:34:16 Foo()
+2024/02/26 11:34:16 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:34:23 Log()
+2024/02/26 11:34:26 Guard()
+2024/02/26 11:34:26 Guard() 120
+2024/02/26 11:34:32 Log()
+2024/02/26 11:34:35 Guard()
+2024/02/26 11:34:35 Guard() 120
+2024/02/26 11:34:35 Foo()
+2024/02/26 11:34:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:34:57 Log()
+2024/02/26 11:35:04 Guard()
+2024/02/26 11:40:28 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:40:36 Log()
+2024/02/26 11:40:36 Home log: UrlPath: "/"
+2024/02/26 11:40:42 Log()
+2024/02/26 11:40:42 Login log: UrlPath: "/Login"
+2024/02/26 11:40:48 Log()
+2024/02/26 11:40:48 Signin log: UrlPath: "/Signin"
+2024/02/26 11:40:51 Log()
+2024/02/26 11:40:54 Guard()
+2024/02/26 11:41:46 Guard() 120
+2024/02/26 11:41:49 Log()
+2024/02/26 11:41:54 Guard()
+2024/02/26 11:41:54 Guard() 120
+2024/02/26 11:41:54 Foo()
+2024/02/26 11:41:54 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:42:01 Log()
+2024/02/26 11:42:06 Guard()
+2024/02/26 11:43:13 Guard() 120
+2024/02/26 11:43:35 Log()
+2024/02/26 11:43:45 Guard()
+2024/02/26 11:43:45 Guard() 120
+2024/02/26 11:43:45 Foo()
+2024/02/26 11:43:45 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:43:51 Log()
+2024/02/26 11:43:51 Guard()
+2024/02/26 11:43:51 Guard() 120
+2024/02/26 11:43:54 Log()
+2024/02/26 11:43:54 Guard()
+2024/02/26 11:43:54 Guard() 120
+2024/02/26 11:43:54 Foo()
+2024/02/26 11:43:54 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:44:02 Log()
+2024/02/26 11:44:02 Guard()
+2024/02/26 11:44:02 Guard() 120
+2024/02/26 11:46:17 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:46:20 Log()
+2024/02/26 11:46:20 Home log: UrlPath: "/"
+2024/02/26 11:46:30 Log()
+2024/02/26 11:46:30 Login log: UrlPath: "/Login"
+2024/02/26 11:46:41 Log()
+2024/02/26 11:46:41 Signin log: UrlPath: "/Signin"
+2024/02/26 11:48:01 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:48:07 Log()
+2024/02/26 11:48:07 Home log: UrlPath: "/"
+2024/02/26 11:48:12 Log()
+2024/02/26 11:48:12 Login log: UrlPath: "/Login"
+2024/02/26 11:48:17 Log()
+2024/02/26 11:48:17 Signin log: UrlPath: "/Signin"
+2024/02/26 11:48:25 Log()
+2024/02/26 11:48:25 Guard()
+2024/02/26 11:48:25 Guard() 120
+2024/02/26 11:48:40 Log()
+2024/02/26 11:48:40 Guard()
+2024/02/26 11:48:40 Guard() 120
+2024/02/26 11:48:40 Foo()
+2024/02/26 11:48:40 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:48:51 Log()
+2024/02/26 11:48:51 Guard()
+2024/02/26 11:48:51 Guard() 120
+2024/02/26 11:50:05 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:50:13 Log()
+2024/02/26 11:50:13 Home log: UrlPath: "/"
+2024/02/26 11:50:25 Log()
+2024/02/26 11:50:25 Home log: UrlPath: "/"
+2024/02/26 11:50:34 Log()
+2024/02/26 11:50:34 Home log: UrlPath: "/"
+2024/02/26 11:50:40 Log()
+2024/02/26 11:50:40 Guard()
+2024/02/26 11:50:40 Guard() 120
+2024/02/26 11:50:40 Foo()
+2024/02/26 11:50:47 Log()
+2024/02/26 11:50:47 Login log: UrlPath: "/Login"
+2024/02/26 11:50:54 Log()
+2024/02/26 11:50:54 Signin log: UrlPath: "/Signin"
+2024/02/26 11:50:58 Log()
+2024/02/26 11:50:58 Guard()
+2024/02/26 11:50:58 Guard() 120
+2024/02/26 11:51:02 Log()
+2024/02/26 11:51:02 Guard()
+2024/02/26 11:51:02 Guard() 120
+2024/02/26 11:51:02 Foo()
+2024/02/26 11:51:02 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:51:10 Log()
+2024/02/26 11:51:10 Guard()
+2024/02/26 11:51:10 Guard() 120
+2024/02/26 11:51:16 Log()
+2024/02/26 11:51:16 Guard()
+2024/02/26 11:51:16 Guard() 120
+2024/02/26 11:51:16 Foo()
+2024/02/26 11:51:42 Log()
+2024/02/26 11:51:42 Login log: UrlPath: "/Login"
+2024/02/26 11:56:31 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:56:35 Log()
+2024/02/26 11:56:35 Home log: UrlPath: "/"
+2024/02/26 11:57:03 Log()
+2024/02/26 11:57:03 Login log: UrlPath: "/Login"
+2024/02/26 11:57:13 Log()
+2024/02/26 11:57:13 Signin log: UrlPath: "/Signin"
+2024/02/26 11:57:16 Log()
+2024/02/26 11:57:16 Guard()
+2024/02/26 11:57:16 Guard() 120
+2024/02/26 11:57:46 Log()
+2024/02/26 11:57:46 Guard()
+2024/02/26 11:57:46 Guard() 120
+2024/02/26 11:57:46 Foo()
+2024/02/26 11:57:46 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 11:58:07 Log()
+2024/02/26 11:58:07 Guard()
+2024/02/26 11:58:10 Guard() 120
+2024/02/26 11:58:22 Log()
+2024/02/26 11:58:22 Guard()
+2024/02/26 11:58:59 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 11:59:06 Log()
+2024/02/26 11:59:06 Home log: UrlPath: "/"
+2024/02/26 11:59:14 Log()
+2024/02/26 11:59:14 Guard()
+2024/02/26 11:59:17 Guard() 120
+2024/02/26 11:59:17 Foo()
+2024/02/26 11:59:22 Log()
+2024/02/26 11:59:22 Login log: UrlPath: "/Login"
+2024/02/26 11:59:29 Log()
+2024/02/26 11:59:29 Signin log: UrlPath: "/Signin"
+2024/02/26 11:59:33 Log()
+2024/02/26 11:59:33 Guard()
+2024/02/26 12:00:52 Guard() 120
+2024/02/26 12:01:11 Log()
+2024/02/26 12:01:11 Guard()
+2024/02/26 12:03:19 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 12:03:28 Log()
+2024/02/26 12:03:28 Home log: UrlPath: "/"
+2024/02/26 12:03:34 Log()
+2024/02/26 12:03:34 Login log: UrlPath: "/Login"
+2024/02/26 12:03:40 Log()
+2024/02/26 12:03:40 Signin log: UrlPath: "/Signin"
+2024/02/26 12:03:43 Log()
+2024/02/26 12:03:43 Guard()
+2024/02/26 12:03:56 http: panic serving 127.0.0.1:39346: runtime error: invalid memory address or nil pointer dereference
+goroutine 2 [running]:
+net/http.(*conn).serve.func1()
+	/snap/go/10506/src/net/http/server.go:1898 +0x13f
+panic({0x99e720?, 0xc94c20?})
+	/snap/go/10506/src/runtime/panic.go:770 +0x136
+118_session_ok/controllers.Guard.func1.1({0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:95 +0x1b7
+net/http.HandlerFunc.ServeHTTP(0xc000112eb0, {0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/snap/go/10506/src/net/http/server.go:2166 +0x33
+118_session_ok/controllers.Log.func1.1({0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/home/henry/go/src/118_session_ok/controllers/middleware.go:76 +0x98d
+net/http.HandlerFunc.ServeHTTP(0xc000112ec0, {0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/snap/go/10506/src/net/http/server.go:2166 +0x33
+net/http.(*ServeMux).ServeHTTP(0xc000092000, {0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/snap/go/10506/src/net/http/server.go:2683 +0x37e
+net/http.serverHandler.ServeHTTP({0xc0000ac000}, {0xa5b960, 0xc00017c380}, 0xc000150ea0)
+	/snap/go/10506/src/net/http/server.go:3137 +0x257
+net/http.(*conn).serve(0xc0000c0000, {0xa5c100, 0xc0000be0f0})
+	/snap/go/10506/src/net/http/server.go:2039 +0x1ab5
+created by net/http.(*Server).Serve in goroutine 1
+	/snap/go/10506/src/net/http/server.go:3285 +0xa9a
+2024/02/26 12:03:56 Log()
+2024/02/26 12:03:56 Guard()
+2024/02/26 12:06:34 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 12:06:37 Log()
+2024/02/26 12:06:37 Home log: UrlPath: "/"
+2024/02/26 12:06:45 Log()
+2024/02/26 12:06:45 Login log: UrlPath: "/Login"
+2024/02/26 12:06:51 Log()
+2024/02/26 12:06:51 Signin log: UrlPath: "/Signin"
+2024/02/26 12:06:53 Log()
+2024/02/26 12:06:53 Guard()
+2024/02/26 12:07:03 Log()
+2024/02/26 12:07:03 Login log: UrlPath: "/Login"
+2024/02/26 12:08:46 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 12:08:52 Log()
+2024/02/26 12:08:52 Home log: UrlPath: "/"
+2024/02/26 12:09:06 Log()
+2024/02/26 12:09:06 Login log: UrlPath: "/Login"
+2024/02/26 12:09:13 Log()
+2024/02/26 12:09:13 Signin log: UrlPath: "/Signin"
+2024/02/26 12:10:14 Log()
+2024/02/26 12:10:14 Guard()
+2024/02/26 12:14:21 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 12:14:26 Log()
+2024/02/26 12:14:26 Home log: UrlPath: "/"
+2024/02/26 12:14:32 Log()
+2024/02/26 12:14:32 Login log: UrlPath: "/Login"
+2024/02/26 12:14:38 Log()
+2024/02/26 12:14:38 Signin log: UrlPath: "/Signin"
+2024/02/26 12:15:12 Log()
+2024/02/26 12:15:12 Guard()
+2024/02/26 16:15:11 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:15:29 Log()
+2024/02/26 16:15:29 Home log: UrlPath: "/"
+2024/02/26 16:15:31 Log()
+2024/02/26 16:15:31 Login log: UrlPath: "/Login"
+2024/02/26 16:15:34 Log()
+2024/02/26 16:15:34 Signin log: UrlPath: "/Signin"
+2024/02/26 16:15:34 Log()
+2024/02/26 16:15:34 Guard()
+2024/02/26 16:15:34 Guard() 120
+2024/02/26 16:15:37 Log()
+2024/02/26 16:15:37 Guard()
+2024/02/26 16:15:37 Guard() 120
+2024/02/26 16:15:37 Foo()
+2024/02/26 16:15:37 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:15:38 Log()
+2024/02/26 16:15:38 Guard()
+2024/02/26 16:15:38 Guard() 120
+2024/02/26 16:15:39 Log()
+2024/02/26 16:15:39 Guard()
+2024/02/26 16:15:39 Guard() 120
+2024/02/26 16:15:39 Foo()
+2024/02/26 16:15:39 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:15:40 Log()
+2024/02/26 16:15:40 Guard()
+2024/02/26 16:15:40 Guard() 120
+2024/02/26 16:15:41 Log()
+2024/02/26 16:15:41 Guard()
+2024/02/26 16:15:41 Guard() 120
+2024/02/26 16:15:41 Foo()
+2024/02/26 16:15:41 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:15:42 Log()
+2024/02/26 16:15:42 Guard()
+2024/02/26 16:15:42 Guard() 120
+2024/02/26 16:16:13 Log()
+2024/02/26 16:16:13 Guard()
+2024/02/26 16:16:13 Guard() 120
+2024/02/26 16:16:13 Foo()
+2024/02/26 16:16:13 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:16:14 Log()
+2024/02/26 16:16:14 Guard()
+2024/02/26 16:16:14 Guard() 120
+2024/02/26 16:16:16 Log()
+2024/02/26 16:16:16 Guard()
+2024/02/26 16:16:16 Guard() 120
+2024/02/26 16:16:16 Foo()
+2024/02/26 16:16:37 Log()
+2024/02/26 16:16:37 Foo()
+2024/02/26 16:16:37 Register log: UrlPath: "/Register"
+2024/02/26 16:16:37 SessionExiste r.Method= GET
+2024/02/26 16:16:39 Log()
+2024/02/26 16:16:39 Home log: UrlPath: "/"
+2024/02/26 16:16:50 Log()
+2024/02/26 16:16:50 Login log: UrlPath: "/Login"
+2024/02/26 16:16:53 Log()
+2024/02/26 16:16:53 Signin log: UrlPath: "/Signin"
+2024/02/26 16:16:53 Log()
+2024/02/26 16:16:53 Guard()
+2024/02/26 16:16:53 Guard() 120
+2024/02/26 16:16:57 Log()
+2024/02/26 16:16:57 Guard()
+2024/02/26 16:16:57 Guard() 120
+2024/02/26 16:16:57 Foo()
+2024/02/26 16:16:57 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:16:58 Log()
+2024/02/26 16:16:58 Guard()
+2024/02/26 16:16:58 Guard() 120
+2024/02/26 16:16:59 Log()
+2024/02/26 16:16:59 Guard()
+2024/02/26 16:16:59 Guard() 120
+2024/02/26 16:16:59 Foo()
+2024/02/26 16:16:59 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:17:00 Log()
+2024/02/26 16:17:00 Guard()
+2024/02/26 16:17:00 Guard() 120
+2024/02/26 16:17:09 Log()
+2024/02/26 16:17:09 Guard()
+2024/02/26 16:17:09 Guard() 120
+2024/02/26 16:17:09 Foo()
+2024/02/26 16:17:16 Log()
+2024/02/26 16:17:16 Login log: UrlPath: "/Login"
+2024/02/26 16:17:19 Log()
+2024/02/26 16:17:19 Signin log: UrlPath: "/Signin"
+2024/02/26 16:17:19 Log()
+2024/02/26 16:17:19 Guard()
+2024/02/26 16:17:19 Guard() 120
+2024/02/26 16:17:23 Log()
+2024/02/26 16:17:23 Guard()
+2024/02/26 16:17:23 Guard() 120
+2024/02/26 16:17:23 Foo()
+2024/02/26 16:17:23 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:17:24 Log()
+2024/02/26 16:17:24 Guard()
+2024/02/26 16:17:24 Guard() 120
+2024/02/26 16:17:24 Log()
+2024/02/26 16:17:24 Guard()
+2024/02/26 16:17:24 Guard() 120
+2024/02/26 16:17:24 Foo()
+2024/02/26 16:17:24 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:17:25 Log()
+2024/02/26 16:17:25 Guard()
+2024/02/26 16:17:25 Guard() 120
+2024/02/26 16:17:27 Log()
+2024/02/26 16:17:27 Guard()
+2024/02/26 16:17:27 Guard() 120
+2024/02/26 16:17:27 Foo()
+2024/02/26 16:18:09 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:18:13 Log()
+2024/02/26 16:18:13 Login log: UrlPath: "/Login"
+2024/02/26 16:18:17 Log()
+2024/02/26 16:18:17 Signin log: UrlPath: "/Signin"
+2024/02/26 16:18:17 Log()
+2024/02/26 16:18:17 Guard()
+2024/02/26 16:18:17 Guard() 120
+2024/02/26 16:18:20 Log()
+2024/02/26 16:18:20 Guard()
+2024/02/26 16:18:20 Guard() 120
+2024/02/26 16:18:20 Foo()
+2024/02/26 16:18:20 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:18:23 Log()
+2024/02/26 16:18:23 Guard()
+2024/02/26 16:18:23 Guard() 120
+2024/02/26 16:18:26 Log()
+2024/02/26 16:18:26 Guard()
+2024/02/26 16:18:26 Guard() 120
+2024/02/26 16:18:26 Foo()
+2024/02/26 16:18:26 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:18:28 Log()
+2024/02/26 16:18:28 Guard()
+2024/02/26 16:18:28 Guard() 120
+2024/02/26 16:18:31 Log()
+2024/02/26 16:18:31 Guard()
+2024/02/26 16:18:31 Guard() 120
+2024/02/26 16:18:31 Foo()
+2024/02/26 16:18:31 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:18:33 Log()
+2024/02/26 16:18:33 Guard()
+2024/02/26 16:18:33 Guard() 120
+2024/02/26 16:18:35 Log()
+2024/02/26 16:18:35 Guard()
+2024/02/26 16:18:35 Guard() 120
+2024/02/26 16:18:35 Foo()
+2024/02/26 16:18:39 Log()
+2024/02/26 16:18:39 Login log: UrlPath: "/Login"
+2024/02/26 16:18:43 Log()
+2024/02/26 16:18:43 Signin log: UrlPath: "/Signin"
+2024/02/26 16:18:43 Log()
+2024/02/26 16:18:43 Guard()
+2024/02/26 16:18:43 Guard() 120
+2024/02/26 16:20:32 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:20:40 Log()
+2024/02/26 16:20:40 Home log: UrlPath: "/"
+2024/02/26 16:20:45 Log()
+2024/02/26 16:20:45 Home log: UrlPath: "/"
+2024/02/26 16:20:45 Log()
+2024/02/26 16:20:45 Home log: UrlPath: "/"
+2024/02/26 16:20:45 Log()
+2024/02/26 16:20:45 Home log: UrlPath: "/"
+2024/02/26 16:20:48 Log()
+2024/02/26 16:20:48 Login log: UrlPath: "/Login"
+2024/02/26 16:20:51 Log()
+2024/02/26 16:20:51 Signin log: UrlPath: "/Signin"
+2024/02/26 16:20:51 Log()
+2024/02/26 16:20:51 Guard()
+2024/02/26 16:20:51 Guard() 120
+2024/02/26 16:20:55 Log()
+2024/02/26 16:20:55 Guard()
+2024/02/26 16:20:55 Guard() 120
+2024/02/26 16:20:55 Foo()
+2024/02/26 16:20:55 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:20:58 Log()
+2024/02/26 16:20:58 Guard()
+2024/02/26 16:20:58 Guard() 120
+2024/02/26 16:21:01 Log()
+2024/02/26 16:21:01 Guard()
+2024/02/26 16:21:01 Guard() 120
+2024/02/26 16:21:01 Foo()
+2024/02/26 16:21:01 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:21:02 Log()
+2024/02/26 16:21:02 Guard()
+2024/02/26 16:21:02 Guard() 120
+2024/02/26 16:21:06 Log()
+2024/02/26 16:21:06 Guard()
+2024/02/26 16:21:06 Guard() 120
+2024/02/26 16:21:06 Foo()
+2024/02/26 16:21:06 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:21:07 Log()
+2024/02/26 16:21:07 Guard()
+2024/02/26 16:21:07 Guard() 120
+2024/02/26 16:21:21 Log()
+2024/02/26 16:21:21 Guard()
+2024/02/26 16:21:21 Guard() 120
+2024/02/26 16:21:21 Foo()
+2024/02/26 16:21:21 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:21:23 Log()
+2024/02/26 16:21:23 Guard()
+2024/02/26 16:21:23 Guard() 120
+2024/02/26 16:21:31 Log()
+2024/02/26 16:21:31 Guard()
+2024/02/26 16:21:31 Guard() 120
+2024/02/26 16:21:31 Foo()
+2024/02/26 16:21:31 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:21:33 Log()
+2024/02/26 16:21:33 Guard()
+2024/02/26 16:21:33 Guard() 120
+2024/02/26 16:23:06 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:23:14 Log()
+2024/02/26 16:23:14 Home log: UrlPath: "/"
+2024/02/26 16:23:22 Log()
+2024/02/26 16:23:22 Home log: UrlPath: "/"
+2024/02/26 16:23:23 Log()
+2024/02/26 16:23:23 Home log: UrlPath: "/"
+2024/02/26 16:23:23 Log()
+2024/02/26 16:23:23 Home log: UrlPath: "/"
+2024/02/26 16:23:23 Log()
+2024/02/26 16:23:23 Home log: UrlPath: "/"
+2024/02/26 16:23:30 Log()
+2024/02/26 16:23:30 Guard()
+2024/02/26 16:23:50 Guard() 120
+2024/02/26 16:23:50 Foo()
+2024/02/26 16:24:44 Log()
+2024/02/26 16:24:44 Login log: UrlPath: "/Login"
+2024/02/26 16:24:47 Log()
+2024/02/26 16:24:47 Signin log: UrlPath: "/Signin"
+2024/02/26 16:24:47 Log()
+2024/02/26 16:24:47 Guard()
+2024/02/26 16:26:01 Guard() 120
+2024/02/26 16:26:06 Log()
+2024/02/26 16:26:06 Guard()
+2024/02/26 16:26:12 Guard() 120
+2024/02/26 16:26:12 Foo()
+2024/02/26 16:30:04 Log()
+2024/02/26 16:30:04 Login log: UrlPath: "/Login"
+2024/02/26 16:30:07 Log()
+2024/02/26 16:30:07 Signin log: UrlPath: "/Signin"
+2024/02/26 16:30:07 Log()
+2024/02/26 16:30:07 Guard()
+2024/02/26 16:31:58 Guard() 120
+2024/02/26 16:32:13 Log()
+2024/02/26 16:32:13 Guard()
+2024/02/26 16:36:02 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:36:06 Log()
+2024/02/26 16:36:06 Home log: UrlPath: "/"
+2024/02/26 16:36:07 Log()
+2024/02/26 16:36:07 Login log: UrlPath: "/Login"
+2024/02/26 16:36:10 Log()
+2024/02/26 16:36:10 Signin log: UrlPath: "/Signin"
+2024/02/26 16:36:10 Log()
+2024/02/26 16:36:10 Guard()
+2024/02/26 16:36:18 Guard() 120
+2024/02/26 16:36:22 Log()
+2024/02/26 16:36:22 Guard()
+2024/02/26 16:36:35 Guard() 120
+2024/02/26 16:36:35 Foo()
+2024/02/26 16:36:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:36:39 Log()
+2024/02/26 16:36:39 Guard()
+2024/02/26 16:36:53 Guard() 120
+2024/02/26 16:37:00 Log()
+2024/02/26 16:37:00 Guard()
+2024/02/26 16:37:10 Guard() 120
+2024/02/26 16:37:10 Foo()
+2024/02/26 16:37:21 Log()
+2024/02/26 16:37:21 Login log: UrlPath: "/Login"
+2024/02/26 16:37:24 Log()
+2024/02/26 16:37:24 Signin log: UrlPath: "/Signin"
+2024/02/26 16:37:24 Log()
+2024/02/26 16:37:24 Guard()
+2024/02/26 16:38:50 Guard() 120
+2024/02/26 16:38:56 Log()
+2024/02/26 16:38:56 Guard()
+2024/02/26 16:39:04 Guard() 120
+2024/02/26 16:39:04 Foo()
+2024/02/26 16:39:22 Log()
+2024/02/26 16:39:22 Foo()
+2024/02/26 16:39:22 Register log: UrlPath: "/Register"
+2024/02/26 16:39:22 SessionExiste r.Method= GET
+2024/02/26 16:39:24 Log()
+2024/02/26 16:39:24 Home log: UrlPath: "/"
+2024/02/26 16:39:28 Log()
+2024/02/26 16:39:28 Login log: UrlPath: "/Login"
+2024/02/26 16:39:31 Log()
+2024/02/26 16:39:31 Signin log: UrlPath: "/Signin"
+2024/02/26 16:39:31 Log()
+2024/02/26 16:39:31 Guard()
+2024/02/26 16:39:43 Guard() 120
+2024/02/26 16:46:48 Log()
+2024/02/26 16:46:48 Guard()
+2024/02/26 16:47:23 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:47:34 Log()
+2024/02/26 16:47:34 Home log: UrlPath: "/"
+2024/02/26 16:48:05 Log()
+2024/02/26 16:48:05 Login log: UrlPath: "/Login"
+2024/02/26 16:48:28 Log()
+2024/02/26 16:48:28 Signin log: UrlPath: "/Signin"
+2024/02/26 16:49:16 Log()
+2024/02/26 16:49:16 Guard()
+2024/02/26 16:51:05 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:51:09 Log()
+2024/02/26 16:51:09 Home log: UrlPath: "/"
+2024/02/26 16:51:36 Log()
+2024/02/26 16:51:36 Home log: UrlPath: "/"
+2024/02/26 16:52:01 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 16:52:04 Log()
+2024/02/26 16:52:04 Home log: UrlPath: "/"
+2024/02/26 16:52:25 Log()
+2024/02/26 16:52:25 Login log: UrlPath: "/Login"
+2024/02/26 16:52:34 Log()
+2024/02/26 16:52:34 Signin log: UrlPath: "/Signin"
+2024/02/26 16:52:38 Log()
+2024/02/26 16:52:38 Guard()
+2024/02/26 16:53:12 Guard() 120
+2024/02/26 16:53:19 Log()
+2024/02/26 16:53:19 Guard()
+2024/02/26 16:53:48 Guard() 120
+2024/02/26 16:53:48 Foo()
+2024/02/26 16:53:48 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 16:53:55 Log()
+2024/02/26 16:53:55 Guard()
+2024/02/26 16:54:13 Guard() 120
+2024/02/26 16:54:22 Log()
+2024/02/26 16:54:22 Guard()
+2024/02/26 16:54:42 Guard() 120
+2024/02/26 16:54:43 Foo()
+2024/02/26 17:00:10 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:00:19 Log()
+2024/02/26 17:00:19 Home log: UrlPath: "/"
+2024/02/26 17:00:36 Log()
+2024/02/26 17:00:36 Login log: UrlPath: "/Login"
+2024/02/26 17:00:46 Log()
+2024/02/26 17:00:46 Signin log: UrlPath: "/Signin"
+2024/02/26 17:00:49 Log()
+2024/02/26 17:00:49 Guard()
+2024/02/26 17:01:11 Guard() 120
+2024/02/26 17:01:18 Log()
+2024/02/26 17:01:18 Guard()
+2024/02/26 17:01:28 Guard() 120
+2024/02/26 17:01:28 Foo()
+2024/02/26 17:01:28 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 17:01:36 Log()
+2024/02/26 17:01:36 Guard()
+2024/02/26 17:01:43 Guard() 120
+2024/02/26 17:01:45 Log()
+2024/02/26 17:01:45 Guard()
+2024/02/26 17:01:50 Guard() 120
+2024/02/26 17:01:50 Foo()
+2024/02/26 17:03:45 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:03:51 Log()
+2024/02/26 17:03:51 Home log: UrlPath: "/"
+2024/02/26 17:03:56 Log()
+2024/02/26 17:03:56 Login log: UrlPath: "/Login"
+2024/02/26 17:04:02 Log()
+2024/02/26 17:04:02 Signin log: UrlPath: "/Signin"
+2024/02/26 17:04:05 Log()
+2024/02/26 17:04:05 Guard()
+2024/02/26 17:05:01 Guard() 120
+2024/02/26 17:05:04 Log()
+2024/02/26 17:05:04 Guard()
+2024/02/26 17:05:09 Guard() 120
+2024/02/26 17:05:09 Foo()
+2024/02/26 17:05:09 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 17:05:16 Log()
+2024/02/26 17:05:16 Guard()
+2024/02/26 17:05:27 Guard() 120
+2024/02/26 17:05:29 Log()
+2024/02/26 17:05:29 Guard()
+2024/02/26 17:05:35 Guard() 120
+2024/02/26 17:05:35 Foo()
+2024/02/26 17:06:07 Log()
+2024/02/26 17:06:07 Login log: UrlPath: "/Login"
+2024/02/26 17:32:50 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:32:55 Log()
+2024/02/26 17:32:55 Home log: UrlPath: "/"
+2024/02/26 17:33:01 Log()
+2024/02/26 17:33:01 Login log: UrlPath: "/Login"
+2024/02/26 17:33:08 Log()
+2024/02/26 17:33:08 Signin log: UrlPath: "/Signin"
+2024/02/26 17:33:11 Log()
+2024/02/26 17:33:11 Guard()
+2024/02/26 17:44:58 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:45:08 Log()
+2024/02/26 17:45:08 Home log: UrlPath: "/"
+2024/02/26 17:45:10 Log()
+2024/02/26 17:45:10 Login log: UrlPath: "/Login"
+2024/02/26 17:45:13 Log()
+2024/02/26 17:45:13 Signin log: UrlPath: "/Signin"
+2024/02/26 17:45:13 Log()
+2024/02/26 17:45:13 Guard()
+2024/02/26 17:45:13 Guard() 120
+2024/02/26 17:45:36 Log()
+2024/02/26 17:45:36 Guard()
+2024/02/26 17:45:36 Guard() 120
+2024/02/26 17:45:47 Log()
+2024/02/26 17:45:47 Signin log: UrlPath: "/Signin"
+2024/02/26 17:45:47 Log()
+2024/02/26 17:45:47 Guard()
+2024/02/26 17:45:47 Guard() 120
+2024/02/26 17:45:56 Log()
+2024/02/26 17:45:56 Signin log: UrlPath: "/Signin"
+2024/02/26 17:45:56 Log()
+2024/02/26 17:45:56 Guard()
+2024/02/26 17:45:56 Guard() 120
+2024/02/26 17:47:15 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:47:23 Log()
+2024/02/26 17:47:23 Home log: UrlPath: "/"
+2024/02/26 17:47:33 Log()
+2024/02/26 17:47:33 Home log: UrlPath: "/"
+2024/02/26 17:47:44 Log()
+2024/02/26 17:47:44 Home log: UrlPath: "/"
+2024/02/26 17:47:58 Log()
+2024/02/26 17:47:58 Guard()
+2024/02/26 17:48:03 Log()
+2024/02/26 17:48:03 Login log: UrlPath: "/Login"
+2024/02/26 17:48:10 Log()
+2024/02/26 17:48:10 Signin log: UrlPath: "/Signin"
+2024/02/26 17:48:13 Log()
+2024/02/26 17:48:13 Guard()
+2024/02/26 17:49:56 Guard() 120
+2024/02/26 17:50:19 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:50:32 Log()
+2024/02/26 17:50:32 Home log: UrlPath: "/"
+2024/02/26 17:51:18 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:51:22 Log()
+2024/02/26 17:51:22 Home log: UrlPath: "/"
+2024/02/26 17:51:31 Log()
+2024/02/26 17:51:31 Guard()
+2024/02/26 17:51:39 Guard() 120
+2024/02/26 17:51:39 Foo()
+2024/02/26 17:52:01 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:52:08 Log()
+2024/02/26 17:52:08 Home log: UrlPath: "/"
+2024/02/26 17:52:18 Log()
+2024/02/26 17:52:18 Guard()
+2024/02/26 17:54:24 Guard() 120
+2024/02/26 17:54:24 Foo()
+2024/02/26 17:55:14 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 17:55:17 Log()
+2024/02/26 17:55:17 Home log: UrlPath: "/"
+2024/02/26 17:55:25 Log()
+2024/02/26 17:55:25 Login log: UrlPath: "/Login"
+2024/02/26 17:55:32 Log()
+2024/02/26 17:55:32 Signin log: UrlPath: "/Signin"
+2024/02/26 17:55:34 Log()
+2024/02/26 17:55:34 Guard()
+2024/02/26 17:57:54 Guard() 120
+2024/02/26 18:00:20 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 18:00:28 Log()
+2024/02/26 18:00:28 Home log: UrlPath: "/"
+2024/02/26 18:00:33 Log()
+2024/02/26 18:00:33 Login log: UrlPath: "/Login"
+2024/02/26 18:00:39 Log()
+2024/02/26 18:00:39 Signin log: UrlPath: "/Signin"
+2024/02/26 18:00:42 Log()
+2024/02/26 18:00:42 Guard()
+2024/02/26 18:00:49 Guard() 120
+2024/02/26 18:00:54 Log()
+2024/02/26 18:00:54 Guard()
+2024/02/26 18:01:01 Guard() 120
+2024/02/26 18:01:01 Foo()
+2024/02/26 18:01:01 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 18:01:06 Log()
+2024/02/26 18:01:06 Guard()
+2024/02/26 18:01:11 Guard() 120
+2024/02/26 18:01:16 Log()
+2024/02/26 18:01:16 Guard()
+2024/02/26 18:01:21 Guard() 120
+2024/02/26 18:01:21 Foo()
+2024/02/26 18:34:18 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 18:34:29 Log()
+2024/02/26 18:34:29 Home log: UrlPath: "/"
+2024/02/26 18:34:36 Log()
+2024/02/26 18:42:31 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 18:42:39 Log()
+2024/02/26 18:42:39 Home log: UrlPath: "/"
+2024/02/26 18:42:44 Log()
+2024/02/26 18:42:52 Guard()
+2024/02/26 18:43:34 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 18:43:38 Log()
+2024/02/26 18:43:38 Home log: UrlPath: "/"
+2024/02/26 18:43:43 Log()
+2024/02/26 18:43:47 Guard()
+2024/02/26 18:49:39 Log()
+2024/02/26 18:49:42 Guard()
+2024/02/26 18:49:42 Log()
+2024/02/26 18:49:45 Guard()
+2024/02/26 18:49:45 Log()
+2024/02/26 18:49:49 Guard()
+2024/02/26 18:49:49 Log()
+2024/02/26 18:49:50 Guard()
+2024/02/26 18:49:50 Log()
+2024/02/26 18:49:55 Guard()
+2024/02/26 18:49:55 Log()
+2024/02/26 18:49:55 Guard()
+2024/02/26 18:49:55 Log()
+2024/02/26 18:49:56 Guard()
+2024/02/26 18:49:56 Log()
+2024/02/26 18:49:56 Guard()
+2024/02/26 18:49:56 Log()
+2024/02/26 18:49:57 Guard()
+2024/02/26 18:49:57 Log()
+2024/02/26 18:49:58 Guard()
+2024/02/26 18:49:58 Log()
+2024/02/26 18:49:59 Guard()
+2024/02/26 18:49:59 Log()
+2024/02/26 18:49:59 Guard()
+2024/02/26 18:49:59 Log()
+2024/02/26 18:49:59 Guard()
+2024/02/26 18:49:59 Log()
+2024/02/26 18:49:59 Guard()
+2024/02/26 18:49:59 Log()
+2024/02/26 18:50:00 Guard()
+2024/02/26 18:50:00 Log()
+2024/02/26 18:50:00 Guard()
+2024/02/26 18:50:00 Log()
+2024/02/26 18:50:00 Guard()
+2024/02/26 18:50:00 Log()
+2024/02/26 18:50:01 Guard()
+2024/02/26 18:50:01 Log()
+2024/02/26 18:50:01 Guard()
+2024/02/26 18:50:01 Log()
+2024/02/26 18:50:02 Guard()
+2024/02/26 18:50:13 Log()
+2024/02/26 18:50:13 Home log: UrlPath: "/"
+2024/02/26 18:50:19 Log()
+2024/02/26 18:50:22 Guard()
+2024/02/26 18:50:25 Log()
+2024/02/26 18:50:32 Guard()
+2024/02/26 18:50:32 Log()
+2024/02/26 18:50:33 Guard()
+2024/02/26 18:50:33 Log()
+2024/02/26 18:50:34 Guard()
+2024/02/26 18:50:34 Log()
+2024/02/26 18:50:35 Guard()
+2024/02/26 18:50:35 Log()
+2024/02/26 18:50:35 Guard()
+2024/02/26 18:50:35 Log()
+2024/02/26 18:50:36 Guard()
+2024/02/26 18:50:36 Log()
+2024/02/26 18:50:37 Guard()
+2024/02/26 18:50:37 Log()
+2024/02/26 18:50:37 Guard()
+2024/02/26 18:50:37 Log()
+2024/02/26 18:50:38 Guard()
+2024/02/26 18:50:38 Log()
+2024/02/26 18:50:39 Guard()
+2024/02/26 18:50:39 Log()
+2024/02/26 18:50:39 Guard()
+2024/02/26 18:50:39 Log()
+2024/02/26 18:50:40 Guard()
+2024/02/26 18:50:40 Log()
+2024/02/26 18:50:40 Guard()
+2024/02/26 18:50:40 Log()
+2024/02/26 18:50:41 Guard()
+2024/02/26 18:50:41 Log()
+2024/02/26 18:50:41 Guard()
+2024/02/26 18:50:41 Log()
+2024/02/26 18:50:41 Guard()
+2024/02/26 18:50:41 Log()
+2024/02/26 18:50:42 Guard()
+2024/02/26 18:50:42 Log()
+2024/02/26 18:50:42 Guard()
+2024/02/26 18:50:42 Log()
+2024/02/26 18:50:42 Guard()
+2024/02/26 18:50:42 Log()
+2024/02/26 18:50:42 Guard()
+2024/02/26 18:51:47 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 18:51:55 Log()
+2024/02/26 18:51:55 Home log: UrlPath: "/"
+2024/02/26 18:52:01 Log()
+2024/02/26 18:52:01 Login log: UrlPath: "/Login"
+2024/02/26 18:52:07 Log()
+2024/02/26 18:52:07 Signin log: UrlPath: "/Signin"
+2024/02/26 18:52:09 Log()
+2024/02/26 18:52:13 Guard()
+2024/02/26 18:52:24 Guard() 120
+2024/02/26 18:52:27 Log()
+2024/02/26 18:52:33 Guard()
+2024/02/26 18:52:41 Guard() 120
+2024/02/26 18:52:41 Foo()
+2024/02/26 18:52:41 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 18:52:45 Log()
+2024/02/26 18:52:50 Guard()
+2024/02/26 18:52:50 Guard() 120
+2024/02/26 18:52:58 Log()
+2024/02/26 18:53:01 Guard()
+2024/02/26 18:53:01 Guard() 120
+2024/02/26 18:53:01 Foo()
+2024/02/26 18:53:01 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 18:53:08 Log()
+2024/02/26 18:53:11 Guard()
+2024/02/26 18:53:11 Guard() 120
+2024/02/26 18:53:13 Log()
+2024/02/26 18:53:13 Foo()
+2024/02/26 18:53:35 Log()
+2024/02/26 18:53:35 Login log: UrlPath: "/Login"
+2024/02/26 18:53:54 Log()
+2024/02/26 18:53:54 Signin log: UrlPath: "/Signin"
+2024/02/26 18:54:41 Log()
+2024/02/26 18:54:45 Guard()
+2024/02/26 18:55:37 Guard() 120
+2024/02/26 18:55:56 Log()
+2024/02/26 18:55:56 Foo()
+2024/02/26 18:57:15 Log()
+2024/02/26 18:57:15 Login log: UrlPath: "/Login"
+2024/02/26 18:57:25 Log()
+2024/02/26 18:57:25 Signin log: UrlPath: "/Signin"
+2024/02/26 18:57:48 Log()
+2024/02/26 18:57:53 Guard()
+2024/02/26 18:58:44 Guard() 120
+2024/02/26 18:59:01 Log()
+2024/02/26 18:59:08 Guard()
+2024/02/26 19:00:10 Guard() 120
+2024/02/26 19:00:10 Foo()
+2024/02/26 19:00:10 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 19:01:12 Log()
+2024/02/26 19:01:15 Guard()
+2024/02/26 19:01:15 Guard() 120
+2024/02/26 19:01:21 Log()
+2024/02/26 19:01:28 Guard()
+2024/02/26 19:02:23 Guard() 120
+2024/02/26 19:02:23 Foo()
+2024/02/26 19:02:23 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/26 19:09:51 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 19:10:02 Log()
+2024/02/26 19:10:02 Home log: UrlPath: "/"
+2024/02/26 19:10:08 Log()
+2024/02/26 19:10:08 Login log: UrlPath: "/Login"
+2024/02/26 19:10:14 Log()
+2024/02/26 19:10:14 Signin log: UrlPath: "/Signin"
+2024/02/26 19:10:18 Log()
+2024/02/26 19:10:21 Guard()
+2024/02/26 19:13:07 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 19:13:13 Log()
+2024/02/26 19:13:13 Home log: UrlPath: "/"
+2024/02/26 19:13:19 Log()
+2024/02/26 19:13:19 Login log: UrlPath: "/Login"
+2024/02/26 19:13:24 Log()
+2024/02/26 19:13:24 Signin log: UrlPath: "/Signin"
+2024/02/26 19:13:27 Log()
+2024/02/26 19:13:29 Guard()
+2024/02/26 19:15:16 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/26 19:15:24 Log()
+2024/02/26 19:15:24 Home log: UrlPath: "/"
+2024/02/26 19:15:31 Log()
+2024/02/26 19:15:31 Foo()
+2024/02/26 19:15:38 Log()
+2024/02/26 19:15:38 Login log: UrlPath: "/Login"
+2024/02/26 19:15:45 Log()
+2024/02/26 19:15:45 Signin log: UrlPath: "/Signin"
+2024/02/26 19:15:48 Log()
+2024/02/26 19:15:51 Guard()
+2024/02/26 19:17:00 Le cookie n'existe pas
+2024/02/27 08:30:59 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:31:09 Log()
+2024/02/27 08:31:09 Home log: UrlPath: "/"
+2024/02/27 08:31:09 "118_session_ok/controllers.Home"
+2024/02/27 08:31:15 Log()
+2024/02/27 08:31:15 Login log: UrlPath: "/Login"
+2024/02/27 08:31:15 "118_session_ok/controllers.Login"
+2024/02/27 08:31:18 Log()
+2024/02/27 08:31:18 Signin log: UrlPath: "/Signin"
+2024/02/27 08:31:18 "118_session_ok/controllers.Signin"
+2024/02/27 08:31:18 Log()
+2024/02/27 08:31:18 Guard()
+2024/02/27 08:31:18 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"6TdBfr_CiKtESbjzO9viUiI0MLBs7qfrje_SlpLwPdjNpv7W7nntjDxn9XbHDAU6zZNwgyDseC7qgvbjMf28oA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"veOWN2QH5f2m5lbFjjYsXalntUeVAfBf6cWElGdRdI10mFmP73_z-sJonZa46Y0_V8z4dACH5ZpjrtDaCDezUA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:31:18 "118_session_ok/controllers.Index"
+2024/02/27 08:31:18 http: superfluous response.WriteHeader call from 118_session_ok/controllers.Index (handlers.go:231)
+2024/02/27 08:34:07 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:34:15 Log()
+2024/02/27 08:34:15 Home log: UrlPath: "/"
+2024/02/27 08:34:15 "118_session_ok/controllers.Home"
+2024/02/27 08:34:17 Log()
+2024/02/27 08:34:17 Login log: UrlPath: "/Login"
+2024/02/27 08:34:17 "118_session_ok/controllers.Login"
+2024/02/27 08:34:21 Log()
+2024/02/27 08:34:21 Signin log: UrlPath: "/Signin"
+2024/02/27 08:34:21 "118_session_ok/controllers.Signin"
+2024/02/27 08:34:21 Log()
+2024/02/27 08:34:21 Guard()
+2024/02/27 08:34:21 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"A7nFmMmJq7B5hgGU2m5YQCQJtEB8mx9C1_zEE8DO4mJtBGMLR9_0aaZwPF7wVrm1R7qTdx0Cyi5de9Fmhq5gRg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"x35Pcx8b_yRr3oHki6IlKyf4fyk-quHe6L_P3a4-TNQt0veflqfrLUMlnaj-SL7om1gmH-dzjBfSrRE-Oo0TyA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:34:21 "118_session_ok/controllers.Index"
+2024/02/27 08:34:33 Log()
+2024/02/27 08:34:33 Guard()
+2024/02/27 08:34:33 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"x35Pcx8b_yRr3oHki6IlKyf4fyk-quHe6L_P3a4-TNQt0veflqfrLUMlnaj-SL7om1gmH-dzjBfSrRE-Oo0TyA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"dAr3TeEtXiB1Aes5W-qr1Nw7Byub0pF3OWU0XQHFykcYmcu4kPvy0ZtvOeF_QRax-iKb8UnRVOIdW9Vn7iYoBw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:34:33 Foo()
+2024/02/27 08:34:33 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 08:34:33 http: panic serving 127.0.0.1:38216: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
 net/http.(*conn).serve.func1()
 	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
+panic({0x777b20?, 0xab7f00?})
 	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0000ccee0}, 0xc0000c6900)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0000ccee0?}, 0x6a4f9a?)
+118_session_ok/controllers.AfficheUserInfo({0x86db08, 0xc0000fd180}, 0xc0001c0120)
+	/home/henry/go/src/118_session_ok/controllers/handlers.go:275 +0x16d
+net/http.HandlerFunc.ServeHTTP(...)
+	/snap/go/10506/src/net/http/server.go:2166
+118_session_ok/controllers.init.func3.1({0x86db08, 0xc0000fd180}, 0xc0001c0120)
+	/home/henry/go/src/118_session_ok/controllers/middlewares.go:90 +0xb1
+net/http.HandlerFunc.ServeHTTP(...)
+	/snap/go/10506/src/net/http/server.go:2166
+118_session_ok/controllers.init.func2.1({0x86db08, 0xc0000fd180}, 0xc0001c0120)
+	/home/henry/go/src/118_session_ok/controllers/middlewares.go:82 +0x7ab
+net/http.HandlerFunc.ServeHTTP(...)
+	/snap/go/10506/src/net/http/server.go:2166
+118_session_ok/controllers.init.func1.1({0x86db08, 0xc0000fd180}, 0xc0001c0120)
+	/home/henry/go/src/118_session_ok/controllers/middlewares.go:27 +0x38f
+net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x86db08?, 0xc0000fd180?}, 0x6a48fa?)
 	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0000ccee0}, 0xc0000c6900)
+net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x86db08, 0xc0000fd180}, 0xc0001c0120)
 	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0000a95c0?}, {0x870748?, 0xc0000ccee0?}, 0x6?)
+net/http.serverHandler.ServeHTTP({0xc0000a9260?}, {0x86db08?, 0xc0000fd180?}, 0x6?)
 	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c4510, {0x870ef8, 0xc0000a9170})
+net/http.(*conn).serve(0xc0000c4120, {0x86e2b8, 0xc0000a9170})
 	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54538: runtime error: invalid memory address or nil pointer dereference
-goroutine 12 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c2a0}, 0xc00021a120)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c2a0?}, 0x6a4f9a?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c2a0}, 0xc00021a120)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002041b0?}, {0x870748?, 0xc00021c2a0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0000c46c0, {0x870ef8, 0xc0000a9170})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54542: runtime error: invalid memory address or nil pointer dereference
-goroutine 36 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c460}, 0xc00021a240)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c460?}, 0x6a4f9a?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c460}, 0xc00021a240)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002042a0?}, {0x870748?, 0xc00021c460?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0001161b0, {0x870ef8, 0xc0000a9170})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54548: runtime error: invalid memory address or nil pointer dereference
-goroutine 22 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c620}, 0xc00021a360)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c620?}, 0x6a4f9a?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c620}, 0xc00021a360)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc0002043f0?}, {0x870748?, 0xc00021c620?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0002083f0, {0x870ef8, 0xc0000a9170})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54560: runtime error: invalid memory address or nil pointer dereference
-goroutine 24 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc00021c7e0}, 0xc00021a480)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc00021c7e0?}, 0x6a4f9a?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc00021c7e0}, 0xc00021a480)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000204540?}, {0x870748?, 0xc00021c7e0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc0002085a0, {0x870ef8, 0xc0000a9170})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:28:39 http: panic serving 127.0.0.1:54576: runtime error: invalid memory address or nil pointer dereference
-goroutine 26 [running]:
-net/http.(*conn).serve.func1()
-	/snap/go/10506/src/net/http/server.go:1898 +0xbe
-panic({0x77aac0?, 0xabaef0?})
-	/snap/go/10506/src/runtime/panic.go:770 +0x132
-118_session_ok/controllers.init.Log.func1.1({0x870748, 0xc0001342a0}, 0xc000130120)
-	/home/henry/go/src/118_session_ok/controllers/middleware.go:57 +0x52
-net/http.HandlerFunc.ServeHTTP(0xc0000aadd0?, {0x870748?, 0xc0001342a0?}, 0x6a4f9a?)
-	/snap/go/10506/src/net/http/server.go:2166 +0x29
-net/http.(*ServeMux).ServeHTTP(0x46b999?, {0x870748, 0xc0001342a0}, 0xc000130120)
-	/snap/go/10506/src/net/http/server.go:2683 +0x1ad
-net/http.serverHandler.ServeHTTP({0xc000112210?}, {0x870748?, 0xc0001342a0?}, 0x6?)
-	/snap/go/10506/src/net/http/server.go:3137 +0x8e
-net/http.(*conn).serve(0xc000208750, {0x870ef8, 0xc0000a9170})
-	/snap/go/10506/src/net/http/server.go:2039 +0x5e8
-created by net/http.(*Server).Serve in goroutine 1
-	/snap/go/10506/src/net/http/server.go:3285 +0x4b4
-2024/02/25 23:31:07 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:31:10 Log()
-2024/02/25 23:31:10 Home log: UrlPath: "/"
-2024/02/25 23:31:10 SessionValide r.Method= GET
-2024/02/25 23:31:12 Log()
-2024/02/25 23:31:12 Login log: UrlPath: "/Login"
-2024/02/25 23:31:15 Log()
-2024/02/25 23:31:15 Signin log: UrlPath: "/Signin"
-2024/02/25 23:31:15 Log()
-2024/02/25 23:31:15 Guard()
-2024/02/25 23:31:15 SessionValide r.Method= GET
-2024/02/25 23:31:16 Log()
-2024/02/25 23:31:16 Guard()
-2024/02/25 23:31:16 SessionValide r.Method= POST
-2024/02/25 23:31:16 Foo()
-2024/02/25 23:31:16 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:31:17 Log()
-2024/02/25 23:31:17 Guard()
-2024/02/25 23:31:17 SessionValide r.Method= GET
-2024/02/25 23:31:19 Log()
-2024/02/25 23:31:19 Guard()
-2024/02/25 23:31:19 SessionValide r.Method= POST
-2024/02/25 23:31:19 Foo()
-2024/02/25 23:31:19 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:31:20 Log()
-2024/02/25 23:31:20 Guard()
-2024/02/25 23:31:20 SessionValide r.Method= GET
-2024/02/25 23:31:21 Log()
-2024/02/25 23:31:21 Guard()
-2024/02/25 23:31:21 SessionValide r.Method= POST
-2024/02/25 23:31:21 Foo()
-2024/02/25 23:31:22 Log()
-2024/02/25 23:31:22 Foo()
-2024/02/25 23:31:22 Register log: UrlPath: "/Register"
-2024/02/25 23:31:22 SessionExiste r.Method= GET
-2024/02/25 23:31:23 Log()
-2024/02/25 23:31:23 Home log: UrlPath: "/"
-2024/02/25 23:31:23 SessionValide r.Method= GET
-2024/02/25 23:31:24 Log()
-2024/02/25 23:31:24 Login log: UrlPath: "/Login"
-2024/02/25 23:31:28 Log()
-2024/02/25 23:31:28 Signin log: UrlPath: "/Signin"
-2024/02/25 23:31:28 Log()
-2024/02/25 23:31:28 Guard()
-2024/02/25 23:31:28 SessionValide r.Method= GET
-2024/02/25 23:33:23 Log()
-2024/02/25 23:33:23 Guard()
-2024/02/25 23:33:23 SessionValide r.Method= POST
-2024/02/25 23:33:23 Foo()
-2024/02/25 23:33:25 Log()
-2024/02/25 23:33:25 Foo()
-2024/02/25 23:33:25 Register log: UrlPath: "/Register"
-2024/02/25 23:33:25 SessionExiste r.Method= GET
-2024/02/25 23:33:27 Log()
-2024/02/25 23:33:27 Home log: UrlPath: "/"
-2024/02/25 23:33:27 SessionValide r.Method= GET
-2024/02/25 23:33:27 Log()
-2024/02/25 23:33:27 Login log: UrlPath: "/Login"
-2024/02/25 23:33:31 Log()
-2024/02/25 23:33:31 Signin log: UrlPath: "/Signin"
-2024/02/25 23:33:31 Log()
-2024/02/25 23:33:31 Guard()
-2024/02/25 23:33:31 SessionValide r.Method= GET
-2024/02/25 23:33:32 Log()
-2024/02/25 23:33:32 Guard()
-2024/02/25 23:33:32 SessionValide r.Method= POST
-2024/02/25 23:33:32 Foo()
-2024/02/25 23:33:32 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:33:33 Log()
-2024/02/25 23:33:33 Guard()
-2024/02/25 23:33:33 SessionValide r.Method= GET
-2024/02/25 23:33:35 Log()
-2024/02/25 23:33:35 Guard()
-2024/02/25 23:33:35 SessionValide r.Method= POST
-2024/02/25 23:33:35 Foo()
-2024/02/25 23:33:35 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:33:36 Log()
-2024/02/25 23:33:36 Guard()
-2024/02/25 23:33:36 SessionValide r.Method= GET
-2024/02/25 23:33:37 Log()
-2024/02/25 23:33:37 Guard()
-2024/02/25 23:33:37 SessionValide r.Method= POST
-2024/02/25 23:33:37 Foo()
-2024/02/25 23:33:39 Log()
-2024/02/25 23:33:39 Foo()
-2024/02/25 23:33:39 Register log: UrlPath: "/Register"
-2024/02/25 23:33:39 SessionExiste r.Method= GET
-2024/02/25 23:33:40 Log()
-2024/02/25 23:33:40 Home log: UrlPath: "/"
-2024/02/25 23:33:40 SessionValide r.Method= GET
-2024/02/25 23:33:41 Log()
-2024/02/25 23:33:41 Login log: UrlPath: "/Login"
-2024/02/25 23:33:46 Log()
-2024/02/25 23:33:46 Signin log: UrlPath: "/Signin"
-2024/02/25 23:33:46 Log()
-2024/02/25 23:33:46 Guard()
-2024/02/25 23:33:46 SessionValide r.Method= GET
-2024/02/25 23:33:49 Log()
-2024/02/25 23:33:49 Guard()
-2024/02/25 23:33:49 SessionValide r.Method= POST
-2024/02/25 23:33:49 Foo()
-2024/02/25 23:33:49 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:33:50 Log()
-2024/02/25 23:33:50 Guard()
-2024/02/25 23:33:50 SessionValide r.Method= GET
-2024/02/25 23:33:51 Log()
-2024/02/25 23:33:51 Guard()
-2024/02/25 23:33:51 SessionValide r.Method= POST
-2024/02/25 23:33:51 Foo()
-2024/02/25 23:33:51 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:33:53 Log()
-2024/02/25 23:33:53 Guard()
-2024/02/25 23:33:53 SessionValide r.Method= GET
-2024/02/25 23:33:53 Log()
-2024/02/25 23:33:53 Guard()
-2024/02/25 23:33:53 SessionValide r.Method= POST
-2024/02/25 23:33:53 Foo()
-2024/02/25 23:33:53 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:33:54 Log()
-2024/02/25 23:33:54 Guard()
-2024/02/25 23:33:54 SessionValide r.Method= GET
-2024/02/25 23:42:04 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:42:12 Log()
-2024/02/25 23:42:12 Home log: UrlPath: "/"
-2024/02/25 23:42:12 SessionValide r.Method= GET
-2024/02/25 23:42:13 Log()
-2024/02/25 23:42:13 Login log: UrlPath: "/Login"
-2024/02/25 23:42:16 Log()
-2024/02/25 23:42:16 Signin log: UrlPath: "/Signin"
-2024/02/25 23:42:16 Log()
-2024/02/25 23:42:16 Guard()
-2024/02/25 23:42:16 SessionValide r.Method= GET
-2024/02/25 23:42:17 Log()
-2024/02/25 23:42:17 Guard()
-2024/02/25 23:42:17 SessionValide r.Method= POST
-2024/02/25 23:42:17 Foo()
-2024/02/25 23:42:17 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:42:19 Log()
-2024/02/25 23:42:19 Guard()
-2024/02/25 23:42:19 SessionValide r.Method= GET
-2024/02/25 23:42:20 Log()
-2024/02/25 23:42:20 Guard()
-2024/02/25 23:42:20 SessionValide r.Method= POST
-2024/02/25 23:42:20 Foo()
-2024/02/25 23:42:20 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:42:21 Log()
-2024/02/25 23:42:21 Guard()
-2024/02/25 23:42:21 SessionValide r.Method= GET
-2024/02/25 23:42:22 Log()
-2024/02/25 23:42:22 Guard()
-2024/02/25 23:42:22 SessionValide r.Method= POST
-2024/02/25 23:42:22 Foo()
-2024/02/25 23:42:24 Log()
-2024/02/25 23:42:24 Foo()
-2024/02/25 23:42:24 Register log: UrlPath: "/Register"
-2024/02/25 23:42:24 SessionExiste r.Method= GET
-2024/02/25 23:42:24 Log()
-2024/02/25 23:42:24 Home log: UrlPath: "/"
-2024/02/25 23:42:24 SessionValide r.Method= GET
-2024/02/25 23:42:25 Log()
-2024/02/25 23:42:25 Login log: UrlPath: "/Login"
-2024/02/25 23:42:28 Log()
-2024/02/25 23:42:28 Signin log: UrlPath: "/Signin"
-2024/02/25 23:42:28 Log()
-2024/02/25 23:42:28 Guard()
-2024/02/25 23:42:28 SessionValide r.Method= GET
-2024/02/25 23:44:19 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/25 23:44:24 Log()
-2024/02/25 23:44:24 Guard()
-2024/02/25 23:44:24 SessionValide r.Method= GET
-2024/02/25 23:44:24 http: superfluous response.WriteHeader call from 118_session_ok/controllers.init.Guard.func5.1 (middleware.go:112)
-2024/02/25 23:44:32 Log()
-2024/02/25 23:44:32 Home log: UrlPath: "/"
-2024/02/25 23:44:32 SessionValide r.Method= GET
-2024/02/25 23:44:33 Log()
-2024/02/25 23:44:33 Login log: UrlPath: "/Login"
-2024/02/25 23:44:36 Log()
-2024/02/25 23:44:36 Signin log: UrlPath: "/Signin"
-2024/02/25 23:44:36 Log()
-2024/02/25 23:44:36 Guard()
-2024/02/25 23:44:36 SessionValide r.Method= GET
-2024/02/25 23:44:38 Log()
-2024/02/25 23:44:38 Guard()
-2024/02/25 23:44:38 SessionValide r.Method= POST
-2024/02/25 23:44:38 Foo()
-2024/02/25 23:44:38 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:44:39 Log()
-2024/02/25 23:44:39 Guard()
-2024/02/25 23:44:39 SessionValide r.Method= GET
-2024/02/25 23:44:40 Log()
-2024/02/25 23:44:40 Guard()
-2024/02/25 23:44:40 SessionValide r.Method= POST
-2024/02/25 23:44:40 Foo()
-2024/02/25 23:44:40 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/25 23:44:41 Log()
-2024/02/25 23:44:41 Guard()
-2024/02/25 23:44:41 SessionValide r.Method= GET
-2024/02/25 23:44:42 Log()
-2024/02/25 23:44:42 Guard()
-2024/02/25 23:44:42 SessionValide r.Method= POST
-2024/02/25 23:44:42 Foo()
-2024/02/25 23:44:43 Log()
-2024/02/25 23:44:43 Foo()
-2024/02/25 23:44:43 Register log: UrlPath: "/Register"
-2024/02/25 23:44:43 SessionExiste r.Method= GET
-2024/02/25 23:44:44 Log()
-2024/02/25 23:44:44 Home log: UrlPath: "/"
-2024/02/25 23:44:44 SessionValide r.Method= GET
-2024/02/25 23:44:45 Log()
-2024/02/25 23:44:45 Login log: UrlPath: "/Login"
-2024/02/25 23:44:48 Log()
-2024/02/25 23:44:48 Signin log: UrlPath: "/Signin"
-2024/02/25 23:44:48 Log()
-2024/02/25 23:44:48 Guard()
-2024/02/25 23:44:48 SessionValide r.Method= GET
+2024/02/27 08:34:33 Log()
+2024/02/27 08:34:33 Guard()
+2024/02/27 08:35:05 Log()
+2024/02/27 08:35:05 Foo()
+2024/02/27 08:36:31 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:36:40 Log()
+2024/02/27 08:36:40 Home log: UrlPath: "/"
+2024/02/27 08:36:40 "118_session_ok/controllers.Home"
+2024/02/27 08:36:43 Log()
+2024/02/27 08:36:43 Login log: UrlPath: "/Login"
+2024/02/27 08:36:43 "118_session_ok/controllers.Login"
+2024/02/27 08:36:47 Log()
+2024/02/27 08:36:47 Signin log: UrlPath: "/Signin"
+2024/02/27 08:36:47 "118_session_ok/controllers.Signin"
+2024/02/27 08:36:47 Log()
+2024/02/27 08:36:47 Guard()
+2024/02/27 08:36:47 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"iXUYJOubJzhOJYJ4wSauK0LHo92QJqvmmjgnF8YBcjvq6YCfXTn2ve2X_QVYqASC_E8IQIslBlUe6xf440XNhQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"LjzxjlwcgDqZ_jBajNeXqD8poK7SqRU60pNAuZIaiDdAzUQsR7QBi1Jz4VNWdJIK7chVQAQtWmY3Tr42qZ9mTA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:36:47 "118_session_ok/controllers.Index"
+2024/02/27 08:36:53 Log()
+2024/02/27 08:36:53 Foo()
+2024/02/27 08:37:14 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:37:21 Log()
+2024/02/27 08:37:21 Home log: UrlPath: "/"
+2024/02/27 08:37:21 "118_session_ok/controllers.Home"
+2024/02/27 08:37:23 Log()
+2024/02/27 08:37:23 Login log: UrlPath: "/Login"
+2024/02/27 08:37:23 "118_session_ok/controllers.Login"
+2024/02/27 08:37:26 Log()
+2024/02/27 08:37:26 Signin log: UrlPath: "/Signin"
+2024/02/27 08:37:26 "118_session_ok/controllers.Signin"
+2024/02/27 08:37:26 Log()
+2024/02/27 08:37:26 Guard()
+2024/02/27 08:37:26 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"rzCN7nndTXBqW2uEEHH1_bibQY1YCP6TogA0Pm_eUV_6Qjkm1fDlcYtx9D60veEkSlN-iAXVFgjtWnuzHj72gQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"vi4fnhUIAIKsTrR0V1_NclR6PNAxDW0nIzfpA8oR73VooYmaoCmy2ypEKO9DRM9omXsq9lO2EBlXAcbhOzCG3Q==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:37:26 "118_session_ok/controllers.Index"
+2024/02/27 08:37:28 Log()
+2024/02/27 08:37:28 Foo()
+2024/02/27 08:37:39 Log()
+2024/02/27 08:37:39 Login log: UrlPath: "/Login"
+2024/02/27 08:37:39 "118_session_ok/controllers.Login"
+2024/02/27 08:37:42 Log()
+2024/02/27 08:37:42 Signin log: UrlPath: "/Signin"
+2024/02/27 08:37:42 "118_session_ok/controllers.Signin"
+2024/02/27 08:37:42 Log()
+2024/02/27 08:37:42 Guard()
+2024/02/27 08:37:42 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"umKIUcBV77oo7zKilNZXqAn5WkIenI5nUeybmagPRipOZC0TCPW1XH-IlSWDdqvQfTrHVxX0ZU88GVPQaonwIA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"KsDVeXzB4q04qHBD5Bcwn7WDYLgMeJxN_wCU898xX5n8I8OjI9Z_d2KRk80FHHLDACOzuQLqUzJv-xoYcRzATA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:37:42 "118_session_ok/controllers.Index"
+2024/02/27 08:50:10 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:50:18 Log()
+2024/02/27 08:50:18 Home log: UrlPath: "/"
+2024/02/27 08:50:18 "118_session_ok/controllers.Home"
+2024/02/27 08:50:20 Log()
+2024/02/27 08:50:20 Login log: UrlPath: "/Login"
+2024/02/27 08:50:20 "118_session_ok/controllers.Login"
+2024/02/27 08:50:22 Log()
+2024/02/27 08:50:22 Signin log: UrlPath: "/Signin"
+2024/02/27 08:50:22 "118_session_ok/controllers.Signin"
+2024/02/27 08:50:23 Log()
+2024/02/27 08:50:23 Guard()
+2024/02/27 08:50:23 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"lyA6LVfp83vHgvegHupoe4zkyUEoMvhjBZtOTcErbVaDsuqFiHbG_NauL-Dk21WjmLvtSW5p7IW9SYRGPRt4LQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"cb-aTbEon7GqHIWvNPJD0alRsSHQ80TyVS7ugFuCO3nSJNzktYIGNFuogFOXOi-GrMWHXDPOwTNzWSvzHIuP9Q==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:50:23 "118_session_ok/controllers.Index"
+2024/02/27 08:50:24 Log()
+2024/02/27 08:50:24 Guard()
+2024/02/27 08:50:24 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"cb-aTbEon7GqHIWvNPJD0alRsSHQ80TyVS7ugFuCO3nSJNzktYIGNFuogFOXOi-GrMWHXDPOwTNzWSvzHIuP9Q==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"DUwnsbAUjGveV6fjtsWkuFR-2kMidY_wI4_iSxpnnNLia9kyYbsuGKbcmp_bWKGd-3tszdBo3WY34wvHN5r2FQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:50:24 Foo()
+2024/02/27 08:50:24 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 08:50:24 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 08:52:19 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 08:52:26 Log()
+2024/02/27 08:52:26 Home log: UrlPath: "/"
+2024/02/27 08:52:26 "118_session_ok/controllers.Home"
+2024/02/27 08:52:27 Log()
+2024/02/27 08:52:27 Login log: UrlPath: "/Login"
+2024/02/27 08:52:27 "118_session_ok/controllers.Login"
+2024/02/27 08:52:30 Log()
+2024/02/27 08:52:30 Signin log: UrlPath: "/Signin"
+2024/02/27 08:52:30 "118_session_ok/controllers.Signin"
+2024/02/27 08:52:30 Log()
+2024/02/27 08:52:30 Guard()
+2024/02/27 08:52:30 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"em5gUdflYMX9o3Ty5JJZYX8o_TP3UBA9vhsrdlzaofOL5MInJu1AZfNri6PiKJsiFAXhlb9Xlk6SYrJj6sjjGQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"4CuaAlyLR0L1gAnKUZs5r1xJpfaC8c_wxUdrJVKiGDoef-kbZlYUPI9yx5I-lxQfxhLuK8TMAdojLw6Qw4fk9g==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:52:30 "118_session_ok/controllers.Index"
+2024/02/27 08:52:32 Log()
+2024/02/27 08:52:32 Guard()
+2024/02/27 08:52:32 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"4CuaAlyLR0L1gAnKUZs5r1xJpfaC8c_wxUdrJVKiGDoef-kbZlYUPI9yx5I-lxQfxhLuK8TMAdojLw6Qw4fk9g==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"EkktYlZYWurA_OfBGcn15-51DZXe8UsCzX0peIP2V5z-Zxnad0gE-glS19MtPkvaV0kBN98B5TprmtUQNahqnQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:52:32 Foo()
+2024/02/27 08:52:32 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 08:52:32 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 08:52:37 Log()
+2024/02/27 08:52:37 Guard()
+2024/02/27 08:52:37 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"EkktYlZYWurA_OfBGcn15-51DZXe8UsCzX0peIP2V5z-Zxnad0gE-glS19MtPkvaV0kBN98B5TprmtUQNahqnQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"zlX2Yxtk6qx0Qn5R4IUoAAMgecGJZSDa059LjDo_pUbOcxoNWxXIqtMrBOseBEZW7zfn1g1hlPXQlrfiXfMHvg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 08:52:37 "118_session_ok/controllers.Index"
+2024/02/27 08:52:41 Log()
+2024/02/27 08:52:41 Foo()
+2024/02/27 08:52:43 Log()
+2024/02/27 08:52:43 Foo()
+2024/02/27 08:52:43 Register log: UrlPath: "/Register"
+2024/02/27 08:52:44 Log()
+2024/02/27 08:52:44 Home log: UrlPath: "/"
+2024/02/27 08:52:44 "118_session_ok/controllers.Home"
+2024/02/27 09:00:24 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 09:00:33 Log()
+2024/02/27 09:00:33 Home log: UrlPath: "/"
+2024/02/27 09:00:33 "118_session_ok/controllers.Home"
+2024/02/27 09:00:34 Log()
+2024/02/27 09:00:34 Login log: UrlPath: "/Login"
+2024/02/27 09:00:34 "118_session_ok/controllers.Login"
+2024/02/27 09:00:37 Log()
+2024/02/27 09:00:37 Signin log: UrlPath: "/Signin"
+2024/02/27 09:00:37 "118_session_ok/controllers.Signin"
+2024/02/27 09:00:37 Log()
+2024/02/27 09:00:37 Guard()
+2024/02/27 09:00:37 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"1Ut8ZNzWvEi5p-j2tZ9-dsQOA7odmo6tLUiGcfTMuxihCCAIuoWwGEj_bk1jZs4fmOGmguvGPG-RnuwL0Rp1zw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"xa7SwwNH9_4ItFtDeH2SmC1KD_c64hXNNJr2v2u4Pe4ouZtgViFonalI0ZUN3ovBjxKwrJkXz1QbTGXam9KhqQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 09:00:37 Index log: UrlPath: "/Index"
+2024/02/27 09:00:37 "118_session_ok/controllers.Index"
+2024/02/27 09:00:39 Log()
+2024/02/27 09:00:39 Guard()
+2024/02/27 09:00:39 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"xa7SwwNH9_4ItFtDeH2SmC1KD_c64hXNNJr2v2u4Pe4ouZtgViFonalI0ZUN3ovBjxKwrJkXz1QbTGXam9KhqQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"SqTN1ZEowD39c_ryPaPQjNx-8dPpuKR9SBtJfBe6wbvM-Y2iF7UNIuNOhO7BdkyueYcSxQFDIysXS8amqAFnVg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 09:00:39 Foo()
+2024/02/27 09:00:39 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 09:00:39 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 09:00:42 Log()
+2024/02/27 09:00:42 Guard()
+2024/02/27 09:00:42 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"SqTN1ZEowD39c_ryPaPQjNx-8dPpuKR9SBtJfBe6wbvM-Y2iF7UNIuNOhO7BdkyueYcSxQFDIysXS8amqAFnVg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"WmqJpsszCouK-qso6LEzFZ7pwppBz3rg8G7audWyi6lJCDupOXPVw0M8Jwvg_3bwIn8EnV7tifV-sMD266fA2Q==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 09:00:42 Index log: UrlPath: "/Index"
+2024/02/27 09:00:42 "118_session_ok/controllers.Index"
+2024/02/27 09:00:45 Log()
+2024/02/27 09:00:45 Guard()
+2024/02/27 09:00:45 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"WmqJpsszCouK-qso6LEzFZ7pwppBz3rg8G7audWyi6lJCDupOXPVw0M8Jwvg_3bwIn8EnV7tifV-sMD266fA2Q==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"mR888XRwDc82b9HuQOnUJdH54aYX2AF8rTDQyuRa89oOBJMyDofiyVgZr6UXJOn0I9kRxvs6OsJBupa2u3o6ZQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 09:00:45 Foo()
+2024/02/27 09:00:45 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 09:00:45 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 09:00:48 Log()
+2024/02/27 09:00:48 Guard()
+2024/02/27 09:00:48 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"mR888XRwDc82b9HuQOnUJdH54aYX2AF8rTDQyuRa89oOBJMyDofiyVgZr6UXJOn0I9kRxvs6OsJBupa2u3o6ZQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"uoDIBPqNxrTLHldFpFMKabyjbn86anYJyPjYceSSH_FbHDrVF6gP529F-jvIlucRB9XYhZVCQafJxMIl7u74Vg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 09:00:48 Index log: UrlPath: "/Index"
+2024/02/27 09:00:48 "118_session_ok/controllers.Index"
+2024/02/27 09:00:50 Log()
+2024/02/27 09:00:50 Foo()
+2024/02/27 09:00:50 Logout log: UrlPath: "/Logout"
+2024/02/27 09:00:50 "118_session_ok/controllers.Logout"
+2024/02/27 09:00:52 Log()
+2024/02/27 09:00:52 Foo()
+2024/02/27 09:00:52 Register log: UrlPath: "/Register"
+2024/02/27 09:00:52 118_session_ok/controllers.Register
+2024/02/27 09:00:54 Log()
+2024/02/27 09:00:54 Home log: UrlPath: "/"
+2024/02/27 09:00:54 "118_session_ok/controllers.Home"
+2024/02/27 09:01:00 Log()
+2024/02/27 09:01:00 Home log: UrlPath: "/"
+2024/02/27 09:01:00 "118_session_ok/controllers.Home"
+2024/02/27 09:01:13 Log()
+2024/02/27 09:01:13 Foo()
+2024/02/27 09:01:13 Register log: UrlPath: "/Register"
+2024/02/27 09:01:13 118_session_ok/controllers.Register
+2024/02/27 09:01:19 Log()
+2024/02/27 09:01:19 Home log: UrlPath: "/"
+2024/02/27 09:01:19 "118_session_ok/controllers.Home"
+2024/02/27 09:01:21 Log()
+2024/02/27 09:01:21 Foo()
+2024/02/27 09:01:21 Register log: UrlPath: "/Register"
+2024/02/27 09:01:21 118_session_ok/controllers.Register
+2024/02/27 09:01:22 Log()
+2024/02/27 09:01:22 Home log: UrlPath: "/"
+2024/02/27 09:01:22 "118_session_ok/controllers.Home"

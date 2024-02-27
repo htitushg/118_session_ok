@@ -1,3 +1,4 @@
+{{define "index"}}
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,16 +7,18 @@
     <link rel="icon" href="/static/css/faviconhb.png" type="image/x-icon" />
   </head>
   <header>
-    <h1 class="entete">Bonjour {{.CSessions.Pseudo}}</h1>
+    <h1 class="entete">Bonjour {{.CSessions.Username}}</h1>
     <img src="/static/css/utilisateurs2.png" />
     <time class="datesite">{{.Date_jour}}</time>
   </header>
   <body>
     <div class="login-container">
-      <h2>Page index</h2>
+      <h2>Page privée Index</h2>
       <form action="/Logout" method="POST">
-        <div>Bonjour {{.CSessions.Pseudo}} vous êtes connecté !</div>
-        <div>La session exipirera dans : {{.CSessions.MaxAge}} secondes!</div>
+        <div>Bonjour {{.CSessions.Username}} vous êtes connecté !</div>
+        <div>
+          La session exipirera dans : {{.CSessions.ExpirationTime}} secondes!
+        </div>
         <button id="subbtn" type="submit" class="bouton2">Deconnexion</button>
       </form>
       <label for="story">Voici le token:</label>
@@ -29,3 +32,4 @@
     <div class="login-container">Contenu du site partie privée</div>
   </body>
 </html>
+{{end}}
