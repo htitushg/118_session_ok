@@ -30,11 +30,6 @@ func CheckError(err error) {
 	}
 }
 
-/* // we'll use this method later to determine if the session has expired
-func (s Session) IsExpired() bool {
-	return s.Expiry.Before(time.Now())
-} */
-
 // Create a struct that models the structure of a user in the request body
 type CredentialsR struct {
 	Pseudo    string `json:"pseudo"` //go.mod, db:"pseudo"`
@@ -77,7 +72,7 @@ type Credentials struct {
 } */
 type Data struct {
 	CSessions   models.Session
-	Date_Expire time.Time
+	Date_Expire time.Duration
 	Date_jour   string
 	SToken      string
 	Message     template.HTML

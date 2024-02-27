@@ -1,129 +1,37 @@
-2024/02/27 09:34:45 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/27 09:34:51 Log()
-2024/02/27 09:34:51 Home log: UrlPath: "/"
-2024/02/27 09:34:51 "118_session_ok/controllers.Home"
-2024/02/27 09:34:53 Log()
-2024/02/27 09:34:53 Login log: UrlPath: "/Login"
-2024/02/27 09:34:53 "118_session_ok/controllers.Login"
-2024/02/27 09:34:56 Log()
-2024/02/27 09:34:56 Signin log: UrlPath: "/Signin"
-2024/02/27 09:34:56 "118_session_ok/controllers.Signin"
-2024/02/27 09:34:56 Log()
-2024/02/27 09:34:56 Guard()
-2024/02/27 09:34:56 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"77wtzyYXmgo2rb09khfyPOhm423Db66zSwb-2InJacn3Oze059Qk7vhq8f4aU1X1R0SNhUbAz656iw6JJJhbrA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"0veDSLTn2bdAhSUi6AdXWshU8vq1S2Yx4gjaf6I5g08N_dh0mOBl3iqAmpq3b9H6Xfn6EpNMjiKt2-HgkJvy4A==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:34:56 Index log: UrlPath: "/Index"
-2024/02/27 09:34:56 "118_session_ok/controllers.Index"
-2024/02/27 09:34:58 Log()
-2024/02/27 09:34:58 Guard()
-2024/02/27 09:34:58 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"0veDSLTn2bdAhSUi6AdXWshU8vq1S2Yx4gjaf6I5g08N_dh0mOBl3iqAmpq3b9H6Xfn6EpNMjiKt2-HgkJvy4A==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"TL585pE-IJ5upcg83D6jfZvNG2YwNwB8khXo-nQjp3yehgJk6T554YNVpL91y2WTw9zWEyufq8MurON0JgLlwA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:34:58 Foo()
-2024/02/27 09:34:58 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/27 09:34:58 118_session_ok/controllers.AfficheUserInfo
-2024/02/27 09:35:01 Log()
-2024/02/27 09:35:01 Guard()
-2024/02/27 09:35:01 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"TL585pE-IJ5upcg83D6jfZvNG2YwNwB8khXo-nQjp3yehgJk6T554YNVpL91y2WTw9zWEyufq8MurON0JgLlwA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"MmY1BAWe8c3egllqohl9YA9TytQ235Zo4gSXteAWM4ELbkF6B2QZmzVeFDtQuS3I8VosllZRUHPG_P7wnOHfRA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:01 Index log: UrlPath: "/Index"
-2024/02/27 09:35:01 "118_session_ok/controllers.Index"
-2024/02/27 09:35:02 Log()
-2024/02/27 09:35:02 Guard()
-2024/02/27 09:35:02 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"MmY1BAWe8c3egllqohl9YA9TytQ235Zo4gSXteAWM4ELbkF6B2QZmzVeFDtQuS3I8VosllZRUHPG_P7wnOHfRA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"nhLuRiVwIH46m0rlCK5JHWHJ4Db5wUQrXUd6fzGO4Tr-Y5Wi8-y6fVMNSYWFHxosy3Ehjl5znRU4ESQ3iBIKKA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:02 Foo()
-2024/02/27 09:35:02 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/27 09:35:02 118_session_ok/controllers.AfficheUserInfo
-2024/02/27 09:35:03 Log()
-2024/02/27 09:35:03 Guard()
-2024/02/27 09:35:03 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"nhLuRiVwIH46m0rlCK5JHWHJ4Db5wUQrXUd6fzGO4Tr-Y5Wi8-y6fVMNSYWFHxosy3Ehjl5znRU4ESQ3iBIKKA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"RhXyAhc-J2Xp9UeEFpblQ5A38ACoDJQPTb658ueejpgEJFr2-vi3PvRJlsECm12-LDxUovLoUeqiS6M8B1m9yg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:03 Index log: UrlPath: "/Index"
-2024/02/27 09:35:03 "118_session_ok/controllers.Index"
-2024/02/27 09:35:06 Log()
-2024/02/27 09:35:06 Foo()
-2024/02/27 09:35:06 Logout log: UrlPath: "/Logout"
-2024/02/27 09:35:06 "118_session_ok/controllers.Logout"
-2024/02/27 09:35:08 Log()
-2024/02/27 09:35:08 Foo()
-2024/02/27 09:35:08 Register log: UrlPath: "/Register"
-2024/02/27 09:35:08 118_session_ok/controllers.Register
-2024/02/27 09:35:09 Log()
-2024/02/27 09:35:09 Home log: UrlPath: "/"
-2024/02/27 09:35:09 "118_session_ok/controllers.Home"
-2024/02/27 09:35:10 Log()
-2024/02/27 09:35:10 Login log: UrlPath: "/Login"
-2024/02/27 09:35:10 "118_session_ok/controllers.Login"
-2024/02/27 09:35:13 Log()
-2024/02/27 09:35:13 Signin log: UrlPath: "/Signin"
-2024/02/27 09:35:13 "118_session_ok/controllers.Signin"
-2024/02/27 09:35:13 Log()
-2024/02/27 09:35:13 Guard()
-2024/02/27 09:35:13 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"7dim-4vgCnoWzGZpXPR7ub-VGXelaIkSdnw9oXaemDFIrhZny7__LE1p6Bwzilf6maqCr150ILJyOV0C9cF1uw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"lIHnpuu7b3HiYSJbw-5lvl6t7hO56WvAXVisMlNhX-pA0kcY_BIVTJmwzgHrTfrZqq9yn1mF1rToH8W9xTrY-A==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:13 Index log: UrlPath: "/Index"
-2024/02/27 09:35:13 "118_session_ok/controllers.Index"
-2024/02/27 09:35:14 Log()
-2024/02/27 09:35:14 Guard()
-2024/02/27 09:35:14 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"lIHnpuu7b3HiYSJbw-5lvl6t7hO56WvAXVisMlNhX-pA0kcY_BIVTJmwzgHrTfrZqq9yn1mF1rToH8W9xTrY-A==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"cEcO0_7OTUx4Z7i-hwCtUBl1DJ48qvolTH83Z7nSM_3lyTg6Ou3kOFvmVGxMdNqv89MX7nMkECu__ahN7fx7Yg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:14 Foo()
-2024/02/27 09:35:14 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/27 09:35:14 118_session_ok/controllers.AfficheUserInfo
-2024/02/27 09:35:16 Log()
-2024/02/27 09:35:16 Guard()
-2024/02/27 09:35:16 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"cEcO0_7OTUx4Z7i-hwCtUBl1DJ48qvolTH83Z7nSM_3lyTg6Ou3kOFvmVGxMdNqv89MX7nMkECu__ahN7fx7Yg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"77Aoh4QmBO_K7LgOY3_RMfXy85v-6YXwe5HYjMTAHtYlc_gLrqT6lsVYIV-8gvSwPvfb50pSl7-ZQametyIcHg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:35:16 Index log: UrlPath: "/Index"
-2024/02/27 09:35:16 "118_session_ok/controllers.Index"
-2024/02/27 09:37:25 Log()
-2024/02/27 09:37:25 Login log: UrlPath: "/Login"
-2024/02/27 09:37:25 "118_session_ok/controllers.Login"
-2024/02/27 09:37:35 Log()
-2024/02/27 09:37:35 Signin log: UrlPath: "/Signin"
-2024/02/27 09:37:35 "118_session_ok/controllers.Signin"
-2024/02/27 09:37:35 Log()
-2024/02/27 09:37:35 Guard()
-2024/02/27 09:37:35 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"g05F0SkGej5y8dh_dxkky5C9mm6X2Rq3iaYAuVIRQp8RPkK22U1XNpAyjmV5O0-gKienMRRC8bSw7vPXwBXLrA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"rHqfFyiJ4GsgWbrfdhQcr3Cbt1mhL1ZQPKITRjfLWzmcsrYYVm8JyjS2uuO43x860en6uVmyAcclW_Viun4lcg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:37:35 Index log: UrlPath: "/Index"
-2024/02/27 09:37:35 "118_session_ok/controllers.Index"
-2024/02/27 09:37:41 Log()
-2024/02/27 09:37:41 Guard()
-2024/02/27 09:37:41 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"rHqfFyiJ4GsgWbrfdhQcr3Cbt1mhL1ZQPKITRjfLWzmcsrYYVm8JyjS2uuO43x860en6uVmyAcclW_Viun4lcg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"BdErL3lLZEv_Ji2HuKV4DhvDGkJ2-oxo8SZONz_ysOHYa6IKVifwaZm4phs0IK4eQqwa5zV2ZpyN0wfaJBphCw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:37:41 Foo()
-2024/02/27 09:37:41 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/27 09:37:41 118_session_ok/controllers.AfficheUserInfo
-2024/02/27 09:37:49 Log()
-2024/02/27 09:37:49 Guard()
-2024/02/27 09:37:49 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"BdErL3lLZEv_Ji2HuKV4DhvDGkJ2-oxo8SZONz_ysOHYa6IKVifwaZm4phs0IK4eQqwa5zV2ZpyN0wfaJBphCw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"VXCuf_yTZPXm6xG3VD9mpGoAehpRHNdA6aSmA2bDjIqxeHeoGwihnEtp3OxlSgeCRGrvMzhub7SLxo1FW4bqmA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:37:49 Index log: UrlPath: "/Index"
-2024/02/27 09:37:49 "118_session_ok/controllers.Index"
-2024/02/27 09:37:53 Log()
-2024/02/27 09:37:53 Foo()
-2024/02/27 09:37:53 Logout log: UrlPath: "/Logout"
-2024/02/27 09:37:53 "118_session_ok/controllers.Logout"
-2024/02/27 09:37:56 Log()
-2024/02/27 09:37:56 Foo()
-2024/02/27 09:37:56 Register log: UrlPath: "/Register"
-2024/02/27 09:37:56 118_session_ok/controllers.Register
-2024/02/27 09:37:58 Log()
-2024/02/27 09:37:58 Home log: UrlPath: "/"
-2024/02/27 09:37:58 "118_session_ok/controllers.Home"
-2024/02/27 09:38:00 Log()
-2024/02/27 09:38:00 Login log: UrlPath: "/Login"
-2024/02/27 09:38:00 "118_session_ok/controllers.Login"
-2024/02/27 09:38:07 Log()
-2024/02/27 09:38:07 Signin log: UrlPath: "/Signin"
-2024/02/27 09:38:07 "118_session_ok/controllers.Signin"
-2024/02/27 09:38:07 Log()
-2024/02/27 09:38:07 Guard()
-2024/02/27 09:38:07 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"6sy4dUe4jhXTmNwA2HwdQC6tA6T0Xh5ZeQ_H_ipJ1znB--cVpFKynQ8hHGIYnlPs2-zKBHJNPF9Mhzd-AZ62Yg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"E5WBakw_mjvbUoWElfsCX7n2FrdAv2P_U_Q5c_yWZvf9ImmfPcCwFJUKRvMKTTVaykGwYlOD8b6_AQ5rDA88rQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:38:07 Index log: UrlPath: "/Index"
-2024/02/27 09:38:07 "118_session_ok/controllers.Index"
-2024/02/27 09:38:11 Log()
-2024/02/27 09:38:11 Guard()
-2024/02/27 09:38:11 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"E5WBakw_mjvbUoWElfsCX7n2FrdAv2P_U_Q5c_yWZvf9ImmfPcCwFJUKRvMKTTVaykGwYlOD8b6_AQ5rDA88rQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"_8osNFMYRtKQck7Ex4caYdYkHApQO-1fgkeA5-yoWLXZzFFm6zALVvah_DKKQcHLclxmqX53TLm558lpGcKIWA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:38:11 Foo()
-2024/02/27 09:38:11 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
-2024/02/27 09:38:11 118_session_ok/controllers.AfficheUserInfo
-2024/02/27 09:38:13 Log()
-2024/02/27 09:38:13 Guard()
-2024/02/27 09:38:13 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"_8osNFMYRtKQck7Ex4caYdYkHApQO-1fgkeA5-yoWLXZzFFm6zALVvah_DKKQcHLclxmqX53TLm558lpGcKIWA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"hFSK78Wxc1zFTWAdtT3xFGtNXyX3oyTkkS4NScDqvXbKxKPV7FNjU5m0tD8DAJ9C4C9ZR849DCSWn0lbcAVEdQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
-2024/02/27 09:38:13 Index log: UrlPath: "/Index"
-2024/02/27 09:38:13 "118_session_ok/controllers.Index"
-2024/02/27 09:38:19 Log()
-2024/02/27 09:38:19 Foo()
-2024/02/27 09:38:19 Logout log: UrlPath: "/Logout"
-2024/02/27 09:38:19 "118_session_ok/controllers.Logout"
+2024/02/27 12:18:54 Main Chemin= /home/henry/go/src/118_session_ok/assets/
+2024/02/27 12:19:05 Log()
+2024/02/27 12:19:05 Home log: UrlPath: "/"
+2024/02/27 12:19:05 "118_session_ok/controllers.Home"
+2024/02/27 12:19:06 Log()
+2024/02/27 12:19:06 Login log: UrlPath: "/Login"
+2024/02/27 12:19:06 "118_session_ok/controllers.Login"
+2024/02/27 12:19:09 Log()
+2024/02/27 12:19:09 Signin log: UrlPath: "/Signin"
+2024/02/27 12:19:09 "118_session_ok/controllers.Signin"
+2024/02/27 12:19:09 Log()
+2024/02/27 12:19:09 Guard()
+2024/02/27 12:19:09 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"r6fxaSQin4AAwfWref-OcyRvdPNsC-tx_POaJ7P6eGnqsTIp5AEztY3-ww-aDXSOp2E0o220PBqFC8LPDwByYg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"eW-tup3Z4JbCu1BPgfApdDkzxWxalvoYoDgFeV56j-amaHzb8YVZhFMQSiSo-5A48ZFosjmVEFRu6HD3SWccgw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 12:19:09 Index log: UrlPath: "/Index"
+2024/02/27 12:19:09 "118_session_ok/controllers.Index"
+2024/02/27 12:19:18 Log()
+2024/02/27 12:19:18 Guard()
+2024/02/27 12:19:18 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"eW-tup3Z4JbCu1BPgfApdDkzxWxalvoYoDgFeV56j-amaHzb8YVZhFMQSiSo-5A48ZFosjmVEFRu6HD3SWccgw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"hJ_q6UWH-GUKuvb0hQBvOr83uRk6Df1LPDW40osr6SUob14KJtbg2OKQ8xWBOyloiA2X6kqiwjjf4a7om-iAXg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 12:19:18 Foo()
+2024/02/27 12:19:18 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 12:19:18 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 12:19:26 Log()
+2024/02/27 12:19:26 Guard()
+2024/02/27 12:19:26 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"hJ_q6UWH-GUKuvb0hQBvOr83uRk6Df1LPDW40osr6SUob14KJtbg2OKQ8xWBOyloiA2X6kqiwjjf4a7om-iAXg==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"6mQChc8zKQGKDN8qzmDDV0MYeyY2T0dVPaE4Bv4nNfdfMGVpIAdgbgz8ObU3MWbTzUNrPNUBBipy_SMgqjsYMw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 12:19:26 Index log: UrlPath: "/Index"
+2024/02/27 12:19:26 "118_session_ok/controllers.Index"
+2024/02/27 12:19:33 Log()
+2024/02/27 12:19:33 Guard()
+2024/02/27 12:19:33 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"6mQChc8zKQGKDN8qzmDDV0MYeyY2T0dVPaE4Bv4nNfdfMGVpIAdgbgz8ObU3MWbTzUNrPNUBBipy_SMgqjsYMw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"EqWgZsAzg-e4j4aUVnpvtW8I1svCeNYKOStV97OuDLyI5pQEFDwRogYbLaae-NJEAgrYnamlWW-hcLVPhmo6cA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 12:19:33 Foo()
+2024/02/27 12:19:33 AfficheUserInfo log: UrlPath: "/AfficheUserInfo"
+2024/02/27 12:19:33 118_session_ok/controllers.AfficheUserInfo
+2024/02/27 12:19:34 Log()
+2024/02/27 12:19:34 Guard()
+2024/02/27 12:19:34 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"EqWgZsAzg-e4j4aUVnpvtW8I1svCeNYKOStV97OuDLyI5pQEFDwRogYbLaae-NJEAgrYnamlWW-hcLVPhmo6cA==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"Lr9AxLohx7ochU8doHzknpbar_6cbWsTc8n1mRMM2cB20vGJ0g4npXmMskdHERdOVO2Nho1aNSE6zbjLjLSgEQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/27 12:19:34 Index log: UrlPath: "/Index"
+2024/02/27 12:19:34 "118_session_ok/controllers.Index"

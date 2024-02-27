@@ -16,9 +16,7 @@
       <h2>Page privée Index</h2>
       <form action="/Logout" method="POST">
         <div>Bonjour {{.CSessions.Username}} vous êtes connecté !</div>
-        <div>
-          La session exipirera dans : {{.CSessions.ExpirationTime}} secondes!
-        </div>
+        <div>La session exipirera dans : {{.Date_Expire}} secondes !</div>
         <button id="subbtn" type="submit" class="bouton2">Deconnexion</button>
       </form>
       <label for="story">Voici le token:</label>

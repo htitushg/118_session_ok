@@ -70,9 +70,8 @@ func Signin(w http.ResponseWriter, r *http.Request) {
 	// AND, if it is the same as the password we received, the we can move ahead
 	// if NOT, then we return an "Unauthorized" status
 	if !ok || expectedPassword != creds.Password {
-		w.WriteHeader(http.StatusUnauthorized)
+		//w.WriteHeader(http.StatusUnauthorized)
 		http.Redirect(w, r, "/Login?err=pass", http.StatusSeeOther)
-		return
 	}
 	models.OpenSession(&w, r, creds.Pseudo)
 	http.Redirect(w, r, "/Index", http.StatusSeeOther)
@@ -81,10 +80,12 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Index log: UrlPath: %#v\n", r.URL.Path)
 	log.Printf("%#v\n", models.GetCurrentFuncName())
 	sessionID, _ := r.Cookie("updatedCookie")
+	duration := models.SessionsData[sessionID.Value].ExpirationTime.Sub(time.Now())
 	var data = assets.Data{
-		SToken:    sessionID.Value,
-		CSessions: models.SessionsData[sessionID.Value],
-		Date_jour: time.Now().Format("2006-01-02"),
+		SToken:      sessionID.Value,
+		CSessions:   models.SessionsData[sessionID.Value],
+		Date_Expire: duration,
+		Date_jour:   time.Now().Format("2006-01-02"),
 	}
 	t, err := template.ParseFiles(assets.Chemin + "templates/index.html")
 	if err != nil {
@@ -102,7 +103,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Logout log: UrlPath: %#v\n", r.URL.Path)
 	log.Printf("%#v\n", models.GetCurrentFuncName())
 	var err error
-	c, err := r.Cookie("session_token")
+	c, err := r.Cookie("session_id")
 	if err == nil {
 		sessionToken := c.Value
 
@@ -112,7 +113,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 		// In the response, we set the session token to an empty
 		// value and set its expiry as the current time
 		http.SetCookie(w, &http.Cookie{
-			Name:   "session_token",
+			Name:   "session_id",
 			Value:  "",
 			MaxAge: -1,
 		})
@@ -138,11 +139,13 @@ func AfficheUserInfo(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/Home?err=pass", http.StatusSeeOther)
 	}
 	var sessionToken = cookie.Value
+	duration := models.SessionsData[sessionToken].ExpirationTime.Sub(time.Now())
+	//newFormat := models.SessionsData[sessionToken].ExpirationTime.Format("2006-01-02 15:00:00 +0800")
 	var data = assets.Data{
 		SToken:      sessionToken,
 		CSessions:   models.SessionsData[sessionToken],
 		Date_jour:   time.Now().Format("2006-01-02"),
-		Date_Expire: models.SessionsData[sessionToken].ExpirationTime,
+		Date_Expire: duration,
 	}
 	t, err := template.ParseFiles(assets.Chemin + "templates/afficheuserinfo.html")
 	if err != nil {
@@ -179,16 +182,16 @@ func Register(w http.ResponseWriter, r *http.Request) {
 func IndexHandlerNoMeth(w http.ResponseWriter, r *http.Request) {
 	log.Println(models.GetCurrentFuncName())
 	log.Println("HTTP Error", http.StatusMethodNotAllowed)
-	w.WriteHeader(http.StatusMethodNotAllowed)
+	//w.WriteHeader(http.StatusMethodNotAllowed)
 	Logger.Warn("indexHandlerNoMeth", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusMethodNotAllowed))
-	http.Redirect(w, r, "/Home?err=pass", http.StatusSeeOther)
+	http.Redirect(w, r, "/?err=pass", http.StatusSeeOther)
 	//http.Redirect(w, r, "/Home", http.StatusSeeOther)
 }
 func IndexHandlerOther(w http.ResponseWriter, r *http.Request) {
 	log.Println(models.GetCurrentFuncName())
 	log.Println("HTTP Error", http.StatusNotFound)
-	w.WriteHeader(http.StatusNotFound)
+	//w.WriteHeader(http.StatusNotFound)
 	Logger.Warn("indexHandlerOther", slog.String("reqURL", r.URL.String()), slog.Int("HttpStatus", http.StatusNotFound))
-	http.Redirect(w, r, "/Home?err=pass", http.StatusSeeOther)
+	http.Redirect(w, r, "/?err=pass", http.StatusSeeOther)
 	//http.Redirect(w, r, "/Home", http.StatusSeeOther)
 }

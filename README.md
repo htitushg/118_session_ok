@@ -7,12 +7,12 @@
 To run this application, build and run the Go binary:
 
 ```sh
-go run .
+go run ./exe/main.go
 
 ```
 
 Ce programme met en oeuvre un système de controle d'accès pour pouvoir accéder à un contenu.
-Il utilise un système de session associé à des cookies ("github.com/google/uuid")
+Il utilise un système de session associé à des cookies ("crypto/rand")
 
 Un cookie HTTP (également appelé cookie web ou cookie de navigateur) est une donnée de petite taille envoyée automatiquement par le serveur au navigateur web de l'utilisateur. Le navigateur peut alors enregistrer le cookie et le renvoyer au serveur lors des requêtes ultérieures.
 
@@ -46,7 +46,7 @@ Après avoir reçu une requête HTTP, un serveur peut envoyer un ou plusieurs en
 // Une map contient les sessions des utilisateurs.
 
 ```go
-var Sessions = map[string]Session{}
+var SessionsData = make(map[string]Session)
 ```
 
 // Chaque session contient le Pseudo de l'utilisateur et la date d'expiration du jeton (Token) associé à la session
@@ -54,15 +54,11 @@ dans cette structure on peut ajouter les informations dont on a besoin en plus d
 
 ```go
 type Session struct {
- Pseudo    string
- Expiry    time.Time
- Email     string
- Firstname string
- Lastname  string
- Address   string
- Town      string
- ZipCode   string
- Country   string
+ UserID         int
+ SessionID      string
+ Username       string
+ IpAddress      string
+ ExpirationTime time.Time
 }
 ```
 
@@ -76,10 +72,22 @@ var Users = map[string]string{
 }
 ```
 
-** "session_token" est le code secret qui permet d'accéder au cookie (r est de type http.Request)
+## Middlewares
+
+On utilise ici deux middlewares :
+
+* Log qui enregistre les logs
+* Guard qui gère les sessions
+on vérifie la validité de la session : ```Go models.ValidateSessionID(cookie.Value)```
+Retrieve user data from session : ```Go userData, ok := models.SessionsData[cookie.Value]```
+Verify user IP address : ```Go userData.IpAddress != models.GetIP(r)```
+Verify expiration time : ```Go userData.ExpirationTime.Before(time.Now())```
+Refresh Session : ```Go err = models.RefreshSession(&w, r)```
+
+** "session_id" est le code secret qui permet d'accéder au cookie (r est de type http.Request)
 
 ```go
-c, err := r.Cookie("session_token")
+c, err := r.Cookie("session_id")
 ```
 
 ** On accède au jeton en cours :
@@ -91,7 +99,7 @@ stoken = c.Value
 ** On vérifie si la date de fin du token est atteinte :
 
 ```go
-if assets.Sessions[stoken].Expiry.Before(time.Now())
+if userData.ExpirationTime.Before(time.Now())
 ```
 
 ## Fonctions utilisées

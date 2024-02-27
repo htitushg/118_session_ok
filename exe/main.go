@@ -5,6 +5,7 @@ import (
 	"118_session_ok/controllers"
 	"fmt"
 	"os"
+	"time"
 
 	"log"
 	"net/http"
@@ -12,6 +13,8 @@ import (
 
 func main() {
 	// If the file doesn't exist, create it or append to the file
+	location, _ := time.LoadLocation("France/Paris")
+	fmt.Println(location)
 	file, err := os.Create(assets.Chemin + "logs/logs.txt") //, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal(err)
@@ -37,6 +40,6 @@ func main() {
 	// Handling StatusNotFound error everywhere else
 	mux.HandleFunc("/", controllers.IndexHandlerOtherBundle)
 	// start the server
-	fmt.Printf("http://localhost%v , Ctrl+Clic sur le lien pour lancer le navigateur\n", assets.Port)
+	fmt.Printf("http://localhost%v , ctrl+clic sur le lien pour lancer le navigateur\n", assets.Port)
 	log.Fatal(http.ListenAndServe(assets.Port, mux))
 }
