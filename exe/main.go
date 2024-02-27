@@ -37,6 +37,6 @@ func main() {
 	// Handling StatusNotFound error everywhere else
 	mux.HandleFunc("/", controllers.IndexHandlerOtherBundle)
 	// start the server
-	fmt.Printf("http://localhost%v , Cliquez sur le lien pour lancer le navigateur\n", assets.Port)
+	fmt.Printf("http://localhost%v , Ctrl+Clic sur le lien pour lancer le navigateur\n", assets.Port)
 	log.Fatal(http.ListenAndServe(assets.Port, mux))
 }
