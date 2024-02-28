@@ -1,14 +1,27 @@
-2024/02/27 12:46:37 Main Chemin= /home/henry/go/src/118_session_ok/assets/
-2024/02/27 12:46:43 Log()
-2024/02/27 12:46:43 Home log: UrlPath: "/"
-2024/02/27 12:46:43 "118_session_ok/controllers.Home"
-2024/02/27 12:46:52 Log()
-2024/02/27 12:46:52 Guard()
-2024/02/27 12:46:52 Log()
-2024/02/27 12:46:52 Login log: UrlPath: "/Login"
-2024/02/27 12:46:52 "118_session_ok/controllers.Login"
-2024/02/27 12:47:10 Log()
-2024/02/27 12:47:10 Guard()
-2024/02/27 12:47:10 Log()
-2024/02/27 12:47:10 Login log: UrlPath: "/Login"
-2024/02/27 12:47:10 "118_session_ok/controllers.Login"
+2024/02/28 12:00:35 Main Chemin= /app/assets/
+2024/02/28 12:00:38 Log()
+2024/02/28 12:00:38 Guard()
+2024/02/28 12:00:38 Log()
+2024/02/28 12:00:38 Login log: UrlPath: "/Login"
+2024/02/28 12:00:38 "118_session_ok/controllers.Login"
+2024/02/28 12:00:41 Log()
+2024/02/28 12:00:41 Signin log: UrlPath: "/Signin"
+2024/02/28 12:00:41 "118_session_ok/controllers.Signin"
+2024/02/28 12:00:41 Log()
+2024/02/28 12:00:41 Guard()
+2024/02/28 12:00:41 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"jPCZeZnwu5k5jlhKeXiWzd9gYkIIqXI2jmSl3RsFgYVSZPXpbgkwuZjdUxqohlA6UuUenjb5WX0P09uy0lU5ag==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"qgHlshyic-5k-1i37y_rhX7AxAWLlHtpEOaJfpd6y5AmVosdvSJmtmOMFgULvF1TFGHt2OLh5akPrUlP9JCJ4A==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/28 12:00:41 Index log: UrlPath: "/Index"
+2024/02/28 12:00:41 "118_session_ok/controllers.Index"
+2024/02/28 16:56:56 Log()
+2024/02/28 16:56:56 Guard()
+2024/02/28 16:56:56 Log()
+2024/02/28 16:56:56 Login log: UrlPath: "/Login"
+2024/02/28 16:56:56 "118_session_ok/controllers.Login"
+2024/02/28 16:56:59 Log()
+2024/02/28 16:56:59 Signin log: UrlPath: "/Signin"
+2024/02/28 16:56:59 "118_session_ok/controllers.Signin"
+2024/02/28 16:56:59 Log()
+2024/02/28 16:56:59 Guard()
+2024/02/28 16:56:59 Guard() Middleware, after RefreshSession(): []http.Cookie{http.Cookie{Name:"session_id", Value:"02jMLOzLLd_lfcA7s9Nwkbheo7-B6HHUiK8QGuMKr53bR0cb_68pgo0b1YFvqIcO7MOWssPiHBOo9lcRrTL1ZQ==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}, http.Cookie{Name:"updatedCookie", Value:"bhv_KAc1fmph1GkAJislMpkdg8GWmeWEs82-5k_DljH7D7SJ7DSkeJEFnEVDLlDEL7LRPAhZ9jP7DbANl6qAQw==", Path:"", Domain:"", Expires:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), RawExpires:"", MaxAge:0, Secure:false, HttpOnly:false, SameSite:0, Raw:"", Unparsed:[]string(nil)}}
+2024/02/28 16:56:59 Index log: UrlPath: "/Index"
+2024/02/28 16:56:59 "118_session_ok/controllers.Index"
